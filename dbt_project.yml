@@ -6,22 +6,19 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 vars:
   apple_store_source:
     app_store_device_report: "{{ source('apple_store', 'app_store_source_type_device_report') }}"
-    app_units_device_report: "{{ source('apple_store', 'app_units_source_type_device_report') }}" 
     usage_device_report: "{{ source('apple_store', 'usage_source_type_device_report') }}"
     downloads_device_report: "{{ source('apple_store', 'downloads_source_type_device_report') }}"
 
     app_store_territory_report: "{{ source('apple_store', 'app_store_territory_source_type_report') }}"
-    app_units_territory_report: "{{ source('apple_store', 'app_units_territory_source_type_report') }}"
     downloads_territory_report: "{{ source('apple_store', 'downloads_territory_source_type_report') }}"
     usage_territory_report: "{{ source('apple_store', 'usage_territory_source_type_report') }}"
 
     app_store_platform_version_report: "{{ source('apple_store', 'app_store_platform_version_source_type_report') }}"
-    app_units_platform_version_report: "{{ source('apple_store', 'app_units_platform_version_source_type_report') }}"
-    crashes_platform_version_report: "{{ source('apple_store', 'crashes_platform_version_report') }}"
-    downloads_platform_version_report: "{{ source('apple_store', 'downloads_territory_source_type_report') }}"
-    usage_platform_version_report: "{{ source('apple_store', 'usage_territory_source_type_report') }}"
+    crashes_platform_version_device_report: "{{ source('apple_store', 'crashes_platform_version_device_report') }}"
+    downloads_platform_version_report: "{{ source('apple_store', 'downloads_platform_version_source_type_report') }}"
+    usage_platform_version_report: "{{ source('apple_store', 'usage_platform_version_source_type_report') }}"
 
-    crashes_app_version_report: "{{ source('apple_store', 'crashes_app_version_report') }}"
+    crashes_app_version_device_report: "{{ source('apple_store', 'crashes_app_version_device_report') }}"
     usage_app_version_report: "{{ source('apple_store', 'usage_app_version_source_type_report') }}"
 
     sales_account: "{{ source('apple_store', 'sales_account') }}"

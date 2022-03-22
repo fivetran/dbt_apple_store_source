@@ -1,0 +1,29 @@
+
+version: 2
+
+sources:
+  - name: apple_store
+    schema: "{{ var('apple_store_schema', 'itunes_connect') }}"
+    database: "{% if target.type != 'spark'%}{{ var('apple_store_database', target.database) }}{% endif %}"
+    loader: Fivetran
+    loaded_at_field: _fivetran_synced
+    tables:
+      - name: app_store_source_type_device_report
+      - name: usage_source_type_device_report
+      - name: downloads_source_type_device_report
+
+      - name: app_store_territory_source_type_report
+      - name: downloads_territory_source_type_report
+      - name: usage_territory_source_type_report
+
+      - name: app_store_platform_version_source_type_report
+      - name: crashes_platform_version_device_report
+      - name: downloads_platform_version_source_type_report
+      - name: usage_platform_version_source_type_report
+
+      - name: crashes_app_version_device_report
+      - name: usage_app_version_source_type_report
+
+      - name: sales_account
+      - name: sales_subscription_event_summary
+      - name: sales_subscription_summary

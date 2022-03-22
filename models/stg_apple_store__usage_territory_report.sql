@@ -2,7 +2,7 @@
 with base as (
 
     select * 
-    from {{ ref('stg_apple_store__usage_device_report_tmp') }}
+    from {{ ref('stg_apple_store__usage_territory_report_tmp') }}
 
 ),
 
@@ -11,8 +11,8 @@ fields as (
     select
         {{
             fivetran_utils.fill_staging_columns(
-                source_columns=adapter.get_columns_in_relation(ref('stg_apple_store__usage_device_report_tmp')),
-                staging_columns=get_usage_device_report_columns()
+                source_columns=adapter.get_columns_in_relation(ref('stg_apple_store__usage_territory_report_tmp')),
+                staging_columns=get_usage_territory_report_columns()
             )
         }}
         
@@ -25,7 +25,7 @@ final as (
         date as day,
         app_id,
         source_type,
-        device,
+        territory,
         active_devices,
         active_devices_last_30_days,
         deletions,
