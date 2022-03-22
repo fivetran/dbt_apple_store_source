@@ -22,7 +22,7 @@ fields as (
 final as (
     
     select 
-        date as day
+        date as day,
         app_id,
         source_type,
         device,

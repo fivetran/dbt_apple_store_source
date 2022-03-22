@@ -1,3 +1,4 @@
+{{ config(enabled=var('apple_store__using_subscriptions', True)) }}
 
 with base as (
 
@@ -29,8 +30,9 @@ final as (
         event,
         country,
         state,
-        quantity
+        sum(quantity) as quantity
     from fields
+    {{ dbt_utils.group_by(7) }}
 )
 
 select * from final

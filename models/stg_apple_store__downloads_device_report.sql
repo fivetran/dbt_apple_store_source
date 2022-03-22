@@ -1,3 +1,4 @@
+{{ config(enabled=var('apple_store__using_downloads', True)) }}
 
 with base as (
 
@@ -23,7 +24,7 @@ final as (
     
     select 
         date as day,
-        ap_id,
+        app_id,
         source_type,
         device,
         first_time_downloads,

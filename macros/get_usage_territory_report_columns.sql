@@ -1,4 +1,4 @@
-{% macro get_usage_territory_type_report_columns() %}
+{% macro get_usage_territory_report_columns() %}
 
 {% set columns = [
     {"name": "_fivetran_synced", "datatype": dbt_utils.type_timestamp()},

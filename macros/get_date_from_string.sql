@@ -3,7 +3,7 @@
 {% endmacro %}
 
 
-{% macro default__split_part(string_text, delimiter_text, part_number) %}
+{% macro default__get_date_from_string(string_text) %}
 
     to_date(
       {{ string_text }}, 

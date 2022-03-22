@@ -1,3 +1,4 @@
+{{ config(enabled=var('apple_store__using_subscriptions', True)) }}
 
 with base as (
 
@@ -22,17 +23,18 @@ fields as (
 final as (
     
     select 
-        {{ get_date_from_string( {{ dbt_utils.split_part(_filename, '_', 3) }} ) }} as day,
+        {{ get_date_from_string( dbt_utils.split_part(string_text='_filename', delimiter_text="'_'", part_number=3) ) }} as day, 
         app_name,
-        account_name,
+        account_number,
         country,
         state,
         subscription_name,
-        active_free_trial_introductory_offer_subscriptions,
-        active_pay_as_you_go_introductory_offer_subscriptions,
-        active_pay_up_front_introductory_offer_subscriptions,
-        active_standard_price_subscriptions
+        sum(active_free_trial_introductory_offer_subscriptions) as active_free_trial_introductory_offer_subscriptions,
+        sum(active_pay_as_you_go_introductory_offer_subscriptions) as active_pay_as_you_go_introductory_offer_subscriptions,
+        sum(active_pay_up_front_introductory_offer_subscriptions) as active_pay_up_front_introductory_offer_subscriptions,
+        sum(active_standard_price_subscriptions) as active_standard_price_subscriptions
     from fields
+    {{ dbt_utils.group_by(6) }}
 )
 
 select * from final

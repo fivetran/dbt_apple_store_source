@@ -5,6 +5,7 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 vars:
   apple_store_source:
+    app: "{{ source('apple_store', 'app') }}"
     app_store_device_report: "{{ source('apple_store', 'app_store_source_type_device_report') }}"
     usage_device_report: "{{ source('apple_store', 'usage_source_type_device_report') }}"
     downloads_device_report: "{{ source('apple_store', 'downloads_source_type_device_report') }}"
@@ -25,8 +26,11 @@ vars:
     sales_subscription_event_summary: "{{ source('apple_store', 'sales_subscription_event_summary') }}"
     sales_subscription_summary: "{{ source('apple_store', 'sales_subscription_summary') }}"
 
+    apple_store__using_subscriptions: true
+    apple_store__using_downloads: false # downloads table are available but need updated permissions, will remove var once access is granted
+
 models:
-  apple_store_source:
+  apple_search_ads_source:
     materialized: table
     +schema: stg_apple_store
     tmp:

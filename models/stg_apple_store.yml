@@ -1,0 +1,271 @@
+version: 2
+
+models:
+  - name: app
+    columns:
+      - name: app_id
+        tests:
+          - unique
+      - name: app_name
+      - name: is_enabled
+
+  - name: stg_apple_store__app_store_device_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - device
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: device
+      - name: impressions
+      - name: impressions_unique_device
+      - name: page_views
+      - name: page_views_unique_device
+
+  - name: stg_apple_store__app_store_platform_version_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - platform_version
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: platform_version
+      - name: impressions
+      - name: impressions_unique_device
+      - name: page_views
+      - name: page_views_unique_device
+
+  - name: stg_apple_store__app_store_territory_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - territory
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: territory
+      - name: impressions
+      - name: impressions_unique_device
+      - name: page_views
+      - name: page_views_unique_device
+
+  - name: stg_apple_store__crashes_app_version_device_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - device
+            - app_version
+    columns:
+      - name: day
+      - name: app_id
+      - name: device
+      - name: app_version
+      - name: crashes
+
+  - name: stg_apple_store__crashes_platform_version_device_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - device
+            - platform_version
+    columns:
+      - name: day
+      - name: app_id
+      - name: device
+      - name: platform_version
+      - name: crashes
+
+  - name: stg_apple_store__downloads_device_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - device
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: device
+      - name: first_time_downloads
+      - name: redownloads
+      - name: total_downloads
+
+  - name: stg_apple_store__downloads_platform_version_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - platform_version
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: platform_version
+      - name: first_time_downloads
+      - name: redownloads
+      - name: total_downloads
+
+  - name: stg_apple_store__downloads_territory_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - territory
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: territory
+      - name: first_time_downloads
+      - name: redownloads
+      - name: total_downloads
+
+  - name: stg_apple_store__sales_account
+    columns:
+      - name: sales_account_id
+        tests: 
+          - unique
+      - name: sales_account_name
+
+  - name: stg_apple_store__sales_subscription_event_summary
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - account_number
+            - app_name
+            - subscription_name
+            - event
+            - country
+            - state
+    columns:
+      - name: day
+      - name: account_number
+      - name: app_name
+      - name: subscription_name
+      - name: event
+      - name: country
+      - name: state
+      - name: quantity
+
+  - name: stg_apple_store__sales_subscription_summary
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - account_number
+            - app_name
+            - subscription_name
+            - country
+            - state
+    columns: 
+      - name: day
+      - name: app_name
+      - name: account_number
+      - name: country
+      - name: state
+      - name: subscription_name
+      - name: active_free_trial_introductory_offer_subscriptions
+      - name: active_pay_as_you_go_introductory_offer_subscriptions
+      - name: active_pay_up_front_introductory_offer_subscriptions
+      - name: active_standard_price_subscriptions
+
+  - name: stg_apple_store__usage_app_version_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - app_version
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: app_version
+      - name: active_devices
+      - name: active_devices_last_30_days
+      - name: deletions
+      - name: installations
+      - name: sessions
+
+  - name: stg_apple_store__usage_device_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - device
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: device
+      - name: active_devices
+      - name: active_devices_last_30_days
+      - name: deletions
+      - name: installations
+      - name: sessions
+
+  - name: stg_apple_store__usage_platform_version_report
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - platform_version
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: platform_version
+      - name: active_devices
+      - name: active_devices_last_30_days
+      - name: deletions
+      - name: installations
+      - name: sessions
+
+  - name: stg_apple_store__usage_territory_report 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - day
+            - app_id
+            - source_type
+            - territory
+    columns:
+      - name: day
+      - name: app_id
+      - name: source_type
+      - name: territory
+      - name: active_devices
+      - name: active_devices_last_30_days
+      - name: deletions
+      - name: installations
+      - name: sessions
