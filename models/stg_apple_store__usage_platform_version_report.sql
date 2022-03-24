@@ -22,7 +22,7 @@ fields as (
 final as (
     
     select 
-        date as day,
+        date as date_day,
         app_id,
         source_type,
         platform_version,

@@ -23,7 +23,7 @@ fields as (
 final as (
     
     select 
-        {{ get_date_from_string( dbt_utils.split_part(string_text='_filename', delimiter_text="'_'", part_number=3) ) }} as day, 
+        {{ get_date_from_string( dbt_utils.split_part(string_text='_filename', delimiter_text="'_'", part_number=3) ) }} as date_day, 
         app_name,
         account_number,
         country,
