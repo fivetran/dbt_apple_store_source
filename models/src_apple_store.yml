@@ -8,22 +8,38 @@ sources:
     loaded_at_field: _fivetran_synced
     tables:
       - name: app
+        identifier: "{{ var('app_identifier', 'app')}}"
       - name: app_store_source_type_device_report
+        identifier: "{{ var('app_store_source_type_device_report_identifier', 'app_store_source_type_device_report')}}"
       - name: usage_source_type_device_report
+        identifier: "{{ var('usage_source_type_device_report_identifier', 'usage_source_type_device_report')}}"
       - name: downloads_source_type_device_report
+        identifier: "{{ var('downloads_source_type_device_report_identifier', 'downloads_source_type_device_report')}}"
 
       - name: app_store_territory_source_type_report
+        identifier: "{{ var('app_store_territory_source_type_report_identifier', 'app_store_territory_source_type_report')}}"
       - name: downloads_territory_source_type_report
+        identifier: "{{ var('downloads_territory_source_type_report_identifier', 'downloads_territory_source_type_report')}}"
       - name: usage_territory_source_type_report
+        identifier: "{{ var('usage_territory_source_type_report_identifier', 'usage_territory_source_type_report')}}"
 
       - name: app_store_platform_version_source_type_report
+        identifier: "{{ var('app_store_platform_version_source_type_report_identifier', 'app_store_platform_version_source_type_report')}}"
       - name: crashes_platform_version_device_report
+        identifier: "{{ var('crashes_platform_version_device_report_identifier', 'crashes_platform_version_device_report')}}"
       - name: downloads_platform_version_source_type_report
+        identifier: "{{ var('downloads_platform_version_source_type_report_identifier', 'downloads_platform_version_source_type_report')}}"
       - name: usage_platform_version_source_type_report
+        identifier: "{{ var('usage_platform_version_source_type_report_identifier', 'usage_platform_version_source_type_report')}}"
 
       - name: crashes_app_version_device_report
+        identifier: "{{ var('crashes_app_version_device_report_identifier', 'crashes_app_version_device_report')}}"
       - name: usage_app_version_source_type_report
+        identifier: "{{ var('usage_app_version_source_type_report_identifier', 'usage_app_version_source_type_report')}}"
 
       - name: sales_account
+        identifier: "{{ var('sales_account_identifier', 'sales_account')}}"
       - name: sales_subscription_event_summary
+        identifier: "{{ var('sales_subscription_event_summary_identifier', 'sales_subscription_event_summary')}}"
       - name: sales_subscription_summary
+        identifier: "{{ var('sales_subscription_summary_identifier', 'sales_subscription_summary')}}"
