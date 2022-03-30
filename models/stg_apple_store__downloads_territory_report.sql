@@ -1,5 +1,3 @@
-{{ config(enabled=var('apple_store__using_downloads', True)) }}
-
 with base as (
 
     select * 

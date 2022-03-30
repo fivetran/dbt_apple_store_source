@@ -24,7 +24,7 @@ final as (
     
     select 
         event_date as date_day, 
-        account_number,
+        account_number as account_id,
         app_name,
         subscription_name,
         event,

@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: app
+  - name: stg_apple_store__app
     columns:
       - name: app_id
         tests:
@@ -146,17 +146,17 @@ models:
 
   - name: stg_apple_store__sales_account
     columns:
-      - name: sales_account_id
+      - name: account_id
         tests: 
           - unique
-      - name: sales_account_name
+      - name: account_name
 
   - name: stg_apple_store__sales_subscription_event_summary
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
             - day
-            - account_number
+            - account_id
             - app_name
             - subscription_name
             - event
@@ -164,7 +164,7 @@ models:
             - state
     columns:
       - name: day
-      - name: account_number
+      - name: account_id
       - name: app_name
       - name: subscription_name
       - name: event
@@ -177,7 +177,7 @@ models:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
             - day
-            - account_number
+            - account_id
             - app_name
             - subscription_name
             - country
@@ -185,7 +185,7 @@ models:
     columns: 
       - name: day
       - name: app_name
-      - name: account_number
+      - name: account_id
       - name: country
       - name: state
       - name: subscription_name

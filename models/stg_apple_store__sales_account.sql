@@ -22,8 +22,8 @@ fields as (
 final as (
     
     select 
-        id as sales_account_id,
-        name as sales_account_name
+        id as account_id,
+        name as account_name
     from fields
 )
 
