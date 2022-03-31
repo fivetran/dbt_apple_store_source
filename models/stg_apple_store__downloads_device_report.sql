@@ -21,7 +21,7 @@ fields as (
 final as (
     
     select 
-        date as date_day,
+        cast(date as date) as date_day,
         app_id,
         source_type,
         device,
