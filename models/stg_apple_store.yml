@@ -13,12 +13,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - device
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: device
@@ -31,12 +31,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - platform_version
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: platform_version
@@ -49,12 +49,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - territory
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: territory
@@ -67,12 +67,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - device
             - app_version
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: device
       - name: app_version
@@ -82,12 +82,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - device
             - platform_version
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: device
       - name: platform_version
@@ -97,12 +97,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - device
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: device
@@ -114,12 +114,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - platform_version
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: platform_version
@@ -131,12 +131,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - territory
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: territory
@@ -155,7 +155,7 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - account_id
             - app_name
             - subscription_name
@@ -163,7 +163,7 @@ models:
             - country
             - state
     columns:
-      - name: day
+      - name: date_day
       - name: account_id
       - name: app_name
       - name: subscription_name
@@ -176,14 +176,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - account_id
             - app_name
             - subscription_name
             - country
             - state
     columns: 
-      - name: day
+      - name: date_day
       - name: app_name
       - name: account_id
       - name: country
@@ -198,17 +198,17 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - app_version
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: app_version
       - name: active_devices
-      - name: active_devices_last_30_days
+      - name: active_devices_last_30_date_days
       - name: deletions
       - name: installations
       - name: sessions
@@ -217,12 +217,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - device
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: device
@@ -236,12 +236,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - platform_version
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: platform_version
@@ -255,12 +255,12 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
-            - day
+            - date_day
             - app_id
             - source_type
             - territory
     columns:
-      - name: day
+      - name: date_day
       - name: app_id
       - name: source_type
       - name: territory
