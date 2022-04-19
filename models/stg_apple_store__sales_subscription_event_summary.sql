@@ -1,4 +1,4 @@
-{{ config(enabled=var('apple_store__using_subscriptions', True)) }}
+{{ config(enabled=var('apple_store__using_subscriptions', False)) }}
 
 with base as (
 

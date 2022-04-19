@@ -26,8 +26,6 @@ vars:
     sales_subscription_event_summary: "{{ source('apple_store', 'sales_subscription_event_summary') }}"
     sales_subscription_summary: "{{ source('apple_store', 'sales_subscription_summary') }}"
 
-    apple_store__using_subscriptions: true
-
 models:
   apple_search_ads_source:
     materialized: table
