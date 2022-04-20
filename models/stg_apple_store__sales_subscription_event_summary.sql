@@ -30,9 +30,12 @@ final as (
         event,
         country,
         state,
+        case 
+            when lower(device) like 'ipod%' then 'iPod' else device
+        end as device,
         sum(quantity) as quantity
     from fields
-    {{ dbt_utils.group_by(7) }}
+    {{ dbt_utils.group_by(8) }}
 )
 
 select * from final
