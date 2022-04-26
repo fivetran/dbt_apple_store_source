@@ -18,11 +18,11 @@ vars:
     usage_territory: "{{ ref('usage_territory_source_type') }}"
 
     app_store_platform_version: "{{ ref('app_store_platform_version_source_type') }}"
-    crashes_platform_version_device: "{{ ref('crashes_platform_version_device') }}"
+    crashes_platform_version: "{{ ref('crashes_platform_version') }}"
     downloads_platform_version: "{{ ref('downloads_platform_version_source_type') }}"
     usage_platform_version: "{{ ref('usage_platform_version_source_type') }}"
 
-    crashes_app_version_device: "{{ ref('crashes_app_version_device') }}"
+    crashes_app_version: "{{ ref('crashes_app_version') }}"
     usage_app_version: "{{ ref('usage_app_version_source_type') }}"
 
     sales_account: "{{ ref('sales_account') }}"
