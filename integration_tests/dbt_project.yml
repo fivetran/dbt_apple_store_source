@@ -30,10 +30,17 @@ vars:
     sales_subscription_summary: "{{ ref('sales_subscription_summary') }}"
 
 seeds:
-  +quote_columns: "{{ true if target.type == 'redshift' else false }}"
   apple_store_source_integration_tests:
+      +quote_columns: "{{ true if target.type == 'redshift' else false }}"
       +column_types:
         _fivetran_synced: timestamp
+        date: timestamp
+      sales_subscription_event_summary:
+        +column_types:
+          _filename: string
+      sales_subscription_summary:
+        +column_types:
+          _filename: string
 
 dispatch:
   - macro_namespace: dbt_utils
