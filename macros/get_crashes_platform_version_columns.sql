@@ -1,4 +1,4 @@
-{% macro get_crashes_platform_version_device_columns() %}
+{% macro get_crashes_platform_version_columns() %}
 
 {% set columns = [
     {"name": "_fivetran_synced", "datatype": dbt_utils.type_timestamp()},

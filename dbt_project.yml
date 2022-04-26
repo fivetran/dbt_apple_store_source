@@ -15,11 +15,11 @@ vars:
     usage_territory: "{{ source('apple_store', 'usage_territory_source_type_report') }}"
 
     app_store_platform_version: "{{ source('apple_store', 'app_store_platform_version_source_type_report') }}"
-    crashes_platform_version_device: "{{ source('apple_store', 'crashes_platform_version_device_report') }}"
+    crashes_platform_version: "{{ source('apple_store', 'crashes_platform_version_device_report') }}"
     downloads_platform_version: "{{ source('apple_store', 'downloads_platform_version_source_type_report') }}"
     usage_platform_version: "{{ source('apple_store', 'usage_platform_version_source_type_report') }}"
 
-    crashes_app_version_device: "{{ source('apple_store', 'crashes_app_version_device_report') }}"
+    crashes_app_version: "{{ source('apple_store', 'crashes_app_version_device_report') }}"
     usage_app_version: "{{ source('apple_store', 'usage_app_version_source_type_report') }}"
 
     sales_account: "{{ source('apple_store', 'sales_account') }}"

@@ -13,7 +13,7 @@ models:
       - name: is_enabled
         description: Boolean indicator for whether application is enabled or not.
 
-  - name: stg_apple_store__app_store_device_report
+  - name: stg_apple_store__app_store_device
     description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by device and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -40,7 +40,7 @@ models:
       - name: page_views_unique_device
         description: '{{ doc("page_views_unique_device") }}'
 
-  - name: stg_apple_store__app_store_platform_version_report
+  - name: stg_apple_store__app_store_platform_version
     description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by platform version and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -67,7 +67,7 @@ models:
       - name: page_views_unique_device
         description: '{{ doc("page_views_unique_device") }}'
 
-  - name: stg_apple_store__app_store_territory_report
+  - name: stg_apple_store__app_store_territory
     description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by territory and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -94,7 +94,7 @@ models:
       - name: page_views_unique_device
         description: '{{ doc("page_views_unique_device") }}'
 
-  - name: stg_apple_store__crashes_app_version_device_report
+  - name: stg_apple_store__crashes_app_version
     description: Daily crashes by app version and device.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -115,7 +115,7 @@ models:
       - name: crashes
         description: '{{ doc("crashes") }}'
 
-  - name: stg_apple_store__crashes_platform_version_device_report
+  - name: stg_apple_store__crashes_platform_version
     description: Daily crashes by platform version and device.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -136,7 +136,7 @@ models:
       - name: crashes
         description: '{{ doc("crashes") }}'
 
-  - name: stg_apple_store__downloads_device_report
+  - name: stg_apple_store__downloads_device
     description: Daily downloads metrics (first time downloads, redownloads and total downloads) by device and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -161,7 +161,7 @@ models:
       - name: total_downloads
         description: '{{ doc("total_downloads") }}'
 
-  - name: stg_apple_store__downloads_platform_version_report
+  - name: stg_apple_store__downloads_platform_version
     description: Daily downloads metrics (first time downloads, redownloads and total downloads) by platform version and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -186,7 +186,7 @@ models:
       - name: total_downloads
         description: '{{ doc("total_downloads") }}'
 
-  - name: stg_apple_store__downloads_territory_report
+  - name: stg_apple_store__downloads_territory
     description: Daily downloads metrics (first time downloads, redownloads and total downloads) by territory and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -287,7 +287,7 @@ models:
       - name: active_standard_price_subscriptions
         description: '{{ doc("active_standard_price_subscriptions") }}'
 
-  - name: stg_apple_store__usage_app_version_report
+  - name: stg_apple_store__usage_app_version
     description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by app version and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -316,7 +316,7 @@ models:
       - name: sessions
         description: '{{ doc("sessions") }}'
 
-  - name: stg_apple_store__usage_device_report
+  - name: stg_apple_store__usage_device
     description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by device and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -345,7 +345,7 @@ models:
       - name: sessions
         description: '{{ doc("sessions") }}'
 
-  - name: stg_apple_store__usage_platform_version_report
+  - name: stg_apple_store__usage_platform_version
     description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by platform version and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -374,7 +374,7 @@ models:
       - name: sessions
         description: '{{ doc("sessions") }}'
 
-  - name: stg_apple_store__usage_territory_report 
+  - name: stg_apple_store__usage_territory 
     description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by territory and source type.
     tests:
       - dbt_utils.unique_combination_of_columns:
