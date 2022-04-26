@@ -35,12 +35,6 @@ seeds:
       +column_types:
         _fivetran_synced: timestamp
         date: timestamp
-      sales_subscription_event_summary:
-        +column_types:
-          _filename: string
-      sales_subscription_summary:
-        +column_types:
-          _filename: string
 
 dispatch:
   - macro_namespace: dbt_utils
