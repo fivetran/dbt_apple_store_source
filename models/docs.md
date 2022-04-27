@@ -4,9 +4,9 @@
 
 {% docs account_name %} Sales Account Name associated with the Sales Account ID, app name or app ID. {% enddocs %}
 
-{% docs active_devices %} The count of active_device is the count of devices that ran the app at least one time and for at least two seconds on a given day; this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. {% enddocs %}
+{% docs active_devices %} The count of active_device is the count of devices that ran the app at least one time and for at least two seconds on a given day (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices or no value from the source report that day. {% enddocs %}
 
-{% docs active_devices_last_30_days %} The count of active_devices_last_30_days is the count of devices that ran the app at least one time and for at least two seconds on the date_day of the report minus 30 days; this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. {% enddocs %}
+{% docs active_devices_last_30_days %} The count of active_devices_last_30_days is the count of devices that ran the app at least one time and for at least two seconds on the date_day of the report minus 30 days (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices last 30 days or no value from the source report that day.{% enddocs %}
 
 {% docs active_free_trial_introductory_offer_subscriptions %} Total number of introductory offer subscriptions currently in a free trial. {% enddocs %}
 
@@ -25,11 +25,11 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs country %} The country associated with the subscription event metrics or subscription summary metric(s). {% enddocs %}
 
-{% docs crashes %} The number of recorded crashes experienced (User Opt-In only). {% enddocs %}
+{% docs crashes %} The number of recorded crashes experienced (User Opt-In only); a value of 0 indicates there were 0 crash reports or no value from the source report that day. {% enddocs %}
 
 {% docs date_day %} The date of the report and respective recorded metric(s); follows the format `YYYY-MM-DD`. {% enddocs %}
 
-{% docs deletions %} A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. {% enddocs %}
+{% docs deletions %} A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day. {% enddocs %}
 
 {% docs device %} Device type associated with the respective metric(s). {% enddocs %}
 
@@ -41,7 +41,7 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs impressions_unique_device %} The number of impressions de-duplicated for unique devices; this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. {% enddocs %}
 
-{% docs installations%} An installation event is when the user opens the App after downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. {% enddocs %}
+{% docs installations%} An installation event is when the user opens the App after downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. A value of 0 indicates there were 0 installations or no value from the source report that day. {% enddocs %}
 
 {% docs page_views %} When a user taps on a link from an app, website or App Clip card that brings them to your App Store product page, the immediate product page_view is attributed to the referring app, website, or App Clip. {% enddocs %}
 
@@ -51,9 +51,9 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs quantity %} The number of occurrences of a given subscription event. {% enddocs %}
 
-{% docs sessions %} Sessions is the count of the number of times the app has been used for at least two seconds (User Opt-In Only). If the app is in the background and is later used again, that counts as another session. {% enddocs %}
+{% docs sessions %} Sessions is the count of the number of times the app has been used for at least two seconds (User Opt-In only). If the app is in the background and is later used again, that counts as another session. A value of 0 indicates there were 0 sessions or no value from the source report that day. {% enddocs %}
 
-{% docs redownloads %} The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again; credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. {% enddocs %}
+{% docs redownloads %} The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again (User Opt-In only); credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. A value of 0 indicates there were 0 redownloads or no value from the source report that day. {% enddocs %}
 
 {% docs source_type %} A source is counted when a customer follows a link to your App Store product page. 
 Source Types include:
