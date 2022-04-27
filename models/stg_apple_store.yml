@@ -221,7 +221,7 @@ models:
       - name: account_name
         description: '{{ doc("account_name")}}'
 
-  - name: stg_apple_store__sales_subscription_event_summary
+  - name: stg_apple_store__sales_subscription_events
     description: Daily subscription event report by account ID, app name, subscription name, event, country, state and device; this model is aggregated by date, app_name, account_id, country, state and subscription_name for easier transformations in the modeling package.
     tests:
       - dbt_utils.unique_combination_of_columns:

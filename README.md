@@ -52,7 +52,7 @@ vars:
     apple_store_schema: your_schema_name 
     <default_source_table_name>_identifier: your_table_name
 ```
-### Disabling Model Variables
+### Disabling Components
 Your Apple App Store connector might not sync every table that this package expects. If you use subscriptions and do have the `sales_subscription_event_summary` and `sales_subscription_summary` tables synced, add the following variable to your `dbt_project.yml` file:
 
 ```yml
