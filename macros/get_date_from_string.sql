@@ -27,7 +27,7 @@
 
     to_date(
       {{ string_text }},
-      'yMMMd'
+      'yMMdd'
     )
 
 {% endmacro %}
