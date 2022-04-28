@@ -23,11 +23,11 @@
 {% endmacro %}
 
 
-{% macro databricks__get_date_from_string(string_text) %}
+{% macro spark__get_date_from_string(string_text) %}
 
     to_date(
       {{ string_text }},
-      'yyyymmdd'
+      'yyyyMMd'
     )
 
 {% endmacro %}
