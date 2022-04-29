@@ -37,15 +37,15 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs first_time_downloads %} The number of first time downloads for your app; credit is attributed to the referring app, website, or App Clip of the first time download. {% enddocs %}
 
-{% docs impressions %} The number of times the app’s icon was viewed on the App Store at the respective reporting level. {% enddocs %}
+{% docs impressions %} The number of times your app was viewed on the Today, Games, Apps, and Search tabs of the App Store. {% enddocs %}
 
-{% docs impressions_unique_device %} The number of impressions de-duplicated for unique devices; this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. {% enddocs %}
+{% docs impressions_unique_device %} The number of unique devices that have viewed your app on the Today, Games, Apps, and Search tabs of the App Store. This metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. {% enddocs %}
 
 {% docs installations%} An installation event is when the user opens the App after downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. A value of 0 indicates there were 0 installations or no value from the source report that day. {% enddocs %}
 
-{% docs page_views %} When a user taps on a link from an app, website or App Clip card that brings them to your App Store product page, the immediate product page_view is attributed to the referring app, website, or App Clip. {% enddocs %}
+{% docs page_views %} The total number of times your App Store product page was viewed; when a user taps on a link from an app, website or App Clip card that brings them to your App Store product page, the immediate product page_view is attributed to the referring app, website, or App Clip. {% enddocs %}
 
-{% docs page_views_unique_device %} The number of page_views de-duplicated for unique devices; this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. {% enddocs %}
+{% docs page_views_unique_device %} The number of unique devices that have viewed your App Store product page; this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. {% enddocs %}
 
 {% docs platform_version %} The platform version of the device engaging with your app. {% enddocs %}
 

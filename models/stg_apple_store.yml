@@ -230,10 +230,10 @@ models:
             - account_id
             - app_name
             - subscription_name
+            - device
             - event
             - country
             - state
-            - device
     columns:
       - name: date_day
         description: '{{ doc("date_day") }}'
@@ -263,6 +263,7 @@ models:
             - account_id
             - app_name
             - subscription_name
+            - device
             - country
             - state
     columns:

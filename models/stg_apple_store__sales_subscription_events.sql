@@ -29,7 +29,9 @@ final as (
         subscription_name,
         event,
         country,
-        state,
+        case
+            when replace(state, ' ', '') = '' then 'Not Available' else state
+        end as state,
         case 
             when lower(device) like 'ipod%' then 'iPod' else device
         end as device,

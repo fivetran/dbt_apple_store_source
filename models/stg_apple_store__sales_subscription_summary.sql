@@ -27,14 +27,19 @@ final as (
         app_name,
         account_number as account_id,
         country,
-        state,
+        case
+            when replace(state, ' ', '') = '' then 'Not Available' else state
+        end as state,
         subscription_name,
+        case 
+            when lower(device) like 'ipod%' then 'iPod' else device
+        end as device,
         sum(active_free_trial_introductory_offer_subscriptions) as active_free_trial_introductory_offer_subscriptions,
         sum(active_pay_as_you_go_introductory_offer_subscriptions) as active_pay_as_you_go_introductory_offer_subscriptions,
         sum(active_pay_up_front_introductory_offer_subscriptions) as active_pay_up_front_introductory_offer_subscriptions,
         sum(active_standard_price_subscriptions) as active_standard_price_subscriptions
     from fields
-    {{ dbt_utils.group_by(6) }}
+    {{ dbt_utils.group_by(7) }}
 )
 
 select * from final
