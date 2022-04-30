@@ -50,7 +50,7 @@ vars:
   apple_store_source:
     apple_store_database: your_database_name
     apple_store_schema: your_schema_name 
-    <default_source_table_name>_identifier: your_table_name
+    <source_table_name>_identifier: your_table_name
 ```
 ### Enabling Components
 Your Apple App Store connector might not sync every table that this package expects. If you use subscriptions and have the `sales_subscription_event_summary` and `sales_subscription_summary` tables synced, add the following variable to your `dbt_project.yml` file:
