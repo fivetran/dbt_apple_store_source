@@ -15,8 +15,6 @@
 
 # Apple App Store Source dbt Package ([Docs](https://fivetran.github.io/dbt_apple_store_source/))
 # 📣 What does this dbt package do?
-This package cleans, tests, and preps Apple App Store (formerly iTunes Connect) data from [Fivetran's connector](https://fivetran.com/docs/applications/apple-app-store). It uses data in the format described by [this ERD](https://docs.google.com/presentation/d/1zeV9F1yakOQbgx-L0xQ7h8I3KRuJL_tKc7srX_ctaYw/edit?usp=sharing). 
-
 - Cleans, tests, and prepares your GitHub data from [Fivetran's connector](https://fivetran.com/docs/applications/apple-app-store) for analysis.
 - Generates a comprehensive data dictionary of your Apple Store data via the [dbt docs site](https://fivetran.github.io/dbt_apple_store_source/)
 - Materializes staging tables which leverage data in the format described by [this ERD](https://docs.google.com/presentation/d/1zeV9F1yakOQbgx-L0xQ7h8I3KRuJL_tKc7srX_ctaYw/edit?usp=sharing) and is intended to work simultaneously with our [Apple Store modeling package](https://github.com/fivetran/dbt_apple_store)
