@@ -32,8 +32,12 @@ vars:
     - 'Subscribe'
     
 models:
-  apple_search_ads_source:
+  apple_store_source:
     materialized: table
-    +schema: stg_apple_store
+    +schema: apple_store_source
     tmp:
       materialized: view
+
+seeds:
+  apple_store_source:
+    +schema: apple_store_source
