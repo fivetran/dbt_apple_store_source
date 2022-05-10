@@ -28,7 +28,7 @@ final as (
         account_number as account_id,
         country,
         case
-            when replace(state, ' ', '') = '' then 'Not Available' else state
+            when replace(state, ' ', '') = '' then cast(null as {{ dbt_utils.type_string() }})  else state
         end as state,
         subscription_name,
         case 

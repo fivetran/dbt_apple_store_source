@@ -403,7 +403,8 @@ models:
         description: '{{ doc("installations") }}'
       - name: sessions
         description: '{{ doc("sessions") }}'
-
+        
+seeds:
   - name: country_codes
     description: ISO-3166 country mapping table
     columns:
