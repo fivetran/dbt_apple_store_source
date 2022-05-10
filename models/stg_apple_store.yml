@@ -403,3 +403,23 @@ models:
         description: '{{ doc("installations") }}'
       - name: sessions
         description: '{{ doc("sessions") }}'
+
+  - name: country_codes
+    description: ISO-3166 country mapping table
+    columns:
+      - name: country_name
+        description: '{{ doc("country_name") }}'
+      - name: country_code_numeric
+        description: '{{ doc("country_code_numeric") }}'
+      - name: country_code_alpha_2
+        description: '{{ doc("country_code_alpha_2") }}'
+      - name: country_code_alpha3
+        description: '{{ doc("country_code_alpha_3") }}'
+      - name: region
+        description: '{{ doc("region") }}'
+      - name: region_code
+        description: '{{ doc("region_code") }}'
+      - name: sub_region
+        description: '{{ doc("sub_region") }}'
+      - name: sub_region_code
+        description: '{{ doc("sub_region_code") }}'

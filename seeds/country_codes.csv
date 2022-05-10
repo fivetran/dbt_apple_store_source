@@ -1,250 +1,250 @@
-country_name,iso_3166_alpha_2,iso_3166_alpha_3,iso_3166_numeric,iso_3166_2,region,region_code,sub_region,sub_region_code
-Afghanistan,AF,AFG,4,ISO 3166-2:AF,Asia,142,Southern Asia,034
-Åland Islands,AX,ALA,248,ISO 3166-2:AX,Europe,150,Northern Europe,154
-Albania,AL,ALB,8,ISO 3166-2:AL,Europe,150,Southern Europe,039
-Algeria,DZ,DZA,12,ISO 3166-2:DZ,Africa,002,Northern Africa,015
-American Samoa,AS,ASM,16,ISO 3166-2:AS,Oceania,009,Polynesia,061
-Andorra,AD,AND,20,ISO 3166-2:AD,Europe,150,Southern Europe,039
-Angola,AO,AGO,24,ISO 3166-2:AO,Africa,002,Sub-Saharan Africa,202
-Anguilla,AI,AIA,660,ISO 3166-2:AI,Americas,019,Latin America and the Caribbean,419
-Antarctica,AQ,ATA,10,ISO 3166-2:AQ,,,,
-Antigua and Barbuda,AG,ATG,28,ISO 3166-2:AG,Americas,019,Latin America and the Caribbean,419
-Argentina,AR,ARG,32,ISO 3166-2:AR,Americas,019,Latin America and the Caribbean,419
-Armenia,AM,ARM,51,ISO 3166-2:AM,Asia,142,Western Asia,145
-Aruba,AW,ABW,533,ISO 3166-2:AW,Americas,019,Latin America and the Caribbean,419
-Australia,AU,AUS,36,ISO 3166-2:AU,Oceania,009,Australia and New Zealand,053
-Austria,AT,AUT,40,ISO 3166-2:AT,Europe,150,Western Europe,155
-Azerbaijan,AZ,AZE,31,ISO 3166-2:AZ,Asia,142,Western Asia,145
-Bahamas,BS,BHS,44,ISO 3166-2:BS,Americas,019,Latin America and the Caribbean,419
-Bahrain,BH,BHR,48,ISO 3166-2:BH,Asia,142,Western Asia,145
-Bangladesh,BD,BGD,50,ISO 3166-2:BD,Asia,142,Southern Asia,034
-Barbados,BB,BRB,52,ISO 3166-2:BB,Americas,019,Latin America and the Caribbean,419
-Belarus,BY,BLR,112,ISO 3166-2:BY,Europe,150,Eastern Europe,151
-Belgium,BE,BEL,56,ISO 3166-2:BE,Europe,150,Western Europe,155
-Belize,BZ,BLZ,84,ISO 3166-2:BZ,Americas,019,Latin America and the Caribbean,419
-Benin,BJ,BEN,204,ISO 3166-2:BJ,Africa,002,Sub-Saharan Africa,202
-Bermuda,BM,BMU,60,ISO 3166-2:BM,Americas,019,Northern America,021
-Bhutan,BT,BTN,64,ISO 3166-2:BT,Asia,142,Southern Asia,034
-Bolivia (Plurinational State of),BO,BOL,68,ISO 3166-2:BO,Americas,019,Latin America and the Caribbean,419
-"Bonaire, Sint Eustatius and Saba",BQ,BES,535,ISO 3166-2:BQ,Americas,019,Latin America and the Caribbean,419
-Bosnia and Herzegovina,BA,BIH,70,ISO 3166-2:BA,Europe,150,Southern Europe,039
-Botswana,BW,BWA,72,ISO 3166-2:BW,Africa,002,Sub-Saharan Africa,202
-Bouvet Island,BV,BVT,74,ISO 3166-2:BV,Americas,019,Latin America and the Caribbean,419
-Brazil,BR,BRA,76,ISO 3166-2:BR,Americas,019,Latin America and the Caribbean,419
-British Indian Ocean Territory,IO,IOT,86,ISO 3166-2:IO,Africa,002,Sub-Saharan Africa,202
-Brunei Darussalam,BN,BRN,96,ISO 3166-2:BN,Asia,142,South-eastern Asia,035
-Bulgaria,BG,BGR,100,ISO 3166-2:BG,Europe,150,Eastern Europe,151
-Burkina Faso,BF,BFA,854,ISO 3166-2:BF,Africa,002,Sub-Saharan Africa,202
-Burundi,BI,BDI,108,ISO 3166-2:BI,Africa,002,Sub-Saharan Africa,202
-Cabo Verde,CV,CPV,132,ISO 3166-2:CV,Africa,002,Sub-Saharan Africa,202
-Cambodia,KH,KHM,116,ISO 3166-2:KH,Asia,142,South-eastern Asia,035
-Cameroon,CM,CMR,120,ISO 3166-2:CM,Africa,002,Sub-Saharan Africa,202
-Canada,CA,CAN,124,ISO 3166-2:CA,Americas,019,Northern America,021
-Cayman Islands,KY,CYM,136,ISO 3166-2:KY,Americas,019,Latin America and the Caribbean,419
-Central African Republic,CF,CAF,140,ISO 3166-2:CF,Africa,002,Sub-Saharan Africa,202
-Chad,TD,TCD,148,ISO 3166-2:TD,Africa,002,Sub-Saharan Africa,202
-Chile,CL,CHL,152,ISO 3166-2:CL,Americas,019,Latin America and the Caribbean,419
-China,CN,CHN,156,ISO 3166-2:CN,Asia,142,Eastern Asia,030
-Christmas Island,CX,CXR,162,ISO 3166-2:CX,Oceania,009,Australia and New Zealand,053
-Cocos (Keeling) Islands,CC,CCK,166,ISO 3166-2:CC,Oceania,009,Australia and New Zealand,053
-Colombia,CO,COL,170,ISO 3166-2:CO,Americas,019,Latin America and the Caribbean,419
-Comoros,KM,COM,174,ISO 3166-2:KM,Africa,002,Sub-Saharan Africa,202
-Congo,CG,COG,178,ISO 3166-2:CG,Africa,002,Sub-Saharan Africa,202
-"Congo, Democratic Republic of the",CD,COD,180,ISO 3166-2:CD,Africa,002,Sub-Saharan Africa,202
-Cook Islands,CK,COK,184,ISO 3166-2:CK,Oceania,009,Polynesia,061
-Costa Rica,CR,CRI,188,ISO 3166-2:CR,Americas,019,Latin America and the Caribbean,419
-Côte d'Ivoire,CI,CIV,384,ISO 3166-2:CI,Africa,002,Sub-Saharan Africa,202
-Croatia,HR,HRV,191,ISO 3166-2:HR,Europe,150,Southern Europe,039
-Cuba,CU,CUB,192,ISO 3166-2:CU,Americas,019,Latin America and the Caribbean,419
-Curaçao,CW,CUW,531,ISO 3166-2:CW,Americas,019,Latin America and the Caribbean,419
-Cyprus,CY,CYP,196,ISO 3166-2:CY,Asia,142,Western Asia,145
-Czechia,CZ,CZE,203,ISO 3166-2:CZ,Europe,150,Eastern Europe,151
-Denmark,DK,DNK,208,ISO 3166-2:DK,Europe,150,Northern Europe,154
-Djibouti,DJ,DJI,262,ISO 3166-2:DJ,Africa,002,Sub-Saharan Africa,202
-Dominica,DM,DMA,212,ISO 3166-2:DM,Americas,019,Latin America and the Caribbean,419
-Dominican Republic,DO,DOM,214,ISO 3166-2:DO,Americas,019,Latin America and the Caribbean,419
-Ecuador,EC,ECU,218,ISO 3166-2:EC,Americas,019,Latin America and the Caribbean,419
-Egypt,EG,EGY,818,ISO 3166-2:EG,Africa,002,Northern Africa,015
-El Salvador,SV,SLV,222,ISO 3166-2:SV,Americas,019,Latin America and the Caribbean,419
-Equatorial Guinea,GQ,GNQ,226,ISO 3166-2:GQ,Africa,002,Sub-Saharan Africa,202
-Eritrea,ER,ERI,232,ISO 3166-2:ER,Africa,002,Sub-Saharan Africa,202
-Estonia,EE,EST,233,ISO 3166-2:EE,Europe,150,Northern Europe,154
-Eswatini,SZ,SWZ,748,ISO 3166-2:SZ,Africa,002,Sub-Saharan Africa,202
-Ethiopia,ET,ETH,231,ISO 3166-2:ET,Africa,002,Sub-Saharan Africa,202
-Falkland Islands (Malvinas),FK,FLK,238,ISO 3166-2:FK,Americas,019,Latin America and the Caribbean,419
-Faroe Islands,FO,FRO,234,ISO 3166-2:FO,Europe,150,Northern Europe,154
-Fiji,FJ,FJI,242,ISO 3166-2:FJ,Oceania,009,Melanesia,054
-Finland,FI,FIN,246,ISO 3166-2:FI,Europe,150,Northern Europe,154
-France,FR,FRA,250,ISO 3166-2:FR,Europe,150,Western Europe,155
-French Guiana,GF,GUF,254,ISO 3166-2:GF,Americas,019,Latin America and the Caribbean,419
-French Polynesia,PF,PYF,258,ISO 3166-2:PF,Oceania,009,Polynesia,061
-French Southern Territories,TF,ATF,260,ISO 3166-2:TF,Africa,002,Sub-Saharan Africa,202
-Gabon,GA,GAB,266,ISO 3166-2:GA,Africa,002,Sub-Saharan Africa,202
-Gambia,GM,GMB,270,ISO 3166-2:GM,Africa,002,Sub-Saharan Africa,202
-Georgia,GE,GEO,268,ISO 3166-2:GE,Asia,142,Western Asia,145
-Germany,DE,DEU,276,ISO 3166-2:DE,Europe,150,Western Europe,155
-Ghana,GH,GHA,288,ISO 3166-2:GH,Africa,002,Sub-Saharan Africa,202
-Gibraltar,GI,GIB,292,ISO 3166-2:GI,Europe,150,Southern Europe,039
-Greece,GR,GRC,300,ISO 3166-2:GR,Europe,150,Southern Europe,039
-Greenland,GL,GRL,304,ISO 3166-2:GL,Americas,019,Northern America,021
-Grenada,GD,GRD,308,ISO 3166-2:GD,Americas,019,Latin America and the Caribbean,419
-Guadeloupe,GP,GLP,312,ISO 3166-2:GP,Americas,019,Latin America and the Caribbean,419
-Guam,GU,GUM,316,ISO 3166-2:GU,Oceania,009,Micronesia,057
-Guatemala,GT,GTM,320,ISO 3166-2:GT,Americas,019,Latin America and the Caribbean,419
-Guernsey,GG,GGY,831,ISO 3166-2:GG,Europe,150,Northern Europe,154
-Guinea,GN,GIN,324,ISO 3166-2:GN,Africa,002,Sub-Saharan Africa,202
-Guinea-Bissau,GW,GNB,624,ISO 3166-2:GW,Africa,002,Sub-Saharan Africa,202
-Guyana,GY,GUY,328,ISO 3166-2:GY,Americas,019,Latin America and the Caribbean,419
-Haiti,HT,HTI,332,ISO 3166-2:HT,Americas,019,Latin America and the Caribbean,419
-Heard Island and McDonald Islands,HM,HMD,334,ISO 3166-2:HM,Oceania,009,Australia and New Zealand,053
-Holy See,VA,VAT,336,ISO 3166-2:VA,Europe,150,Southern Europe,039
-Honduras,HN,HND,340,ISO 3166-2:HN,Americas,019,Latin America and the Caribbean,419
-Hong Kong,HK,HKG,344,ISO 3166-2:HK,Asia,142,Eastern Asia,030
-Hungary,HU,HUN,348,ISO 3166-2:HU,Europe,150,Eastern Europe,151
-Iceland,IS,ISL,352,ISO 3166-2:IS,Europe,150,Northern Europe,154
-India,IN,IND,356,ISO 3166-2:IN,Asia,142,Southern Asia,034
-Indonesia,ID,IDN,360,ISO 3166-2:ID,Asia,142,South-eastern Asia,035
-Iran (Islamic Republic of),IR,IRN,364,ISO 3166-2:IR,Asia,142,Southern Asia,034
-Iraq,IQ,IRQ,368,ISO 3166-2:IQ,Asia,142,Western Asia,145
-Ireland,IE,IRL,372,ISO 3166-2:IE,Europe,150,Northern Europe,154
-Isle of Man,IM,IMN,833,ISO 3166-2:IM,Europe,150,Northern Europe,154
-Israel,IL,ISR,376,ISO 3166-2:IL,Asia,142,Western Asia,145
-Italy,IT,ITA,380,ISO 3166-2:IT,Europe,150,Southern Europe,039
-Jamaica,JM,JAM,388,ISO 3166-2:JM,Americas,019,Latin America and the Caribbean,419
-Japan,JP,JPN,392,ISO 3166-2:JP,Asia,142,Eastern Asia,030
-Jersey,JE,JEY,832,ISO 3166-2:JE,Europe,150,Northern Europe,154
-Jordan,JO,JOR,400,ISO 3166-2:JO,Asia,142,Western Asia,145
-Kazakhstan,KZ,KAZ,398,ISO 3166-2:KZ,Asia,142,Central Asia,143
-Kenya,KE,KEN,404,ISO 3166-2:KE,Africa,002,Sub-Saharan Africa,202
-Kiribati,KI,KIR,296,ISO 3166-2:KI,Oceania,009,Micronesia,057
-Korea (Democratic People's Republic of),KP,PRK,408,ISO 3166-2:KP,Asia,142,Eastern Asia,030
-"Korea, Republic of",KR,KOR,410,ISO 3166-2:KR,Asia,142,Eastern Asia,030
-Kuwait,KW,KWT,414,ISO 3166-2:KW,Asia,142,Western Asia,145
-Kyrgyzstan,KG,KGZ,417,ISO 3166-2:KG,Asia,142,Central Asia,143
-Lao People's Democratic Republic,LA,LAO,418,ISO 3166-2:LA,Asia,142,South-eastern Asia,035
-Latvia,LV,LVA,428,ISO 3166-2:LV,Europe,150,Northern Europe,154
-Lebanon,LB,LBN,422,ISO 3166-2:LB,Asia,142,Western Asia,145
-Lesotho,LS,LSO,426,ISO 3166-2:LS,Africa,002,Sub-Saharan Africa,202
-Liberia,LR,LBR,430,ISO 3166-2:LR,Africa,002,Sub-Saharan Africa,202
-Libya,LY,LBY,434,ISO 3166-2:LY,Africa,002,Northern Africa,015
-Liechtenstein,LI,LIE,438,ISO 3166-2:LI,Europe,150,Western Europe,155
-Lithuania,LT,LTU,440,ISO 3166-2:LT,Europe,150,Northern Europe,154
-Luxembourg,LU,LUX,442,ISO 3166-2:LU,Europe,150,Western Europe,155
-Macao,MO,MAC,446,ISO 3166-2:MO,Asia,142,Eastern Asia,030
-Madagascar,MG,MDG,450,ISO 3166-2:MG,Africa,002,Sub-Saharan Africa,202
-Malawi,MW,MWI,454,ISO 3166-2:MW,Africa,002,Sub-Saharan Africa,202
-Malaysia,MY,MYS,458,ISO 3166-2:MY,Asia,142,South-eastern Asia,035
-Maldives,MV,MDV,462,ISO 3166-2:MV,Asia,142,Southern Asia,034
-Mali,ML,MLI,466,ISO 3166-2:ML,Africa,002,Sub-Saharan Africa,202
-Malta,MT,MLT,470,ISO 3166-2:MT,Europe,150,Southern Europe,039
-Marshall Islands,MH,MHL,584,ISO 3166-2:MH,Oceania,009,Micronesia,057
-Martinique,MQ,MTQ,474,ISO 3166-2:MQ,Americas,019,Latin America and the Caribbean,419
-Mauritania,MR,MRT,478,ISO 3166-2:MR,Africa,002,Sub-Saharan Africa,202
-Mauritius,MU,MUS,480,ISO 3166-2:MU,Africa,002,Sub-Saharan Africa,202
-Mayotte,YT,MYT,175,ISO 3166-2:YT,Africa,002,Sub-Saharan Africa,202
-Mexico,MX,MEX,484,ISO 3166-2:MX,Americas,019,Latin America and the Caribbean,419
-Micronesia (Federated States of),FM,FSM,583,ISO 3166-2:FM,Oceania,009,Micronesia,057
-"Moldova, Republic of",MD,MDA,498,ISO 3166-2:MD,Europe,150,Eastern Europe,151
-Monaco,MC,MCO,492,ISO 3166-2:MC,Europe,150,Western Europe,155
-Mongolia,MN,MNG,496,ISO 3166-2:MN,Asia,142,Eastern Asia,030
-Montenegro,ME,MNE,499,ISO 3166-2:ME,Europe,150,Southern Europe,039
-Montserrat,MS,MSR,500,ISO 3166-2:MS,Americas,019,Latin America and the Caribbean,419
-Morocco,MA,MAR,504,ISO 3166-2:MA,Africa,002,Northern Africa,015
-Mozambique,MZ,MOZ,508,ISO 3166-2:MZ,Africa,002,Sub-Saharan Africa,202
-Myanmar,MM,MMR,104,ISO 3166-2:MM,Asia,142,South-eastern Asia,035
-Namibia,NA,NAM,516,ISO 3166-2:NA,Africa,002,Sub-Saharan Africa,202
-Nauru,NR,NRU,520,ISO 3166-2:NR,Oceania,009,Micronesia,057
-Nepal,NP,NPL,524,ISO 3166-2:NP,Asia,142,Southern Asia,034
-Netherlands,NL,NLD,528,ISO 3166-2:NL,Europe,150,Western Europe,155
-New Caledonia,NC,NCL,540,ISO 3166-2:NC,Oceania,009,Melanesia,054
-New Zealand,NZ,NZL,554,ISO 3166-2:NZ,Oceania,009,Australia and New Zealand,053
-Nicaragua,NI,NIC,558,ISO 3166-2:NI,Americas,019,Latin America and the Caribbean,419
-Niger,NE,NER,562,ISO 3166-2:NE,Africa,002,Sub-Saharan Africa,202
-Nigeria,NG,NGA,566,ISO 3166-2:NG,Africa,002,Sub-Saharan Africa,202
-Niue,NU,NIU,570,ISO 3166-2:NU,Oceania,009,Polynesia,061
-Norfolk Island,NF,NFK,574,ISO 3166-2:NF,Oceania,009,Australia and New Zealand,053
-North Macedonia,MK,MKD,807,ISO 3166-2:MK,Europe,150,Southern Europe,039
-Northern Mariana Islands,MP,MNP,580,ISO 3166-2:MP,Oceania,009,Micronesia,057
-Norway,NO,NOR,578,ISO 3166-2:NO,Europe,150,Northern Europe,154
-Oman,OM,OMN,512,ISO 3166-2:OM,Asia,142,Western Asia,145
-Pakistan,PK,PAK,586,ISO 3166-2:PK,Asia,142,Southern Asia,034
-Palau,PW,PLW,585,ISO 3166-2:PW,Oceania,009,Micronesia,057
-"Palestine, State of",PS,PSE,275,ISO 3166-2:PS,Asia,142,Western Asia,145
-Panama,PA,PAN,591,ISO 3166-2:PA,Americas,019,Latin America and the Caribbean,419
-Papua New Guinea,PG,PNG,598,ISO 3166-2:PG,Oceania,009,Melanesia,054
-Paraguay,PY,PRY,600,ISO 3166-2:PY,Americas,019,Latin America and the Caribbean,419
-Peru,PE,PER,604,ISO 3166-2:PE,Americas,019,Latin America and the Caribbean,419
-Philippines,PH,PHL,608,ISO 3166-2:PH,Asia,142,South-eastern Asia,035
-Pitcairn,PN,PCN,612,ISO 3166-2:PN,Oceania,009,Polynesia,061
-Poland,PL,POL,616,ISO 3166-2:PL,Europe,150,Eastern Europe,151
-Portugal,PT,PRT,620,ISO 3166-2:PT,Europe,150,Southern Europe,039
-Puerto Rico,PR,PRI,630,ISO 3166-2:PR,Americas,019,Latin America and the Caribbean,419
-Qatar,QA,QAT,634,ISO 3166-2:QA,Asia,142,Western Asia,145
-Réunion,RE,REU,638,ISO 3166-2:RE,Africa,002,Sub-Saharan Africa,202
-Romania,RO,ROU,642,ISO 3166-2:RO,Europe,150,Eastern Europe,151
-Russian Federation,RU,RUS,643,ISO 3166-2:RU,Europe,150,Eastern Europe,151
-Rwanda,RW,RWA,646,ISO 3166-2:RW,Africa,002,Sub-Saharan Africa,202
-Saint Barthélemy,BL,BLM,652,ISO 3166-2:BL,Americas,019,Latin America and the Caribbean,419
-"Saint Helena, Ascension and Tristan da Cunha",SH,SHN,654,ISO 3166-2:SH,Africa,002,Sub-Saharan Africa,202
-Saint Kitts and Nevis,KN,KNA,659,ISO 3166-2:KN,Americas,019,Latin America and the Caribbean,419
-Saint Lucia,LC,LCA,662,ISO 3166-2:LC,Americas,019,Latin America and the Caribbean,419
-Saint Martin (French part),MF,MAF,663,ISO 3166-2:MF,Americas,019,Latin America and the Caribbean,419
-Saint Pierre and Miquelon,PM,SPM,666,ISO 3166-2:PM,Americas,019,Northern America,021
-Saint Vincent and the Grenadines,VC,VCT,670,ISO 3166-2:VC,Americas,019,Latin America and the Caribbean,419
-Samoa,WS,WSM,882,ISO 3166-2:WS,Oceania,009,Polynesia,061
-San Marino,SM,SMR,674,ISO 3166-2:SM,Europe,150,Southern Europe,039
-Sao Tome and Principe,ST,STP,678,ISO 3166-2:ST,Africa,002,Sub-Saharan Africa,202
-Saudi Arabia,SA,SAU,682,ISO 3166-2:SA,Asia,142,Western Asia,145
-Senegal,SN,SEN,686,ISO 3166-2:SN,Africa,002,Sub-Saharan Africa,202
-Serbia,RS,SRB,688,ISO 3166-2:RS,Europe,150,Southern Europe,039
-Seychelles,SC,SYC,690,ISO 3166-2:SC,Africa,002,Sub-Saharan Africa,202
-Sierra Leone,SL,SLE,694,ISO 3166-2:SL,Africa,002,Sub-Saharan Africa,202
-Singapore,SG,SGP,702,ISO 3166-2:SG,Asia,142,South-eastern Asia,035
-Sint Maarten (Dutch part),SX,SXM,534,ISO 3166-2:SX,Americas,019,Latin America and the Caribbean,419
-Slovakia,SK,SVK,703,ISO 3166-2:SK,Europe,150,Eastern Europe,151
-Slovenia,SI,SVN,705,ISO 3166-2:SI,Europe,150,Southern Europe,039
-Solomon Islands,SB,SLB,90,ISO 3166-2:SB,Oceania,009,Melanesia,054
-Somalia,SO,SOM,706,ISO 3166-2:SO,Africa,002,Sub-Saharan Africa,202
-South Africa,ZA,ZAF,710,ISO 3166-2:ZA,Africa,002,Sub-Saharan Africa,202
-South Georgia and the South Sandwich Islands,GS,SGS,239,ISO 3166-2:GS,Americas,019,Latin America and the Caribbean,419
-South Sudan,SS,SSD,728,ISO 3166-2:SS,Africa,002,Sub-Saharan Africa,202
-Spain,ES,ESP,724,ISO 3166-2:ES,Europe,150,Southern Europe,039
-Sri Lanka,LK,LKA,144,ISO 3166-2:LK,Asia,142,Southern Asia,034
-Sudan,SD,SDN,729,ISO 3166-2:SD,Africa,002,Northern Africa,015
-Suriname,SR,SUR,740,ISO 3166-2:SR,Americas,019,Latin America and the Caribbean,419
-Svalbard and Jan Mayen,SJ,SJM,744,ISO 3166-2:SJ,Europe,150,Northern Europe,154
-Sweden,SE,SWE,752,ISO 3166-2:SE,Europe,150,Northern Europe,154
-Switzerland,CH,CHE,756,ISO 3166-2:CH,Europe,150,Western Europe,155
-Syrian Arab Republic,SY,SYR,760,ISO 3166-2:SY,Asia,142,Western Asia,145
-"Taiwan, Province of China",TW,TWN,158,ISO 3166-2:TW,Asia,142,Eastern Asia,030
-Tajikistan,TJ,TJK,762,ISO 3166-2:TJ,Asia,142,Central Asia,143
-"Tanzania, United Republic of",TZ,TZA,834,ISO 3166-2:TZ,Africa,002,Sub-Saharan Africa,202
-Thailand,TH,THA,764,ISO 3166-2:TH,Asia,142,South-eastern Asia,035
-Timor-Leste,TL,TLS,626,ISO 3166-2:TL,Asia,142,South-eastern Asia,035
-Togo,TG,TGO,768,ISO 3166-2:TG,Africa,002,Sub-Saharan Africa,202
-Tokelau,TK,TKL,772,ISO 3166-2:TK,Oceania,009,Polynesia,061
-Tonga,TO,TON,776,ISO 3166-2:TO,Oceania,009,Polynesia,061
-Trinidad and Tobago,TT,TTO,780,ISO 3166-2:TT,Americas,019,Latin America and the Caribbean,419
-Tunisia,TN,TUN,788,ISO 3166-2:TN,Africa,002,Northern Africa,015
-Turkey,TR,TUR,792,ISO 3166-2:TR,Asia,142,Western Asia,145
-Turkmenistan,TM,TKM,795,ISO 3166-2:TM,Asia,142,Central Asia,143
-Turks and Caicos Islands,TC,TCA,796,ISO 3166-2:TC,Americas,019,Latin America and the Caribbean,419
-Tuvalu,TV,TUV,798,ISO 3166-2:TV,Oceania,009,Polynesia,061
-Uganda,UG,UGA,800,ISO 3166-2:UG,Africa,002,Sub-Saharan Africa,202
-Ukraine,UA,UKR,804,ISO 3166-2:UA,Europe,150,Eastern Europe,151
-United Arab Emirates,AE,ARE,784,ISO 3166-2:AE,Asia,142,Western Asia,145
-United Kingdom of Great Britain and Northern Ireland,GB,GBR,826,ISO 3166-2:GB,Europe,150,Northern Europe,154
-United States of America,US,USA,840,ISO 3166-2:US,Americas,019,Northern America,021
-United States Minor Outlying Islands,UM,UMI,581,ISO 3166-2:UM,Oceania,009,Micronesia,057
-Uruguay,UY,URY,858,ISO 3166-2:UY,Americas,019,Latin America and the Caribbean,419
-Uzbekistan,UZ,UZB,860,ISO 3166-2:UZ,Asia,142,Central Asia,143
-Vanuatu,VU,VUT,548,ISO 3166-2:VU,Oceania,009,Melanesia,054
-Venezuela (Bolivarian Republic of),VE,VEN,862,ISO 3166-2:VE,Americas,019,Latin America and the Caribbean,419
-Viet Nam,VN,VNM,704,ISO 3166-2:VN,Asia,142,South-eastern Asia,035
-Virgin Islands (British),VG,VGB,92,ISO 3166-2:VG,Americas,019,Latin America and the Caribbean,419
-Virgin Islands (U.S.),VI,VIR,850,ISO 3166-2:VI,Americas,019,Latin America and the Caribbean,419
-Wallis and Futuna,WF,WLF,876,ISO 3166-2:WF,Oceania,009,Polynesia,061
-Western Sahara,EH,ESH,732,ISO 3166-2:EH,Africa,002,Northern Africa,015
-Yemen,YE,YEM,887,ISO 3166-2:YE,Asia,142,Western Asia,145
-Zambia,ZM,ZMB,894,ISO 3166-2:ZM,Africa,002,Sub-Saharan Africa,202
-Zimbabwe,ZW,ZWE,716,ISO 3166-2:ZW,Africa,002,Sub-Saharan Africa,202
+country_name,country_code_numeric,country_code_alpha_2,country_code_alpha_3,region,region_code,sub_region,sub_region_code
+Afghanistan,4,AF,AFG,Asia,142,Southern Asia,034
+Åland Islands,248,AX,ALA,Europe,150,Northern Europe,154
+Albania,8,AL,ALB,Europe,150,Southern Europe,039
+Algeria,12,DZ,DZA,Africa,002,Northern Africa,015
+American Samoa,16,AS,ASM,Oceania,009,Polynesia,061
+Andorra,20,AD,AND,Europe,150,Southern Europe,039
+Angola,24,AO,AGO,Africa,002,Sub-Saharan Africa,202
+Anguilla,660,AI,AIA,Americas,019,Latin America and the Caribbean,419
+Antarctica,10,AQ,ATA,,,,
+Antigua and Barbuda,28,AG,ATG,Americas,019,Latin America and the Caribbean,419
+Argentina,32,AR,ARG,Americas,019,Latin America and the Caribbean,419
+Armenia,51,AM,ARM,Asia,142,Western Asia,145
+Aruba,533,AW,ABW,Americas,019,Latin America and the Caribbean,419
+Australia,36,AU,AUS,Oceania,009,Australia and New Zealand,053
+Austria,40,AT,AUT,Europe,150,Western Europe,155
+Azerbaijan,31,AZ,AZE,Asia,142,Western Asia,145
+Bahamas,44,BS,BHS,Americas,019,Latin America and the Caribbean,419
+Bahrain,48,BH,BHR,Asia,142,Western Asia,145
+Bangladesh,50,BD,BGD,Asia,142,Southern Asia,034
+Barbados,52,BB,BRB,Americas,019,Latin America and the Caribbean,419
+Belarus,112,BY,BLR,Europe,150,Eastern Europe,151
+Belgium,56,BE,BEL,Europe,150,Western Europe,155
+Belize,84,BZ,BLZ,Americas,019,Latin America and the Caribbean,419
+Benin,204,BJ,BEN,Africa,002,Sub-Saharan Africa,202
+Bermuda,60,BM,BMU,Americas,019,Northern America,021
+Bhutan,64,BT,BTN,Asia,142,Southern Asia,034
+Bolivia (Plurinational State of),68,BO,BOL,Americas,019,Latin America and the Caribbean,419
+"Bonaire, Sint Eustatius and Saba",535,BQ,BES,Americas,019,Latin America and the Caribbean,419
+Bosnia and Herzegovina,70,BA,BIH,Europe,150,Southern Europe,039
+Botswana,72,BW,BWA,Africa,002,Sub-Saharan Africa,202
+Bouvet Island,74,BV,BVT,Americas,019,Latin America and the Caribbean,419
+Brazil,76,BR,BRA,Americas,019,Latin America and the Caribbean,419
+British Indian Ocean Territory,86,IO,IOT,Africa,002,Sub-Saharan Africa,202
+Brunei Darussalam,96,BN,BRN,Asia,142,South-eastern Asia,035
+Bulgaria,100,BG,BGR,Europe,150,Eastern Europe,151
+Burkina Faso,854,BF,BFA,Africa,002,Sub-Saharan Africa,202
+Burundi,108,BI,BDI,Africa,002,Sub-Saharan Africa,202
+Cabo Verde,132,CV,CPV,Africa,002,Sub-Saharan Africa,202
+Cambodia,116,KH,KHM,Asia,142,South-eastern Asia,035
+Cameroon,120,CM,CMR,Africa,002,Sub-Saharan Africa,202
+Canada,124,CA,CAN,Americas,019,Northern America,021
+Cayman Islands,136,KY,CYM,Americas,019,Latin America and the Caribbean,419
+Central African Republic,140,CF,CAF,Africa,002,Sub-Saharan Africa,202
+Chad,148,TD,TCD,Africa,002,Sub-Saharan Africa,202
+Chile,152,CL,CHL,Americas,019,Latin America and the Caribbean,419
+China,156,CN,CHN,Asia,142,Eastern Asia,030
+Christmas Island,162,CX,CXR,Oceania,009,Australia and New Zealand,053
+Cocos (Keeling) Islands,166,CC,CCK,Oceania,009,Australia and New Zealand,053
+Colombia,170,CO,COL,Americas,019,Latin America and the Caribbean,419
+Comoros,174,KM,COM,Africa,002,Sub-Saharan Africa,202
+Congo,178,CG,COG,Africa,002,Sub-Saharan Africa,202
+"Congo, Democratic Republic of the",180,CD,COD,Africa,002,Sub-Saharan Africa,202
+Cook Islands,184,CK,COK,Oceania,009,Polynesia,061
+Costa Rica,188,CR,CRI,Americas,019,Latin America and the Caribbean,419
+Côte d'Ivoire,384,CI,CIV,Africa,002,Sub-Saharan Africa,202
+Croatia,191,HR,HRV,Europe,150,Southern Europe,039
+Cuba,192,CU,CUB,Americas,019,Latin America and the Caribbean,419
+Curaçao,531,CW,CUW,Americas,019,Latin America and the Caribbean,419
+Cyprus,196,CY,CYP,Asia,142,Western Asia,145
+Czechia,203,CZ,CZE,Europe,150,Eastern Europe,151
+Denmark,208,DK,DNK,Europe,150,Northern Europe,154
+Djibouti,262,DJ,DJI,Africa,002,Sub-Saharan Africa,202
+Dominica,212,DM,DMA,Americas,019,Latin America and the Caribbean,419
+Dominican Republic,214,DO,DOM,Americas,019,Latin America and the Caribbean,419
+Ecuador,218,EC,ECU,Americas,019,Latin America and the Caribbean,419
+Egypt,818,EG,EGY,Africa,002,Northern Africa,015
+El Salvador,222,SV,SLV,Americas,019,Latin America and the Caribbean,419
+Equatorial Guinea,226,GQ,GNQ,Africa,002,Sub-Saharan Africa,202
+Eritrea,232,ER,ERI,Africa,002,Sub-Saharan Africa,202
+Estonia,233,EE,EST,Europe,150,Northern Europe,154
+Eswatini,748,SZ,SWZ,Africa,002,Sub-Saharan Africa,202
+Ethiopia,231,ET,ETH,Africa,002,Sub-Saharan Africa,202
+Falkland Islands (Malvinas),238,FK,FLK,Americas,019,Latin America and the Caribbean,419
+Faroe Islands,234,FO,FRO,Europe,150,Northern Europe,154
+Fiji,242,FJ,FJI,Oceania,009,Melanesia,054
+Finland,246,FI,FIN,Europe,150,Northern Europe,154
+France,250,FR,FRA,Europe,150,Western Europe,155
+French Guiana,254,GF,GUF,Americas,019,Latin America and the Caribbean,419
+French Polynesia,258,PF,PYF,Oceania,009,Polynesia,061
+French Southern Territories,260,TF,ATF,Africa,002,Sub-Saharan Africa,202
+Gabon,266,GA,GAB,Africa,002,Sub-Saharan Africa,202
+Gambia,270,GM,GMB,Africa,002,Sub-Saharan Africa,202
+Georgia,268,GE,GEO,Asia,142,Western Asia,145
+Germany,276,DE,DEU,Europe,150,Western Europe,155
+Ghana,288,GH,GHA,Africa,002,Sub-Saharan Africa,202
+Gibraltar,292,GI,GIB,Europe,150,Southern Europe,039
+Greece,300,GR,GRC,Europe,150,Southern Europe,039
+Greenland,304,GL,GRL,Americas,019,Northern America,021
+Grenada,308,GD,GRD,Americas,019,Latin America and the Caribbean,419
+Guadeloupe,312,GP,GLP,Americas,019,Latin America and the Caribbean,419
+Guam,316,GU,GUM,Oceania,009,Micronesia,057
+Guatemala,320,GT,GTM,Americas,019,Latin America and the Caribbean,419
+Guernsey,831,GG,GGY,Europe,150,Northern Europe,154
+Guinea,324,GN,GIN,Africa,002,Sub-Saharan Africa,202
+Guinea-Bissau,624,GW,GNB,Africa,002,Sub-Saharan Africa,202
+Guyana,328,GY,GUY,Americas,019,Latin America and the Caribbean,419
+Haiti,332,HT,HTI,Americas,019,Latin America and the Caribbean,419
+Heard Island and McDonald Islands,334,HM,HMD,Oceania,009,Australia and New Zealand,053
+Holy See,336,VA,VAT,Europe,150,Southern Europe,039
+Honduras,340,HN,HND,Americas,019,Latin America and the Caribbean,419
+Hong Kong,344,HK,HKG,Asia,142,Eastern Asia,030
+Hungary,348,HU,HUN,Europe,150,Eastern Europe,151
+Iceland,352,IS,ISL,Europe,150,Northern Europe,154
+India,356,IN,IND,Asia,142,Southern Asia,034
+Indonesia,360,ID,IDN,Asia,142,South-eastern Asia,035
+Iran (Islamic Republic of),364,IR,IRN,Asia,142,Southern Asia,034
+Iraq,368,IQ,IRQ,Asia,142,Western Asia,145
+Ireland,372,IE,IRL,Europe,150,Northern Europe,154
+Isle of Man,833,IM,IMN,Europe,150,Northern Europe,154
+Israel,376,IL,ISR,Asia,142,Western Asia,145
+Italy,380,IT,ITA,Europe,150,Southern Europe,039
+Jamaica,388,JM,JAM,Americas,019,Latin America and the Caribbean,419
+Japan,392,JP,JPN,Asia,142,Eastern Asia,030
+Jersey,832,JE,JEY,Europe,150,Northern Europe,154
+Jordan,400,JO,JOR,Asia,142,Western Asia,145
+Kazakhstan,398,KZ,KAZ,Asia,142,Central Asia,143
+Kenya,404,KE,KEN,Africa,002,Sub-Saharan Africa,202
+Kiribati,296,KI,KIR,Oceania,009,Micronesia,057
+Korea (Democratic People's Republic of),408,KP,PRK,Asia,142,Eastern Asia,030
+"Korea, Republic of",410,KR,KOR,Asia,142,Eastern Asia,030
+Kuwait,414,KW,KWT,Asia,142,Western Asia,145
+Kyrgyzstan,417,KG,KGZ,Asia,142,Central Asia,143
+Lao People's Democratic Republic,418,LA,LAO,Asia,142,South-eastern Asia,035
+Latvia,428,LV,LVA,Europe,150,Northern Europe,154
+Lebanon,422,LB,LBN,Asia,142,Western Asia,145
+Lesotho,426,LS,LSO,Africa,002,Sub-Saharan Africa,202
+Liberia,430,LR,LBR,Africa,002,Sub-Saharan Africa,202
+Libya,434,LY,LBY,Africa,002,Northern Africa,015
+Liechtenstein,438,LI,LIE,Europe,150,Western Europe,155
+Lithuania,440,LT,LTU,Europe,150,Northern Europe,154
+Luxembourg,442,LU,LUX,Europe,150,Western Europe,155
+Macao,446,MO,MAC,Asia,142,Eastern Asia,030
+Madagascar,450,MG,MDG,Africa,002,Sub-Saharan Africa,202
+Malawi,454,MW,MWI,Africa,002,Sub-Saharan Africa,202
+Malaysia,458,MY,MYS,Asia,142,South-eastern Asia,035
+Maldives,462,MV,MDV,Asia,142,Southern Asia,034
+Mali,466,ML,MLI,Africa,002,Sub-Saharan Africa,202
+Malta,470,MT,MLT,Europe,150,Southern Europe,039
+Marshall Islands,584,MH,MHL,Oceania,009,Micronesia,057
+Martinique,474,MQ,MTQ,Americas,019,Latin America and the Caribbean,419
+Mauritania,478,MR,MRT,Africa,002,Sub-Saharan Africa,202
+Mauritius,480,MU,MUS,Africa,002,Sub-Saharan Africa,202
+Mayotte,175,YT,MYT,Africa,002,Sub-Saharan Africa,202
+Mexico,484,MX,MEX,Americas,019,Latin America and the Caribbean,419
+Micronesia (Federated States of),583,FM,FSM,Oceania,009,Micronesia,057
+"Moldova, Republic of",498,MD,MDA,Europe,150,Eastern Europe,151
+Monaco,492,MC,MCO,Europe,150,Western Europe,155
+Mongolia,496,MN,MNG,Asia,142,Eastern Asia,030
+Montenegro,499,ME,MNE,Europe,150,Southern Europe,039
+Montserrat,500,MS,MSR,Americas,019,Latin America and the Caribbean,419
+Morocco,504,MA,MAR,Africa,002,Northern Africa,015
+Mozambique,508,MZ,MOZ,Africa,002,Sub-Saharan Africa,202
+Myanmar,104,MM,MMR,Asia,142,South-eastern Asia,035
+Namibia,516,NA,NAM,Africa,002,Sub-Saharan Africa,202
+Nauru,520,NR,NRU,Oceania,009,Micronesia,057
+Nepal,524,NP,NPL,Asia,142,Southern Asia,034
+Netherlands,528,NL,NLD,Europe,150,Western Europe,155
+New Caledonia,540,NC,NCL,Oceania,009,Melanesia,054
+New Zealand,554,NZ,NZL,Oceania,009,Australia and New Zealand,053
+Nicaragua,558,NI,NIC,Americas,019,Latin America and the Caribbean,419
+Niger,562,NE,NER,Africa,002,Sub-Saharan Africa,202
+Nigeria,566,NG,NGA,Africa,002,Sub-Saharan Africa,202
+Niue,570,NU,NIU,Oceania,009,Polynesia,061
+Norfolk Island,574,NF,NFK,Oceania,009,Australia and New Zealand,053
+North Macedonia,807,MK,MKD,Europe,150,Southern Europe,039
+Northern Mariana Islands,580,MP,MNP,Oceania,009,Micronesia,057
+Norway,578,NO,NOR,Europe,150,Northern Europe,154
+Oman,512,OM,OMN,Asia,142,Western Asia,145
+Pakistan,586,PK,PAK,Asia,142,Southern Asia,034
+Palau,585,PW,PLW,Oceania,009,Micronesia,057
+"Palestine, State of",275,PS,PSE,Asia,142,Western Asia,145
+Panama,591,PA,PAN,Americas,019,Latin America and the Caribbean,419
+Papua New Guinea,598,PG,PNG,Oceania,009,Melanesia,054
+Paraguay,600,PY,PRY,Americas,019,Latin America and the Caribbean,419
+Peru,604,PE,PER,Americas,019,Latin America and the Caribbean,419
+Philippines,608,PH,PHL,Asia,142,South-eastern Asia,035
+Pitcairn,612,PN,PCN,Oceania,009,Polynesia,061
+Poland,616,PL,POL,Europe,150,Eastern Europe,151
+Portugal,620,PT,PRT,Europe,150,Southern Europe,039
+Puerto Rico,630,PR,PRI,Americas,019,Latin America and the Caribbean,419
+Qatar,634,QA,QAT,Asia,142,Western Asia,145
+Réunion,638,RE,REU,Africa,002,Sub-Saharan Africa,202
+Romania,642,RO,ROU,Europe,150,Eastern Europe,151
+Russian Federation,643,RU,RUS,Europe,150,Eastern Europe,151
+Rwanda,646,RW,RWA,Africa,002,Sub-Saharan Africa,202
+Saint Barthélemy,652,BL,BLM,Americas,019,Latin America and the Caribbean,419
+"Saint Helena, Ascension and Tristan da Cunha",654,SH,SHN,Africa,002,Sub-Saharan Africa,202
+Saint Kitts and Nevis,659,KN,KNA,Americas,019,Latin America and the Caribbean,419
+Saint Lucia,662,LC,LCA,Americas,019,Latin America and the Caribbean,419
+Saint Martin (French part),663,MF,MAF,Americas,019,Latin America and the Caribbean,419
+Saint Pierre and Miquelon,666,PM,SPM,Americas,019,Northern America,021
+Saint Vincent and the Grenadines,670,VC,VCT,Americas,019,Latin America and the Caribbean,419
+Samoa,882,WS,WSM,Oceania,009,Polynesia,061
+San Marino,674,SM,SMR,Europe,150,Southern Europe,039
+Sao Tome and Principe,678,ST,STP,Africa,002,Sub-Saharan Africa,202
+Saudi Arabia,682,SA,SAU,Asia,142,Western Asia,145
+Senegal,686,SN,SEN,Africa,002,Sub-Saharan Africa,202
+Serbia,688,RS,SRB,Europe,150,Southern Europe,039
+Seychelles,690,SC,SYC,Africa,002,Sub-Saharan Africa,202
+Sierra Leone,694,SL,SLE,Africa,002,Sub-Saharan Africa,202
+Singapore,702,SG,SGP,Asia,142,South-eastern Asia,035
+Sint Maarten (Dutch part),534,SX,SXM,Americas,019,Latin America and the Caribbean,419
+Slovakia,703,SK,SVK,Europe,150,Eastern Europe,151
+Slovenia,705,SI,SVN,Europe,150,Southern Europe,039
+Solomon Islands,90,SB,SLB,Oceania,009,Melanesia,054
+Somalia,706,SO,SOM,Africa,002,Sub-Saharan Africa,202
+South Africa,710,ZA,ZAF,Africa,002,Sub-Saharan Africa,202
+South Georgia and the South Sandwich Islands,239,GS,SGS,Americas,019,Latin America and the Caribbean,419
+South Sudan,728,SS,SSD,Africa,002,Sub-Saharan Africa,202
+Spain,724,ES,ESP,Europe,150,Southern Europe,039
+Sri Lanka,144,LK,LKA,Asia,142,Southern Asia,034
+Sudan,729,SD,SDN,Africa,002,Northern Africa,015
+Suriname,740,SR,SUR,Americas,019,Latin America and the Caribbean,419
+Svalbard and Jan Mayen,744,SJ,SJM,Europe,150,Northern Europe,154
+Sweden,752,SE,SWE,Europe,150,Northern Europe,154
+Switzerland,756,CH,CHE,Europe,150,Western Europe,155
+Syrian Arab Republic,760,SY,SYR,Asia,142,Western Asia,145
+"Taiwan, Province of China",158,TW,TWN,Asia,142,Eastern Asia,030
+Tajikistan,762,TJ,TJK,Asia,142,Central Asia,143
+"Tanzania, United Republic of",834,TZ,TZA,Africa,002,Sub-Saharan Africa,202
+Thailand,764,TH,THA,Asia,142,South-eastern Asia,035
+Timor-Leste,626,TL,TLS,Asia,142,South-eastern Asia,035
+Togo,768,TG,TGO,Africa,002,Sub-Saharan Africa,202
+Tokelau,772,TK,TKL,Oceania,009,Polynesia,061
+Tonga,776,TO,TON,Oceania,009,Polynesia,061
+Trinidad and Tobago,780,TT,TTO,Americas,019,Latin America and the Caribbean,419
+Tunisia,788,TN,TUN,Africa,002,Northern Africa,015
+Turkey,792,TR,TUR,Asia,142,Western Asia,145
+Turkmenistan,795,TM,TKM,Asia,142,Central Asia,143
+Turks and Caicos Islands,796,TC,TCA,Americas,019,Latin America and the Caribbean,419
+Tuvalu,798,TV,TUV,Oceania,009,Polynesia,061
+Uganda,800,UG,UGA,Africa,002,Sub-Saharan Africa,202
+Ukraine,804,UA,UKR,Europe,150,Eastern Europe,151
+United Arab Emirates,784,AE,ARE,Asia,142,Western Asia,145
+United Kingdom of Great Britain and Northern Ireland,826,GB,GBR,Europe,150,Northern Europe,154
+United States of America,840,US,USA,Americas,019,Northern America,021
+United States Minor Outlying Islands,581,UM,UMI,Oceania,009,Micronesia,057
+Uruguay,858,UY,URY,Americas,019,Latin America and the Caribbean,419
+Uzbekistan,860,UZ,UZB,Asia,142,Central Asia,143
+Vanuatu,548,VU,VUT,Oceania,009,Melanesia,054
+Venezuela (Bolivarian Republic of),862,VE,VEN,Americas,019,Latin America and the Caribbean,419
+Viet Nam,704,VN,VNM,Asia,142,South-eastern Asia,035
+Virgin Islands (British),92,VG,VGB,Americas,019,Latin America and the Caribbean,419
+Virgin Islands (U.S.),850,VI,VIR,Americas,019,Latin America and the Caribbean,419
+Wallis and Futuna,876,WF,WLF,Oceania,009,Polynesia,061
+Western Sahara,732,EH,ESH,Africa,002,Northern Africa,015
+Yemen,887,YE,YEM,Asia,142,Western Asia,145
+Zambia,894,ZM,ZMB,Africa,002,Sub-Saharan Africa,202
+Zimbabwe,716,ZW,ZWE,Africa,002,Sub-Saharan Africa,202

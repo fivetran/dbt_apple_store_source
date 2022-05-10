@@ -23,7 +23,15 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs app_version %} The app version of the app that the user is engaging with. {% enddocs %}
 
-{% docs country %} The country associated with the subscription event metrics or subscription summary metric(s). {% enddocs %}
+{% docs country %} The country associated with the subscription event metrics and subscription summary metric(s). This country code maps to ISO-3166 Alpha-2. {% enddocs %}
+
+{% docs country_code_alpha_2 %} The 2 character ISO-3166 country code. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs%}
+
+{% docs country_code_alpha_3 %} The 3 character ISO-3166 country code. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs%}
+
+{% docs country_code_numeric %} The 3 digit ISO-3166 country code. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs%}
+
+{% docs country_name %} The ISO-3166 English country name. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs%}
 
 {% docs crashes %} The number of recorded crashes experienced (User Opt-In only); a value of 0 indicates there were 0 crash reports or no value from the source report that day. {% enddocs %}
 
@@ -55,6 +63,10 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs redownloads %} The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again (User Opt-In only); credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. A value of 0 indicates there were 0 redownloads or no value from the source report that day. {% enddocs %}
 
+{% docs region %} The UN Statistics region name assignment. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs %}
+
+{% docs region_code %} The UN Statistics region numerical code assignment. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs %}
+
 {% docs source_type %} A source is counted when a customer follows a link to your App Store product page. 
 Source Types include:
 - Unavailable: Sales and usage data display sources as unavailable if users downloaded your app before App Analytics started tracking source attribution on April 15, 2017. As users download your app for the first time, you will see more complete sources data. If a user downloads your app using an App Store gift card or promotional code, the source type will also show as unavailable.
@@ -69,9 +81,13 @@ Source Types include:
 
 {% docs state %} The state associated with the subscription event metrics or subscription summary metrics. {% enddocs %}
 
+{% docs sub_region %} The UN Statistics sub-region name. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs%}
+
+{% docs sub_region_code %} The UN Statistics sub-region numerical code. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs %}
+
 {% docs subscription_name %} The subscription name associated with the subscription event metric or subscription summary metric. {% enddocs %}
 
-{% docs territory %} The territory associated with the report's respective metric(s). {% enddocs %}
+{% docs territory %} The territory associated with the report's respective metric(s) and is the full country name; territories will be used for the following reports: downloads, usage and app store. {% enddocs %}
 
 {% docs total_downloads %} Total Downloads is the sum of Redownloads and First Time Downloads. {% enddocs %}
 

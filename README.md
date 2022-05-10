@@ -39,6 +39,7 @@ packages:
   - package: fivetran/apple_store_source
     version: [">=0.1.0", "<0.2.0"]
 ```
+**On your first run,** please be sure to do a `dbt build` to ensure that all dependencies for this package are properly loaded. 
 ## Step 3: Configure Your Variables
 ### Database and Schema Variables
 By default, this package will run using your target database, the `itunes_connect` schema and the default Fivetran Source Tables names for Apple App Store listed above. If this is not where your Apple App Store data is (perhaps your Apple App Store schema is `itunes_connect_fivetran` your `app` table is named `usa_app`), add the following configuration to your `dbt_project.yml` file:
