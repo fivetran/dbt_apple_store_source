@@ -405,11 +405,13 @@ models:
         description: '{{ doc("sessions") }}'
         
 seeds:
-  - name: country_codes
+  - name: apple_store_country_codes
     description: ISO-3166 country mapping table
     columns:
       - name: country_name
         description: '{{ doc("country_name") }}'
+      - name: alternative_country_name
+        description: Due to differences in the official ISO country names and Apple's naming convention, we've added an alternative territory name that will allow us to map to ISO fields.
       - name: country_code_numeric
         description: '{{ doc("country_code_numeric") }}'
       - name: country_code_alpha_2
