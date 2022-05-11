@@ -17,6 +17,8 @@
 {% docs active_standard_price_subscriptions %} Total number of auto-renewable standard paid subscriptions currently active, excluding free trials, 
 subscription offers, introductory offers, and marketing opt-ins. Subscriptions are active during the period for which the customer has paid without cancellation. {% enddocs %}
 
+{% docs alternative_country_name %} Due to differences in the official ISO country names and Apple's naming convention, we've added an alternative territory name that will allow us to join reports and infer ISO fields. {% enddocs %}
+
 {% docs app_id %} Application ID. {% enddocs%}
 
 {% docs app_name %} Application Name. {% enddocs %}
@@ -76,7 +78,7 @@ Source Types include:
 - App Referrer: Users tapped a link in an app that brought them to your App Store product page. Includes apps using the StoreKit API to load your product page. Includes Apple apps, such as Messages, except Safari.
 - App Clip: Users tapped a link in your App Clip that brought them to your App Store product page. If the user then downloaded your app, the resulting Download is attributed to your App Clip as the source.
 - Web Referrer: Users tapped a link from a website that brought them to your App Store product page. If a chain of redirects in Safari leads to your App Store product page, the referring website will be the last URL in the chain.
-- No Associated Source Type: This source type is created in the Apple App Store package in order to account for crashes and subscription events and is not an official Apple defined source type.
+- Null: This is the default value for data that does not provide source types, including: crashes, subscription events and subscription summary.
 {% enddocs %}
 
 {% docs state %} The state associated with the subscription event metrics or subscription summary metrics. {% enddocs %}
@@ -87,7 +89,7 @@ Source Types include:
 
 {% docs subscription_name %} The subscription name associated with the subscription event metric or subscription summary metric. {% enddocs %}
 
-{% docs territory %} The territory associated with the report's respective metric(s) and is the full country name; territories will be used for the following reports: downloads, usage and app store. {% enddocs %}
+{% docs territory %} The territory (aka country) full name associated with the report's respective metric(s). {% enddocs %}
 
 {% docs total_downloads %} Total Downloads is the sum of Redownloads and First Time Downloads. {% enddocs %}
 
