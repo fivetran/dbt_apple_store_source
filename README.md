@@ -34,7 +34,7 @@ Include the following apple_store_source package version in your `packages.yml` 
 ```yaml
 packages:
   - package: fivetran/apple_store_source
-    version: [">=0.5.0", "<0.6.0"]
+    version: [">=0.1.0", "<0.2.0"]
 ```
 ## Step 3: Define database and schema variables
 By default, this package runs using your destination and the `apple_store` schema. If this is not where your apple_store data is (for example, if your apple_store schema is named `apple_store_fivetran`), add the following configuration to your root `dbt_project.yml` file:
