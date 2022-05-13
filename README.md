@@ -17,7 +17,7 @@
 # 📣 What does this dbt package do?
 - Cleans, tests, and prepares your GitHub data from [Fivetran's connector](https://fivetran.com/docs/applications/apple-app-store) for analysis.
 - Generates a comprehensive data dictionary of your Apple Store data via the [dbt docs site](https://fivetran.github.io/dbt_apple_store_source/)
-- Materializes staging tables which leverage data in the format described by [this ERD](https://docs.google.com/presentation/d/1zeV9F1yakOQbgx-L0xQ7h8I3KRuJL_tKc7srX_ctaYw/edit?usp=sharing). These tables are designed to work simultaneously with our [Apple Store modeling package](https://github.com/fivetran/dbt_apple_store). Learn more about these models on the [dbt docs site]
+- Materializes staging tables which leverage data in the format described by [this ERD](https://fivetran.com/docs/applications/apple-app-store#schemainformation). These tables are designed to work simultaneously with our [Apple Store modeling package](https://github.com/fivetran/dbt_apple_store). Learn more about these models on the [dbt docs site]
 
 # 🎯 How do I use the dbt package?
 ## Step 1: Prerequisites
