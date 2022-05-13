@@ -44,7 +44,7 @@ vars:
     apple_store_database: your_destination_name
     apple_store_schema: your_schema_name 
 ```
-## Step 4: Disable models for non-existent sources
+## Step 3: Disable models for non-existent sources
 Your Apple App Store connector may not sync every table that this package expects. If you use subscriptions and have the `sales_subscription_event_summary` and `sales_subscription_summary` tables synced, add the following variable to your `dbt_project.yml` file:
 
 ```yml
@@ -52,7 +52,7 @@ vars:
   apple_store__using_subscriptions: true # by default this is assumed to be false
 ```
 
-## (Optional) Step 5: Additional configurations
+## (Optional) Step 4: Additional configurations
 <details><summary>Expand to view configurations</summary>
 
 ### Defining subscription events
@@ -87,7 +87,7 @@ vars:
     
 </details>
 
-## (Optional) Step 6: Orchestrate your models with Fivetran Transformations for dbt Core™
+## (Optional) Step 5: Orchestrate your models with Fivetran Transformations for dbt Core™
 <details><summary>Expand to view details</summary>
 <br>
     
