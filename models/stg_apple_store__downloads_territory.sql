@@ -2,7 +2,6 @@ with base as (
 
     select * 
     from {{ ref('stg_apple_store__downloads_territory_tmp') }}
-
 ),
 
 fields as (
@@ -31,4 +30,5 @@ final as (
     from fields
 )
 
-select * from final
+select * 
+from final

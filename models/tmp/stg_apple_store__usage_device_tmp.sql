@@ -1,1 +1,2 @@
-select * from {{ var('usage_device') }}
+select * 
+from {{ var('usage_device') }}

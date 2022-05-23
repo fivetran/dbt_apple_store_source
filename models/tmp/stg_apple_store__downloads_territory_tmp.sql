@@ -1,1 +1,2 @@
-select * from {{ var('downloads_territory') }}
+select * 
+from {{ var('downloads_territory') }}

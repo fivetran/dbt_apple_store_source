@@ -4,7 +4,6 @@ with base as (
 
     select * 
     from {{ ref('stg_apple_store__sales_subscription_summary_tmp') }}
-
 ),
 
 fields as (
@@ -42,4 +41,5 @@ final as (
     {{ dbt_utils.group_by(7) }}
 )
 
-select * from final
+select * 
+from final
