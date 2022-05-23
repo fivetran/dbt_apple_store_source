@@ -23,7 +23,7 @@ vars:
     usage_app_version_source_type_report_identifier: "usage_app_version_source_type"
     usage_platform_version_source_type_report_identifier: "usage_platform_version_source_type"
     usage_source_type_device_report_identifier: "usage_source_type_device"
-    usage_territory_source_type_report_identifier: usage_territory_source_type
+    usage_territory_source_type_report_identifier: "usage_territory_source_type"
 
 seeds:
   apple_store_source_integration_tests:
