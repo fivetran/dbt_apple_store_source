@@ -3,7 +3,6 @@ with base as (
 
     select * 
     from {{ ref('stg_apple_store__usage_device_tmp') }}
-
 ),
 
 fields as (
@@ -34,4 +33,5 @@ final as (
     from fields
 )
 
-select * from final
+select * 
+from final
