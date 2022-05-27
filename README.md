@@ -82,7 +82,7 @@ If an individual source table has a different name than the package expects, add
     
 ```yml
 vars:
-    apple_store_<default_source_table_name>_identifier: your_table_name 
+    <default_source_table_name>_identifier: your_table_name 
 ```
     
 </details>

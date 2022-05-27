@@ -1,1 +1,2 @@
-select * from {{ var('usage_territory') }}
+select * 
+from {{ var('usage_territory') }}

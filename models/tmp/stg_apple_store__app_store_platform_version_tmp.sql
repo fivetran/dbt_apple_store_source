@@ -1,1 +1,2 @@
-select * from {{ var('app_store_platform_version') }}
+select * 
+from {{ var('app_store_platform_version') }}
