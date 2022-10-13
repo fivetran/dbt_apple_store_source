@@ -1,45 +1,36 @@
 name: 'apple_store_source'
-version: '0.1.0'
+version: '0.2.0'
 config-version: 2
-require-dbt-version: [">=1.0.0", "<2.0.0"]
-
+require-dbt-version: [">=1.2.0", "<2.0.0"]
 vars:
   apple_store_source:
     app: "{{ source('apple_store', 'app') }}"
     app_store_device: "{{ source('apple_store', 'app_store_source_type_device_report') }}"
     usage_device: "{{ source('apple_store', 'usage_source_type_device_report') }}"
     downloads_device: "{{ source('apple_store', 'downloads_source_type_device_report') }}"
-
     app_store_territory: "{{ source('apple_store', 'app_store_territory_source_type_report') }}"
     downloads_territory: "{{ source('apple_store', 'downloads_territory_source_type_report') }}"
     usage_territory: "{{ source('apple_store', 'usage_territory_source_type_report') }}"
-
     app_store_platform_version: "{{ source('apple_store', 'app_store_platform_version_source_type_report') }}"
     crashes_platform_version: "{{ source('apple_store', 'crashes_platform_version_device_report') }}"
     downloads_platform_version: "{{ source('apple_store', 'downloads_platform_version_source_type_report') }}"
     usage_platform_version: "{{ source('apple_store', 'usage_platform_version_source_type_report') }}"
-
     crashes_app_version: "{{ source('apple_store', 'crashes_app_version_device_report') }}"
     usage_app_version: "{{ source('apple_store', 'usage_app_version_source_type_report') }}"
-
     sales_account: "{{ source('apple_store', 'sales_account') }}"
     sales_subscription_events: "{{ source('apple_store', 'sales_subscription_event_summary') }}"
     sales_subscription_summary: "{{ source('apple_store', 'sales_subscription_summary') }}"
-
     apple_store_country_codes: "{{ ref('apple_store_country_codes') }}"
-
     apple_store__subscription_events:
     - 'Renew'
     - 'Cancel'
     - 'Subscribe'
-    
 models:
   apple_store_source:
     materialized: table
     +schema: apple_store_source
     tmp:
       materialized: view
-
 seeds:
   apple_store_source:
     +schema: apple_store_source
