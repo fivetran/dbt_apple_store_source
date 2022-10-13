@@ -1,16 +1,16 @@
 {% macro get_app_store_territory_columns() %}
 
 {% set columns = [
-    {"name": "_fivetran_synced", "datatype": dbt_utils.type_timestamp()},
-    {"name": "app_id", "datatype": dbt_utils.type_int()},
-    {"name": "date", "datatype": dbt_utils.type_timestamp()},
-    {"name": "impressions", "datatype": dbt_utils.type_int()},
-    {"name": "impressions_unique_device", "datatype": dbt_utils.type_int()},
+    {"name": "_fivetran_synced", "datatype": dbt.type_timestamp()},
+    {"name": "app_id", "datatype": dbt.type_int()},
+    {"name": "date", "datatype": dbt.type_timestamp()},
+    {"name": "impressions", "datatype": dbt.type_int()},
+    {"name": "impressions_unique_device", "datatype": dbt.type_int()},
     {"name": "meets_threshold", "datatype": "boolean"},
-    {"name": "page_views", "datatype": dbt_utils.type_int()},
-    {"name": "page_views_unique_device", "datatype": dbt_utils.type_int()},
-    {"name": "source_type", "datatype": dbt_utils.type_string()},
-    {"name": "territory", "datatype": dbt_utils.type_string()}
+    {"name": "page_views", "datatype": dbt.type_int()},
+    {"name": "page_views_unique_device", "datatype": dbt.type_int()},
+    {"name": "source_type", "datatype": dbt.type_string()},
+    {"name": "territory", "datatype": dbt.type_string()}
 ] %}
 
 {{ return(columns) }}

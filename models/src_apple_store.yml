@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: apple_store
     schema: "{{ var('apple_store_schema', 'itunes_connect') }}"
-    database: "{% if target.type != 'spark'%}{{ var('apple_store_database', target.database) }}{% endif %}"
+    database: "{% if target.type != '!!!!!!! REPLACE 'spark' WITH 'spark','databricks' OR EQUIV !!!!!!!'%}{{ var('apple_store_database', target.database) }}{% endif %}"
     loader: Fivetran
     loaded_at_field: _fivetran_synced
 
