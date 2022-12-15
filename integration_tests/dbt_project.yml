@@ -6,7 +6,7 @@ version: '0.2.0'
 profile: 'integration_tests' 
 
 vars:
-  apple_store_schema: apple_store_source_integration_tests
+  apple_store_schema: apple_store_source_integrations_tests
   apple_store__using_subscriptions: True
   apple_store_source:
     app_identifier: "app"
