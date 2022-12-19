@@ -22,12 +22,12 @@ fields as (
 final as (
     
     select 
-        {{ get_date_from_string( dbt_utils.split_part(string_text='_filename', delimiter_text="'_'", part_number=3) ) }} as date_day, 
+        {{ get_date_from_string( dbt.split_part(string_text='_filename', delimiter_text="'_'", part_number=3) ) }} as date_day, 
         app_name,
         account_number as account_id,
         country,
         case
-            when replace(state, ' ', '') = '' then cast(null as {{ dbt_utils.type_string() }})  else state
+            when replace(state, ' ', '') = '' then cast(null as {{ dbt.type_string() }})  else state
         end as state,
         subscription_name,
         case 
