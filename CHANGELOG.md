@@ -1,3 +1,12 @@
+# dbt_apple_store_source v0.2.1
+
+## 🚨 Breaking Changes 🚨:
+[PR #7](https://github.com/fivetran/dbt_apple_store_source/pull/7) includes the following breaking changes:
+- Column `date_day` of `stg_apple_store__sales_subscription_events` model is now casted to `date` type. This change might affect downstream models.
+
+## Contributors
+- [@lch88](https://github.com/lch88) ([#7](https://github.com/fivetran/dbt_apple_store_source/pull/7))
+
 # dbt_apple_store_source v0.2.0
 
 ## 🚨 Breaking Changes 🚨:
