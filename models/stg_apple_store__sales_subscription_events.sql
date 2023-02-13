@@ -22,7 +22,7 @@ fields as (
 final as (
     
     select 
-        event_date as date_day, 
+        cast(event_date as date) as date_day,
         account_number as account_id,
         app_name,
         subscription_name,
