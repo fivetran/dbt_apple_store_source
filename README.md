@@ -31,7 +31,7 @@ Include the following apple_store_source package version in your `packages.yml` 
 ```yaml
 packages:
   - package: fivetran/apple_store_source
-    version: [">=0.2.0", "<0.3.0"] # we recommend using ranges to capture non-breaking changes automatically
+    version: [">=0.3.0", "<0.4.0"] # we recommend using ranges to capture non-breaking changes automatically
 ```
 ## Step 3: Define database and schema variables
 By default, this package runs using your destination and the `apple_store` schema. If this is not where your apple_store data is (for example, if your apple_store schema is named `apple_store_fivetran`), add the following configuration to your root `dbt_project.yml` file:
@@ -48,6 +48,12 @@ Your Apple App Store connector may not sync every table that this package expect
 vars:
   apple_store__using_subscriptions: true # by default this is assumed to be false
 ```
+
+## Step 4: Seed `country_codes` mapping table (once)
+
+In order to map longform territory names to their ISO country codes, we have adapted the CSV from [lukes/ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes) to align with Apple's country output [format](https://developer.apple.com/help/app-store-connect/reference/app-store-localizations/). 
+
+You will need to `dbt seed` the `apple_store_country_codes` [file](https://github.com/fivetran/dbt_apple_store_source/blob/main/seeds/apple_store_country_codes.csv) just once.
 
 ## (Optional) Step 4: Additional configurations
 <details><summary>Expand to view configurations</summary>
