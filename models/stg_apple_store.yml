@@ -416,7 +416,7 @@ seeds:
         description: '{{ doc("country_code_numeric") }}'
       - name: country_code_alpha_2
         description: '{{ doc("country_code_alpha_2") }}'
-      - name: country_code_alpha3
+      - name: country_code_alpha_3
         description: '{{ doc("country_code_alpha_3") }}'
       - name: region
         description: '{{ doc("region") }}'
