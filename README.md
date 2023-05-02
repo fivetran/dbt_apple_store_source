@@ -55,7 +55,7 @@ In order to map longform territory names to their ISO country codes, we have ada
 
 You will need to `dbt seed` the `apple_store_country_codes` [file](https://github.com/fivetran/dbt_apple_store_source/blob/main/seeds/apple_store_country_codes.csv) just once.
 
-## (Optional) Step 4: Additional configurations
+## (Optional) Step 5: Additional configurations
 <details><summary>Expand to view configurations</summary>
 
 ### Defining subscription events
@@ -90,7 +90,7 @@ vars:
     
 </details>
 
-## (Optional) Step 5: Orchestrate your models with Fivetran Transformations for dbt Core™
+## (Optional) Step 6: Orchestrate your models with Fivetran Transformations for dbt Core™
 <details><summary>Expand to view details</summary>
 <br>
     
