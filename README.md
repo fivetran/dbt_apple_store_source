@@ -41,7 +41,7 @@ vars:
     apple_store_database: your_destination_name
     apple_store_schema: your_schema_name 
 ```
-## Step 3: Enabling additional models 
+## Step 4: Enabling additional models 
 Your Apple App Store connector may not sync every table that this package expects. If you use subscriptions and have the `sales_subscription_event_summary` and `sales_subscription_summary` tables synced, add the following variable to your `dbt_project.yml` file:
 
 ```yml
@@ -49,13 +49,13 @@ vars:
   apple_store__using_subscriptions: true # by default this is assumed to be false
 ```
 
-## Step 4: Seed `country_codes` mapping table (once)
+## Step 5: Seed `country_codes` mapping table (once)
 
 In order to map longform territory names to their ISO country codes, we have adapted the CSV from [lukes/ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes) to align with Apple's country output [format](https://developer.apple.com/help/app-store-connect/reference/app-store-localizations/). 
 
 You will need to `dbt seed` the `apple_store_country_codes` [file](https://github.com/fivetran/dbt_apple_store_source/blob/main/seeds/apple_store_country_codes.csv) just once.
 
-## (Optional) Step 5: Additional configurations
+## (Optional) Step 6: Additional configurations
 <details><summary>Expand to view configurations</summary>
 
 ### Defining subscription events
@@ -90,7 +90,7 @@ vars:
     
 </details>
 
-## (Optional) Step 6: Orchestrate your models with Fivetran Transformations for dbt Core™
+## (Optional) Step 7: Orchestrate your models with Fivetran Transformations for dbt Core™
 <details><summary>Expand to view details</summary>
 <br>
     
