@@ -1,3 +1,5 @@
+# dbt_apple_store_source v0.3.1
+
 # dbt_apple_store_source v0.3.0
 
 ## Bug Fixes
