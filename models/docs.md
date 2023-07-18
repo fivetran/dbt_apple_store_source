@@ -70,15 +70,8 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 {% docs region_code %} The UN Statistics region numerical code assignment. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs %}
 
 {% docs source_type %} A source is counted when a customer follows a link to your App Store product page. 
-Source Types include:
-- Unavailable: Sales and usage data display sources as unavailable if users downloaded your app before App Analytics started tracking source attribution on April 15, 2017. As users download your app for the first time, you will see more complete sources data. If a user downloads your app using an App Store gift card or promotional code, the source type will also show as unavailable.
-- App Store Browse: Users viewed your app or tapped to download it while browsing the App Store (for example, in the Today, Games, or Apps sections).
-- App Store Search: Users viewed your app or downloaded it from Search on the App Store. Includes Search Ads in App Store search.
-- Institutional Purchase: Users downloaded your app from Apple Business Manager or Apple School Manager.
-- App Referrer: Users tapped a link in an app that brought them to your App Store product page. Includes apps using the StoreKit API to load your product page. Includes Apple apps, such as Messages, except Safari.
-- App Clip: Users tapped a link in your App Clip that brought them to your App Store product page. If the user then downloaded your app, the resulting Download is attributed to your App Clip as the source.
-- Web Referrer: Users tapped a link from a website that brought them to your App Store product page. If a chain of redirects in Safari leads to your App Store product page, the referring website will be the last URL in the chain.
-- Null: This is the default value for data that does not provide source types, including: crashes, subscription events and subscription summary.
+There are five types of sources: App Store Browse, App Store Search, App Referrers, Web Referrers, and App Clips. Null is the default value for data that does not provide source types, including: crashes, subscription events and subscription summary.
+More information can be found in the Apple App Store developer [docs](https://developer.apple.com/help/app-store-connect/view-app-analytics/view-acquisition-sources/).
 {% enddocs %}
 
 {% docs state %} The state associated with the subscription event metrics or subscription summary metrics. {% enddocs %}
