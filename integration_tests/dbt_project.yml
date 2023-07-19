@@ -26,6 +26,11 @@ vars:
     usage_source_type_device_report_identifier: "usage_source_type_device"
     usage_territory_source_type_report_identifier: "usage_territory_source_type"
 
+models:
+  +persist_docs:
+    relation: true
+    columns: true
+
 seeds:
   apple_store_source_integration_tests:
       +quote_columns: "{{ true if target.type == 'redshift' else false }}"
