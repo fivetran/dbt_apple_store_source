@@ -70,7 +70,7 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 {% docs region_code %} The UN Statistics region numerical code assignment. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs %}
 
 {% docs source_type %} A source is counted when a customer follows a link to your App Store product page. 
-There are five types of sources: App Store Browse, App Store Search, App Referrers, Web Referrers, and App Clips. Null is the default value for data that does not provide source types, including: crashes, subscription events and subscription summary.
+There are 8 types of sources: App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including: crashes, subscription events and subscription summary.
 More information can be found in the Apple App Store developer [docs](https://developer.apple.com/help/app-store-connect/view-app-analytics/view-acquisition-sources/).
 {% enddocs %}
 
