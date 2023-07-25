@@ -86,6 +86,8 @@ More information can be found in the Apple App Store developer [docs](https://de
 
 {% docs total_downloads %} Total Downloads is the sum of Redownloads and First Time Downloads. {% enddocs %}
 
+{% docs territory_long %} Either the alternative country name, or the country name if the alternative doesn't exist. {% enddocs %}
+
 
 
 
