@@ -28,8 +28,8 @@ vars:
 
 models:
   +persist_docs:
-    relation: true
-    columns: true
+    relation: "{{ false if target.type in ('spark','databricks') else true }}"
+    columns: "{{ false if target.type in ('spark','databricks') else true }}"
 
 seeds:
   apple_store_source_integration_tests:
