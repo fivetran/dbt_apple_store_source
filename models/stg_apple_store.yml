@@ -171,7 +171,7 @@ models:
             - source_type
             - platform_version
     columns: 
-      - name: date
+      - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
         description: '{{ doc("app_id") }}'

@@ -1,3 +1,9 @@
+# dbt_apple_store_source v0.3.1
+
+## Bug Fix
+[PR #11](https://github.com/fivetran/dbt_apple_store_source/pull/11) includes the following update:
+- Shortened the field description for `source_type`. This was causing an error if the persist docs config was enabled because the description size exceeded warehouse constraints.
+
 # dbt_apple_store_source v0.3.0
 
 ## Bug Fixes
