@@ -12,7 +12,7 @@
 
 # Apple App Store Source dbt Package ([Docs](https://fivetran.github.io/dbt_apple_store_source/))
 # 📣 What does this dbt package do?
-- Materializes [Apple App Store staging tables](https://fivetran.github.io/dbt_apple_store_source/#!/overview/github_source/models/?g_v=1) which leverage data in the format described by [this ERD](https://fivetran.com/docs/applications/apple_store/#schemainformation). These staging tables clean, test, and prepare your Apple App Store data from [Fivetran's connector](https://fivetran.com/docs/applications/apple-app-store) for analysis by doing the following:
+- Materializes [Apple App Store staging tables](https://fivetran.github.io/dbt_apple_store_source/#!/overview/github_source/models/?g_v=1) which leverage data in the format described by [this ERD](https://fivetran.com/docs/connectors/applications/apple-app-store#schemainformation). These staging tables clean, test, and prepare your Apple App Store data from [Fivetran's connector](https://fivetran.com/docs/applications/apple-app-store) for analysis by doing the following:
   - Name columns for consistency across all packages and for easier analysis
   - Adds freshness tests to source data
   - Adds column-level testing where applicable. For example, all primary keys are tested for uniqueness and non-null values.
