@@ -88,11 +88,4 @@ More information can be found in the Apple App Store developer [docs](https://de
 
 {% docs territory_long %} Either the alternative country name, or the country name if the alternative doesn't exist. {% enddocs %}
 
-
-
-
-
-
-{% docs source_relation %}
-The source of the record if the unioning functionality is being used. If not this field will be empty.
-{% enddocs %}
+{% docs source_relation %}The source of the record if the unioning functionality is being used. If it is not this field will be empty.{% enddocs %}

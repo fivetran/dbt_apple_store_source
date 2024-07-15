@@ -1,7 +1,4 @@
-ADD source_relation WHERE NEEDED + CHECK JOINS AND WINDOW FUNCTIONS! (Delete this line when done.)
-
 {{ config(enabled=var('apple_store__using_subscriptions', False)) }}
-
 {{
     fivetran_utils.union_data(
         table_identifier='sales_subscription_summary', 

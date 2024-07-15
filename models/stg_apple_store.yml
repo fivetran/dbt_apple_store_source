@@ -1,16 +1,18 @@
-UPDATE TESTS!!! (delete line when done.)
 version: 2
 
 models:
   - name: stg_apple_store__app
     description: Table containing data about your application(s)
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - source_relation
+            - app_id
     columns:
       - name: source_relation
         description: "{{ doc('source_relation') }}"
       - name: app_id
         description: '{{ doc("app_id") }}'
-        tests:
-          - unique
       - name: app_name
         description: '{{ doc("app_name") }}'
       - name: is_enabled
@@ -240,13 +242,16 @@ models:
 
   - name: stg_apple_store__sales_account
     description: Table containing sales account data.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - source_relation
+            - account_id
     columns:
       - name: source_relation
         description: "{{ doc('source_relation') }}" 
       - name: account_id
         description: '{{ doc("account_id") }}'
-        tests:
-          - unique
       - name: account_name
         description: '{{ doc("account_name")}}'
 
@@ -455,8 +460,6 @@ seeds:
   - name: apple_store_country_codes
     description: ISO-3166 country mapping table
     columns:
-      - name: source_relation
-        description: "{{ doc('source_relation') }}"
       - name: country_name
         description: '{{ doc("country_name") }}'
       - name: alternative_country_name
