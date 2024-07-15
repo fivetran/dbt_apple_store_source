@@ -45,7 +45,7 @@ final as (
         sum(active_pay_up_front_introductory_offer_subscriptions) as active_pay_up_front_introductory_offer_subscriptions,
         sum(active_standard_price_subscriptions) as active_standard_price_subscriptions
     from fields
-    {{ dbt_utils.group_by(7) }}
+    {{ dbt_utils.group_by(8) }}
 )
 
 select * 

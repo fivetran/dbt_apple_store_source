@@ -43,7 +43,7 @@ final as (
         end as device,
         sum(quantity) as quantity
     from fields
-    {{ dbt_utils.group_by(8) }}
+    {{ dbt_utils.group_by(9) }}
 )
 
 select * 
