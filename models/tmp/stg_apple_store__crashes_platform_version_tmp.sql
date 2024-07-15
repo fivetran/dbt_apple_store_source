@@ -1,6 +1,6 @@
 {{
     fivetran_utils.union_data(
-        table_identifier='crashes_platform_version', 
+        table_identifier='crashes_platform_version_device_report', 
         database_variable='apple_store_database', 
         schema_variable='apple_store_schema', 
         default_database=target.database,

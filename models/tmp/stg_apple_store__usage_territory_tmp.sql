@@ -1,6 +1,6 @@
 {{
     fivetran_utils.union_data(
-        table_identifier='usage_territory', 
+        table_identifier='usage_territory_source_type_report', 
         database_variable='apple_store_database', 
         schema_variable='apple_store_schema', 
         default_database=target.database,

@@ -1,7 +1,7 @@
 {{ config(enabled=var('apple_store__using_subscriptions', False)) }}
 {{
     fivetran_utils.union_data(
-        table_identifier='sales_subscription_events', 
+        table_identifier='sales_subscription_event_summary', 
         database_variable='apple_store_database', 
         schema_variable='apple_store_schema', 
         default_database=target.database,
