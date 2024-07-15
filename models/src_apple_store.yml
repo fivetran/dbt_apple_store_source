@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: apple_store
+  - name: apple_store # This source will only be used if you are using a single apple_store source connector. If multiple sources are being unioned, their tables will be directly referenced via adapter.get_relation.
     schema: "{{ var('apple_store_schema', 'itunes_connect') }}"
     database: "{% if target.type != 'spark'%}{{ var('apple_store_database', target.database) }}{% endif %}"
     loader: Fivetran

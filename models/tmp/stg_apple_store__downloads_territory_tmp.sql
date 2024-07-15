@@ -1,2 +1,14 @@
-select * 
-from {{ var('downloads_territory') }}
+ADD source_relation WHERE NEEDED + CHECK JOINS AND WINDOW FUNCTIONS! (Delete this line when done.)
+
+{{
+    fivetran_utils.union_data(
+        table_identifier='downloads_territory', 
+        database_variable='apple_store_database', 
+        schema_variable='apple_store_schema', 
+        default_database=target.database,
+        default_schema='apple_store',
+        default_variable='downloads_territory',
+        union_schema_variable='apple_store_union_schemas',
+        union_database_variable='apple_store_union_databases'
+    )
+}}

@@ -92,3 +92,7 @@ More information can be found in the Apple App Store developer [docs](https://de
 
 
 
+
+{% docs source_relation %}
+The source of the record if the unioning functionality is being used. If not this field will be empty.
+{% enddocs %}

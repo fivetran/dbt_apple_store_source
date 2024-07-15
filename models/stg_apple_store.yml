@@ -1,9 +1,12 @@
+UPDATE TESTS!!! (delete line when done.)
 version: 2
 
 models:
   - name: stg_apple_store__app
     description: Table containing data about your application(s)
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: app_id
         description: '{{ doc("app_id") }}'
         tests:
@@ -18,11 +21,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - device
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -45,11 +51,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - platform_version
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -72,11 +81,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - territory
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -99,11 +111,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - device
             - app_version
-    columns: 
+    columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}" 
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -120,11 +135,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - device
             - platform_version
-    columns: 
+    columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}" 
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -141,11 +159,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - device
-    columns: 
+    columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}" 
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -166,11 +187,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - platform_version
-    columns: 
+    columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}" 
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -191,11 +215,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - territory
-    columns: 
+    columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}" 
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -213,7 +240,9 @@ models:
 
   - name: stg_apple_store__sales_account
     description: Table containing sales account data.
-    columns: 
+    columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}" 
       - name: account_id
         description: '{{ doc("account_id") }}'
         tests:
@@ -226,6 +255,7 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - account_id
             - app_name
@@ -235,6 +265,8 @@ models:
             - country
             - state
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: account_id
@@ -259,6 +291,7 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - account_id
             - app_name
@@ -267,6 +300,8 @@ models:
             - country
             - state
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_name
@@ -293,11 +328,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - app_version
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -322,11 +360,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - device
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -351,11 +392,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - platform_version
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -380,11 +424,14 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source_relation
             - date_day
             - app_id
             - source_type
             - territory
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: date_day
         description: '{{ doc("date_day") }}'
       - name: app_id
@@ -408,6 +455,8 @@ seeds:
   - name: apple_store_country_codes
     description: ISO-3166 country mapping table
     columns:
+      - name: source_relation
+        description: "{{ doc('source_relation') }}"
       - name: country_name
         description: '{{ doc("country_name") }}'
       - name: alternative_country_name

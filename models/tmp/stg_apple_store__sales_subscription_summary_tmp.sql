@@ -1,4 +1,16 @@
+ADD source_relation WHERE NEEDED + CHECK JOINS AND WINDOW FUNCTIONS! (Delete this line when done.)
+
 {{ config(enabled=var('apple_store__using_subscriptions', False)) }}
 
-select * 
-from {{ var('sales_subscription_summary') }}
+{{
+    fivetran_utils.union_data(
+        table_identifier='sales_subscription_summary', 
+        database_variable='apple_store_database', 
+        schema_variable='apple_store_schema', 
+        default_database=target.database,
+        default_schema='apple_store',
+        default_variable='sales_subscription_summary',
+        union_schema_variable='apple_store_union_schemas',
+        union_database_variable='apple_store_union_databases'
+    )
+}}

@@ -1,3 +1,5 @@
+ADD source_relation WHERE NEEDED + CHECK JOINS AND WINDOW FUNCTIONS! (Delete this line when done.)
+
 {{ config(enabled=var('apple_store__using_subscriptions', False)) }}
 
 with base as (
@@ -16,12 +18,19 @@ fields as (
             )
         }}
         
+    
+        {{ fivetran_utils.source_relation(
+            union_schema_variable='apple_store_union_schemas', 
+            union_database_variable='apple_store_union_databases') 
+        }}
+
     from base
 ),
 
 final as (
-    
-    select 
+
+    select
+        source_relation, 
         {{ get_date_from_string( dbt.split_part(string_text='_filename', delimiter_text="'_'", part_number=3) ) }} as date_day, 
         app_name,
         account_number as account_id,
