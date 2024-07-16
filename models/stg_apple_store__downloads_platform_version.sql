@@ -31,9 +31,9 @@ final as (
         app_id,
         source_type,
         platform_version,
-        first_time_downloads,
-        redownloads,
-        total_downloads
+        cast(first_time_downloads as {{ dbt.type_bigint() }}) as first_time_downloads,
+        cast(redownloads as {{ dbt.type_bigint() }}) as redownloads,
+        cast(total_downloads as {{ dbt.type_bigint() }}) as total_downloads
     from fields
 )
 

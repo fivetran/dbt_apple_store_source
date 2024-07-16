@@ -40,10 +40,10 @@ final as (
         case 
             when lower(device) like 'ipod%' then 'iPod' else device
         end as device,
-        sum(active_free_trial_introductory_offer_subscriptions) as active_free_trial_introductory_offer_subscriptions,
-        sum(active_pay_as_you_go_introductory_offer_subscriptions) as active_pay_as_you_go_introductory_offer_subscriptions,
-        sum(active_pay_up_front_introductory_offer_subscriptions) as active_pay_up_front_introductory_offer_subscriptions,
-        sum(active_standard_price_subscriptions) as active_standard_price_subscriptions
+        cast(sum(active_free_trial_introductory_offer_subscriptions) as {{ dbt.type_bigint() }}) as active_free_trial_introductory_offer_subscriptions,
+        cast(sum(active_pay_as_you_go_introductory_offer_subscriptions as {{ dbt.type_bigint() }})) as active_pay_as_you_go_introductory_offer_subscriptions,
+        cast(sum(active_pay_up_front_introductory_offer_subscriptions) as {{ dbt.type_bigint() }}) as active_pay_up_front_introductory_offer_subscriptions,
+        cast(sum(active_standard_price_subscriptions) as {{ dbt.type_bigint() }}) as active_standard_price_subscriptions
     from fields
     {{ dbt_utils.group_by(8) }}
 )

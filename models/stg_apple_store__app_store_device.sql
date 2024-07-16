@@ -31,10 +31,10 @@ final as (
         app_id,
         source_type,
         device,
-        impressions,
-        impressions_unique_device,
-        page_views,
-        page_views_unique_device
+        cast(impressions as {{ dbt.type_bigint() }}) as impressions,
+        cast(impressions_unique_device as {{ dbt.type_bigint() }}) as impressions_unique_device,
+        cast(page_views as {{ dbt.type_bigint() }}) as page_views,
+        cast(page_views_unique_device as {{ dbt.type_bigint() }}) as page_views_unique_device
     from fields
 )
 

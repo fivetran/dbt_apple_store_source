@@ -41,7 +41,7 @@ final as (
         case 
             when lower(device) like 'ipod%' then 'iPod' else device
         end as device,
-        sum(quantity) as quantity
+        cast(sum(quantity) as {{ dbt.type_bigint() }}) as quantity
     from fields
     {{ dbt_utils.group_by(9) }}
 )

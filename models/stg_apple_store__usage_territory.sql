@@ -31,11 +31,11 @@ final as (
         app_id,
         source_type,
         territory,
-        active_devices,
-        active_devices_last_30_days,
-        deletions,
-        installations,
-        sessions
+        cast(active_devices as {{ dbt.type_bigint() }}) as active_devices,
+        cast(active_devices_last_30_days as {{ dbt.type_bigint() }}) as active_devices_last_30_days,
+        cast(deletions as {{ dbt.type_bigint() }}) as deletions,
+        cast(installations as {{ dbt.type_bigint() }}) as installations,
+        cast(sessions as {{ dbt.type_bigint() }}) as sessions
     from fields
 )
 
