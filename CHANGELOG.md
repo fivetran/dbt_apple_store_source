@@ -1,5 +1,9 @@
 # dbt_apple_store_source v0.4.0
 [PR #14](https://github.com/fivetran/dbt_apple_store_source/pull/14) includes the following updates:
+
+## Breaking change
+- changed the identifier variables. UPDATE THIS.
+
 ## Feature update 🎉
 - Unioning capability! This adds the ability to union source data from multiple apple_store connectors. Refer to the [README](https://github.com/fivetran/dbt_apple_store_source/blob/main/README.md) for more details.
 
