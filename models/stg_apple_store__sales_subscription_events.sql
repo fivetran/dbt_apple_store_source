@@ -30,7 +30,7 @@ final as (
     select
         source_relation, 
         cast(event_date as date) as date_day,
-        account_number as account_id,
+        cast(account_number as {{ dbt.type_bigint() }}) as account_id,
         app_name,
         subscription_name,
         event,

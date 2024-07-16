@@ -28,7 +28,7 @@ final as (
     select
         source_relation, 
         cast(date as date) as date_day,
-        app_id,
+        cast(app_id as {{ dbt.type_bigint() }}) as app_id,
         device,
         platform_version,
         cast(crashes as {{ dbt.type_bigint() }}) as crashes

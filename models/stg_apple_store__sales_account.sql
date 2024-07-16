@@ -27,7 +27,7 @@ final as (
 
     select
         source_relation, 
-        id as account_id,
+        cast(id as {{ dbt.type_bigint() }}) as account_id,
         name as account_name
     from fields
 )

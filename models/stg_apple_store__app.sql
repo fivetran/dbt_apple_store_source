@@ -27,7 +27,7 @@ final as (
 
     select
         source_relation, 
-        id as app_id,
+        cast(id as {{ dbt.type_bigint() }}) as app_id,
         name as app_name,
         is_enabled
     from fields
