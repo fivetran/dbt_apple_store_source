@@ -31,7 +31,6 @@ final as (
         app_id,
         source_type,
         device,
-        active_devices,
         cast(active_devices as {{ dbt.type_bigint() }}) as active_devices,
         cast(active_devices_last_30_days as {{ dbt.type_bigint() }}) as active_devices_last_30_days,
         cast(deletions as {{ dbt.type_bigint() }}) as deletions,
