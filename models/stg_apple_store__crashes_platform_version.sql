@@ -26,11 +26,11 @@ fields as (
 final as (
 
     select
-        source_relation, 
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(date as date) as date_day,
         cast(app_id as {{ dbt.type_bigint() }}) as app_id,
-        device,
-        platform_version,
+        cast(device as {{ dbt.type_string() }}) as device,
+        cast(platform_version as {{ dbt.type_string() }}) as platform_version,
         cast(crashes as {{ dbt.type_bigint() }}) as crashes
     from fields
 )

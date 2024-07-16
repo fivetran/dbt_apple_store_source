@@ -26,11 +26,11 @@ fields as (
 final as (
 
     select
-        source_relation, 
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(date as date) as date_day,
         cast(app_id as {{ dbt.type_bigint() }}) as app_id,
-        source_type,
-        platform_version,
+        cast(source_type as {{ dbt.type_string() }}) as source_type,
+        cast(platform_version as {{ dbt.type_string() }}) as platform_version,
         cast(first_time_downloads as {{ dbt.type_bigint() }}) as first_time_downloads,
         cast(redownloads as {{ dbt.type_bigint() }}) as redownloads,
         cast(total_downloads as {{ dbt.type_bigint() }}) as total_downloads

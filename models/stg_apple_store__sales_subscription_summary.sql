@@ -28,18 +28,18 @@ fields as (
 final as (
 
     select
-        source_relation, 
-        {{ get_date_from_string( dbt.split_part(string_text='_filename', delimiter_text="'_'", part_number=3) ) }} as date_day, 
-        app_name,
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
+        cast({{ get_date_from_string( dbt.split_part(string_text='_filename', delimiter_text="'_'", part_number=3)) }} as date) as date_day, 
+        cast(app_name as {{ dbt.type_string() }}) as app_name,
         cast(account_number as {{ dbt.type_bigint() }}) as account_id,
-        country,
-        case
+        cast(country as {{ dbt.type_string() }}) as country,
+        cast(case
             when replace(state, ' ', '') = '' then cast(null as {{ dbt.type_string() }})  else state
-        end as state,
-        subscription_name,
-        case 
+        end as {{ dbt.type_string() }}) as state,
+        cast(subscription_name as {{ dbt.type_string() }}) as subscription_name,
+        cast(case 
             when lower(device) like 'ipod%' then 'iPod' else device
-        end as device,
+        end as {{ dbt.type_string() }}) as device,
         sum(cast(active_free_trial_introductory_offer_subscriptions as {{ dbt.type_bigint() }})) as active_free_trial_introductory_offer_subscriptions,
         sum(cast(active_pay_as_you_go_introductory_offer_subscriptions as {{ dbt.type_bigint() }})) as active_pay_as_you_go_introductory_offer_subscriptions,
         sum(cast(active_pay_up_front_introductory_offer_subscriptions as {{ dbt.type_bigint() }})) as active_pay_up_front_introductory_offer_subscriptions,

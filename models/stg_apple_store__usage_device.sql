@@ -26,11 +26,11 @@ fields as (
 final as (
 
     select
-        source_relation, 
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(date as date) as date_day,
         cast(app_id as {{ dbt.type_bigint() }}) as app_id,
-        source_type,
-        device,
+        cast(source_type as {{ dbt.type_string() }}) as source_type,
+        cast(device as {{ dbt.type_string() }}) as device,
         cast(active_devices as {{ dbt.type_bigint() }}) as active_devices,
         cast(active_devices_last_30_days as {{ dbt.type_bigint() }}) as active_devices_last_30_days,
         cast(deletions as {{ dbt.type_bigint() }}) as deletions,

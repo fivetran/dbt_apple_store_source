@@ -26,9 +26,9 @@ fields as (
 final as (
 
     select
-        source_relation, 
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(id as {{ dbt.type_bigint() }}) as account_id,
-        name as account_name
+        cast(name as {{ dbt.type_string() }}) as account_name
     from fields
 )
 

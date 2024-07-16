@@ -28,19 +28,19 @@ fields as (
 final as (
 
     select
-        source_relation, 
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(event_date as date) as date_day,
         cast(account_number as {{ dbt.type_bigint() }}) as account_id,
-        app_name,
-        subscription_name,
+        cast(app_name as {{ dbt.type_string() }}) as app_name,
+        cast(subscription_name as {{ dbt.type_string() }}) as subscription_name,
         event,
-        country,
-        case
-            when replace(state, ' ', '') = '' then cast(null as {{ dbt.type_string() }}) else state
-        end as state,
-        case 
+        cast(country as {{ dbt.type_string() }}) as country,
+        cast(case
+            when replace(state, ' ', '') = '' then cast(null as {{ dbt.type_string() }})  else state
+        end as {{ dbt.type_string() }}) as state,
+        cast(case 
             when lower(device) like 'ipod%' then 'iPod' else device
-        end as device,
+        end as {{ dbt.type_string() }}) as device,
         sum(cast(quantity as {{ dbt.type_bigint() }})) as quantity
     from fields
     {{ dbt_utils.group_by(9) }}

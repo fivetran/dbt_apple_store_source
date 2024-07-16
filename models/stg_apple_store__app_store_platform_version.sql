@@ -26,13 +26,13 @@ fields as (
 final as (
 
     select
-        source_relation, 
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(date as date) as date_day,
         cast(app_id as {{ dbt.type_bigint() }}) as app_id,
-        source_type,
-        platform_version,
+        cast(source_type as {{ dbt.type_string() }}) as source_type,
+        cast(platform_version as {{ dbt.type_string() }}) as platform_version,
         cast(impressions as {{ dbt.type_bigint() }}) as impressions,
-        cast(impressions_unique_device as {{ dbt.type_bigint() }}) as impressions_unique_device,
+        cast(impressions_unique_device as {{ dbt.type_bigint() }}) as impressions_unique_cast(device as {{ dbt.type_string() }}) as device,
         cast(page_views as {{ dbt.type_bigint() }}) as page_views,
         cast(page_views_unique_device as {{ dbt.type_bigint() }}) as page_views_unique_device
     from fields
