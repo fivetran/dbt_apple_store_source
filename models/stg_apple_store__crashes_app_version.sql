@@ -31,7 +31,7 @@ final as (
         app_id,
         device,
         app_version,
-        crashes
+        cast(crashes as {{ dbt.type_bigint() }}) as crashes
     from fields
 )
 
