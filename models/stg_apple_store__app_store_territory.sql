@@ -32,7 +32,7 @@ final as (
         cast(source_type as {{ dbt.type_string() }}) as source_type,
         cast(territory as {{ dbt.type_string() }}) as territory,
         cast(impressions as {{ dbt.type_bigint() }}) as impressions,
-        cast(impressions_unique_device as {{ dbt.type_bigint() }}) as impressions_unique_cast(device as {{ dbt.type_string() }}) as device,
+        cast(impressions_unique_device as {{ dbt.type_bigint() }}) as impressions_unique_device,
         cast(page_views as {{ dbt.type_bigint() }}) as page_views,
         cast(page_views_unique_device as {{ dbt.type_bigint() }}) as page_views_unique_device
     from fields

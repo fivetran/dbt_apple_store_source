@@ -28,7 +28,7 @@ final as (
     select
         cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(id as {{ dbt.type_bigint() }}) as app_id,
-        cast(name as {{ dbt.type_string() }}) as cast(app_name as {{ dbt.type_string() }}) as app_name,
+        cast(name as {{ dbt.type_string() }}) as app_name,
         is_enabled
     from fields
 )
