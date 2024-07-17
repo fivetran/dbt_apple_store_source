@@ -33,6 +33,7 @@ previous | current
 - Updated tmp models to union source data using the `fivetran_utils.union_data` macro. 
 - To distinguish which source each field comes from, added `source_relation` column in each staging model and applied the `fivetran_utils.source_relation` macro.
 - Updated tests to account for the new `source_relation` column.
+- Updated `src_apple_store.yml` to use the current method to enable/disable sources.
 
 # dbt_apple_store_source v0.3.1
 
