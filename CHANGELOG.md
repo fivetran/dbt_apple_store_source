@@ -1,13 +1,35 @@
 # dbt_apple_store_source v0.4.0
 [PR #14](https://github.com/fivetran/dbt_apple_store_source/pull/14) includes the following updates:
 
-## Breaking change
-- changed the identifier variables. UPDATE THIS.
+## 🚨 Breaking Changes 🚨
+- Updated the source identifier format for consistency with other packages and for compatibility with the `fivetran_utils.union_data` macro. The identifier variables now are:
+
+previous | current
+--------|---------
+`app_identifier` | `apple_store_app_identifier`
+`app_store_platform_version_source_type_report_identifier` | `apple_store_app_store_platform_version_source_type_report_identifier`
+`app_store_source_type_device_report_identifier` | `apple_store_app_store_source_type_device_report_identifier`
+`app_store_territory_source_type_report_identifier` | `apple_store_app_store_territory_source_type_report_identifier`
+`crashes_app_version_device_report_identifier` | `apple_store_crashes_app_version_device_report_identifier`
+`crashes_platform_version_device_report_identifier` | `apple_store_crashes_platform_version_device_report_identifier`
+`downloads_platform_version_source_type_report_identifier` | `apple_store_downloads_platform_version_source_type_report_identifier`
+`downloads_source_type_device_report_identifier` | `apple_store_downloads_source_type_device_report_identifier`
+`downloads_territory_source_type_report_identifier` | `apple_store_downloads_territory_source_type_report_identifier`
+`sales_account_identifier` | `apple_store_sales_account_identifier`
+`sales_subscription_event_summary_identifier` | `apple_store_sales_subscription_event_summary_identifier`
+`sales_subscription_summary_identifier` | `apple_store_sales_subscription_summary_identifier`
+`usage_app_version_source_type_report_identifier` | `apple_store_usage_app_version_source_type_report_identifier`
+`usage_platform_version_source_type_report_identifier` | `apple_store_usage_platform_version_source_type_report_identifier`
+`usage_source_type_device_report_identifier` | `apple_store_usage_source_type_device_report_identifier`
+`usage_territory_source_type_report_identifier` | `apple_store_usage_territory_source_type_report_identifier`
+
+- If you are using the previous identifier, be sure to update to the current version!
 
 ## Feature update 🎉
-- Unioning capability! This adds the ability to union source data from multiple apple_store connectors. Refer to the [README](https://github.com/fivetran/dbt_apple_store_source/blob/main/README.md) for more details.
+- Unioning capability! This adds the ability to union source data from multiple apple_store connectors. Refer to the [README](https://github.com/fivetran/dbt_apple_store_source/blob/main/README.md#union-multiple-connectors) for more details.
 
 ## Under the hood 🚘
+- Added casting to staging columns that are used in any downstream COALESCEs, UNIONs, or JOINs to prevent datatype conflicts.
 - Updated tmp models to union source data using the `fivetran_utils.union_data` macro. 
 - To distinguish which source each field comes from, added `source_relation` column in each staging model and applied the `fivetran_utils.source_relation` macro.
 - Updated tests to account for the new `source_relation` column.
