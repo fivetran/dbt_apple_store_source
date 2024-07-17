@@ -33,7 +33,7 @@ final as (
         cast(account_number as {{ dbt.type_bigint() }}) as account_id,
         cast(app_name as {{ dbt.type_string() }}) as app_name,
         cast(subscription_name as {{ dbt.type_string() }}) as subscription_name,
-        event,
+        cast(event as {{ dbt.type_string() }}) as event,
         cast(country as {{ dbt.type_string() }}) as country,
         cast(case
             when replace(state, ' ', '') = '' then cast(null as {{ dbt.type_string() }}) else state
