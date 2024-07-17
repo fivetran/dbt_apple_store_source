@@ -185,8 +185,8 @@ sources:
       - name: sales_subscription_event_summary
         identifier: "{{ var('apple_store_sales_subscription_event_summary_identifier', 'sales_subscription_event_summary')}}"
         description: Daily subscription event report by account ID, app name, subscription name, event, country, state and device; this model is aggregated by date, app_name, account_id, country, state and subscription_name for easier transformations in the modeling package.
-        meta:
-          is_enabled: "{{ var('apple_store__using_subscriptions', false) }}"
+        config:
+          enabled: "{{ var('apple_store__using_subscriptions', false) }}"
         columns:
           - name: event_date
             description: '{{ doc("date_day") }}'
@@ -210,8 +210,8 @@ sources:
       - name: sales_subscription_summary
         identifier: "{{ var('apple_store_sales_subscription_summary_identifier', 'sales_subscription_summary')}}"
         description: Daily subscription summary report by account ID, app name, country, state and subscription name; this model is aggregated by date, app_name, account_id, country, state and subscription_name for easier transformations in the modeling package.
-        meta:
-          is_enabled: "{{ var('apple_store__using_subscriptions', false) }}"
+        config:
+          enabled: "{{ var('apple_store__using_subscriptions', false) }}"
         columns:
           - name: _filename
             description: Report filenames used to extract the date of the report
