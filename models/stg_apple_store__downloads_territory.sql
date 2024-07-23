@@ -14,19 +14,26 @@ fields as (
             )
         }}
         
+    
+        {{ fivetran_utils.source_relation(
+            union_schema_variable='apple_store_union_schemas', 
+            union_database_variable='apple_store_union_databases') 
+        }}
+
     from base
 ),
 
 final as (
-    
-    select 
+
+    select
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(date as date) as date_day,
-        app_id,
-        source_type,
-        territory,
-        first_time_downloads,
-        redownloads,
-        total_downloads
+        cast(app_id as {{ dbt.type_bigint() }}) as app_id,
+        cast(source_type as {{ dbt.type_string() }}) as source_type,
+        cast(territory as {{ dbt.type_string() }}) as territory,
+        cast(first_time_downloads as {{ dbt.type_bigint() }}) as first_time_downloads,
+        cast(redownloads as {{ dbt.type_bigint() }}) as redownloads,
+        cast(total_downloads as {{ dbt.type_bigint() }}) as total_downloads
     from fields
 )
 

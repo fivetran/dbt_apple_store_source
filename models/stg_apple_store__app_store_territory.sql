@@ -1,4 +1,3 @@
-
 with base as (
 
     select * 
@@ -15,20 +14,27 @@ fields as (
             )
         }}
         
+    
+        {{ fivetran_utils.source_relation(
+            union_schema_variable='apple_store_union_schemas', 
+            union_database_variable='apple_store_union_databases') 
+        }}
+
     from base
 ),
 
 final as (
-    
-    select 
+
+    select
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(date as date) as date_day,
-        app_id,
-        source_type,
-        territory,
-        impressions,
-        impressions_unique_device,
-        page_views,
-        page_views_unique_device
+        cast(app_id as {{ dbt.type_bigint() }}) as app_id,
+        cast(source_type as {{ dbt.type_string() }}) as source_type,
+        cast(territory as {{ dbt.type_string() }}) as territory,
+        cast(impressions as {{ dbt.type_bigint() }}) as impressions,
+        cast(impressions_unique_device as {{ dbt.type_bigint() }}) as impressions_unique_device,
+        cast(page_views as {{ dbt.type_bigint() }}) as page_views,
+        cast(page_views_unique_device as {{ dbt.type_bigint() }}) as page_views_unique_device
     from fields
 )
 

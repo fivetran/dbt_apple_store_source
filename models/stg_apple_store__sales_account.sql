@@ -1,4 +1,3 @@
-
 with base as (
 
     select * 
@@ -15,14 +14,21 @@ fields as (
             )
         }}
         
+    
+        {{ fivetran_utils.source_relation(
+            union_schema_variable='apple_store_union_schemas', 
+            union_database_variable='apple_store_union_databases') 
+        }}
+
     from base
 ),
 
 final as (
-    
-    select 
-        id as account_id,
-        name as account_name
+
+    select
+        cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
+        cast(id as {{ dbt.type_bigint() }}) as account_id,
+        cast(name as {{ dbt.type_string() }}) as account_name
     from fields
 )
 
