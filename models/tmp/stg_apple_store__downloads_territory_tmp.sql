@@ -1,12 +1,7 @@
 {{
-    fivetran_utils.union_data(
-        table_identifier='downloads_territory_source_type_report', 
-        database_variable='apple_store_database', 
-        schema_variable='apple_store_schema', 
-        default_database=target.database,
-        default_schema='apple_store',
-        default_variable='downloads_territory',
-        union_schema_variable='apple_store_union_schemas',
-        union_database_variable='apple_store_union_databases'
+    apple_store_source.union_apple_store_connections(
+        connection_dictionary=var('apple_store_sources',[]),
+        single_source_name='apple_store',
+        single_table_name='downloads_territory_source_type_report'
     )
 }}

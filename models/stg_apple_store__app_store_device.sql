@@ -15,9 +15,12 @@ fields as (
         }}
         
     
-        {{ fivetran_utils.source_relation(
-            union_schema_variable='apple_store_union_schemas', 
-            union_database_variable='apple_store_union_databases') 
+        {{ apple_store_source.apple_store_source_relation(
+                connection_dictionary=var('apple_store_union_schemas'),
+                single_schema=var('apple_store_union_schemas', 'apple_store'),
+                single_database=var('apple_store_union_databases', target.database),
+                single_table_identifier=var("apple_store_app_store_source_type_device_report_identifier", "app_store_source_type_device_report")
+            ) 
         }}
 
     from base
