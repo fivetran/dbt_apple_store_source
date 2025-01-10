@@ -22,7 +22,7 @@
 ## How do I use the dbt package?
 ### Step 1: Prerequisites
 To use this dbt package, you must have the following:
-- At least one Fivetran Apple App Store connector syncing data into your destination.
+- At least one Fivetran Apple App Store connection syncing data into your destination.
 - A **BigQuery**, **Snowflake**, **Redshift**, **PostgreSQL**, or **Databricks** destination.
 
 ### Step 2: Install the package (skip if also using the `apple_store` transformation package)
@@ -42,7 +42,7 @@ vars:
     apple_store_schema: your_schema_name 
 ```
 ### Step 4: Enabling additional models
-Your Apple App Store connector may not sync every table that this package expects. If you use subscriptions and have the `sales_subscription_event_summary` and `sales_subscription_summary` tables synced, add the following variable to your `dbt_project.yml` file:
+Your Apple App Store connection may not sync every table that this package expects. If you use subscriptions and have the `sales_subscription_event_summary` and `sales_subscription_summary` tables synced, add the following variable to your `dbt_project.yml` file:
 
 ```yml
 vars:
@@ -58,8 +58,8 @@ You will need to `dbt seed` the `apple_store_country_codes` [file](https://githu
 ### (Optional) Step 6: Additional configurations
 <details open><summary>Expand/collapse configurations</summary>
 
-#### Union multiple connectors
-If you have multiple apple_store connectors in Fivetran and would like to use this package on all of them simultaneously, we have provided functionality to do so. The package will union all of the data together and pass the unioned table into the transformations. You will be able to see which source it came from in the `source_relation` column of each model. To use this functionality, you will need to set either the `apple_store_union_schemas` OR `apple_store_union_databases` variables (cannot do both) in your root `dbt_project.yml` file:
+#### Union multiple connections
+If you have multiple apple_store connections in Fivetran and would like to use this package on all of them simultaneously, we have provided functionality to do so. The package will union all of the data together and pass the unioned table into the transformations. You will be able to see which source it came from in the `source_relation` column of each model. To use this functionality, you will need to set either the `apple_store_union_schemas` OR `apple_store_union_databases` variables (cannot do both) in your root `dbt_project.yml` file:
 
 ```yml
 vars:
