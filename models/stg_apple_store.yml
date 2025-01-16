@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_apple_store__app
+  - name: stg_apple_store__app_store_app
     description: Table containing data about your application(s)
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -15,8 +15,6 @@ models:
         description: '{{ doc("app_id") }}'
       - name: app_name
         description: '{{ doc("app_name") }}'
-      - name: is_enabled
-        description: Boolean indicator for whether application is enabled or not.
 
   - name: stg_apple_store__app_store_device
     description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by device and source type.
