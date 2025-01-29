@@ -23,156 +23,6 @@ sources:
           - name: is_enabled
             description: Boolean indicator for whether application is enabled or not.
 
-      - name: app_store_platform_version_source_type_report
-        identifier: "{{ var('apple_store_app_store_platform_version_source_type_report_identifier', 'app_store_platform_version_source_type_report')}}"
-        description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by platform version and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: platform_version
-            description: '{{ doc("platform_version") }}'
-          - name: impressions
-            description: '{{ doc("impressions")}}'
-          - name: impressions_unique_device
-            description: '{{ doc("impressions_unique_device") }}'
-          - name: page_views
-            description: '{{ doc("page_views") }}'
-          - name: page_views_unique_device
-            description: '{{ doc("page_views_unique_device") }}'
-
-      - name: app_store_source_type_device_report
-        identifier: "{{ var('apple_store_app_store_source_type_device_report_identifier', 'app_store_source_type_device_report')}}"
-        description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by device and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: impressions
-            description: '{{ doc("impressions")}}'
-          - name: impressions_unique_device
-            description: '{{ doc("impressions_unique_device") }}'
-          - name: page_views
-            description: '{{ doc("page_views") }}'
-          - name: page_views_unique_device
-            description: '{{ doc("page_views_unique_device") }}'
-
-      - name: app_store_territory_source_type_report
-        identifier: "{{ var('apple_store_app_store_territory_source_type_report_identifier', 'app_store_territory_source_type_report')}}"
-        description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by territory and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: territory
-            description: '{{ doc("territory") }}'
-          - name: impressions
-            description: '{{ doc("impressions")}}'
-          - name: impressions_unique_device
-            description: '{{ doc("impressions_unique_device") }}'
-          - name: page_views
-            description: '{{ doc("page_views") }}'
-          - name: page_views_unique_device
-            description: '{{ doc("page_views_unique_device") }}'
-
-      - name: crashes_app_version_device_report
-        identifier: "{{ var('apple_store_crashes_app_version_device_report_identifier', 'crashes_app_version_device_report')}}"
-        description: Daily crashes by app version and device.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: app_version
-            description: '{{ doc("app_version") }}'
-          - name: crashes
-            description: '{{ doc("crashes") }}'
-
-      - name: crashes_platform_version_device_report
-        identifier: "{{ var('apple_store_crashes_platform_version_device_report_identifier', 'crashes_platform_version_device_report')}}"
-        description: Daily crashes by platform version and device.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: platform_version
-            description: '{{ doc("app_version") }}'
-          - name: crashes
-            description: '{{ doc("crashes") }}'
-
-      - name: downloads_platform_version_source_type_report
-        identifier: "{{ var('apple_store_downloads_platform_version_source_type_report_identifier', 'downloads_platform_version_source_type_report')}}"
-        description: Daily downloads metrics (first time downloads, redownloads and total downloads) by platform version and source type.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: platform_version
-            description: '{{ doc("platform_version") }}'
-          - name: first_time_downloads
-            description: '{{ doc("first_time_downloads") }}'
-          - name: redownloads
-            description: '{{ doc("redownloads") }}'
-          - name: total_downloads
-            description: '{{ doc("total_downloads") }}'
-
-      - name: downloads_source_type_device_report
-        identifier: "{{ var('apple_store_downloads_source_type_device_report_identifier', 'downloads_source_type_device_report')}}"
-        description: Daily downloads metrics (first time downloads, redownloads and total downloads) by device and source type.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: first_time_downloads
-            description: '{{ doc("first_time_downloads") }}'
-          - name: redownloads
-            description: '{{ doc("redownloads") }}'
-          - name: total_downloads
-            description: '{{ doc("total_downloads") }}'
-
-      - name: downloads_territory_source_type_report
-        identifier: "{{ var('apple_store_downloads_territory_source_type_report_identifier', 'downloads_territory_source_type_report')}}"
-        description: Daily downloads metrics (first time downloads, redownloads and total downloads) by territory and source type.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: territory
-            description: '{{ doc("territory") }}'
-          - name: first_time_downloads
-            description: '{{ doc("first_time_downloads") }}'
-          - name: redownloads
-            description: '{{ doc("redownloads") }}'
-          - name: total_downloads
-            description: '{{ doc("total_downloads") }}'
-
       - name: sales_account
         identifier: "{{ var('apple_store_sales_account_identifier', 'sales_account')}}"
         description: Table containing sales account data.
@@ -234,94 +84,171 @@ sources:
           - name: active_standard_price_subscriptions
             description: '{{ doc("active_standard_price_subscriptions") }}'
 
-      - name: usage_app_version_source_type_report
-        identifier: "{{ var('apple_store_usage_app_version_source_type_report_identifier', 'usage_app_version_source_type_report')}}"
-        description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by app version and source type.
+      - name: app_store_discovery_and_engagement_detailed_daily
+        identifier: "{{ var('apple_store_discovery_and_engagement_detailed_daily_identifier', 'app_store_discovery_and_engagement_detailed_daily') }}"
+        description: Contains daily metrics on how users discover and engage with your app on the App Store.
         columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
+          - name: _fivetran_id
+            description: Unique identifier assigned by Fivetran.
           - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: app_version
-            description: '{{ doc("app_version") }}'
-          - name: active_devices
-            description: '{{ doc("active_devices") }}'
-          - name: active_devices_last_30_days
-            description: '{{ doc("active_devices_last_30_days") }}'
-          - name: deletions
-            description: '{{ doc("deletions") }}'
-          - name: installations
-            description: '{{ doc("installations") }}'
-          - name: sessions
-            description: '{{ doc("sessions") }}'
-
-      - name: usage_platform_version_source_type_report
-        identifier: "{{ var('apple_store_usage_platform_version_source_type_report_identifier', 'usage_platform_version_source_type_report')}}"
-        description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by platform version and source type.
-        columns:
+            description: The unique identifier of your app.
           - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
+            description: The date of the recorded metrics.
+          - name: event
+            description: The type of user interaction event (e.g., Impression, Page View, Tap).
+          - name: page_type
+            description: The App Store page where the event occurred (e.g., Today, Games, Apps, Search).
           - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: platform_version
-            description: '{{ doc("platform_version") }}'
-          - name: active_devices
-            description: '{{ doc("active_devices") }}'
-          - name: active_devices_last_30_days
-            description: '{{ doc("active_devices_last_30_days") }}'
-          - name: deletions
-            description: '{{ doc("deletions") }}'
-          - name: installations
-            description: '{{ doc("installations") }}'
-          - name: sessions
-            description: '{{ doc("sessions") }}'
-
-      - name: usage_source_type_device_report
-        identifier: "{{ var('apple_store_usage_source_type_device_report_identifier', 'usage_source_type_device_report')}}"
-        description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by device and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
+            description: The origin from which users discovered your app (e.g., App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips).
+          - name: engagement_type
+            description: The specific user engagement action (e.g., Tap, Scroll).
           - name: device
-            description: '{{ doc("device") }}'
-          - name: active_devices
-            description: '{{ doc("active_devices") }}'
-          - name: active_devices_last_30_days
-            description: '{{ doc("active_devices_last_30_days") }}'
-          - name: deletions
-            description: '{{ doc("deletions") }}'
-          - name: installations
-            description: '{{ doc("installations") }}'
-          - name: sessions
-            description: '{{ doc("sessions") }}'
-
-      - name: usage_territory_source_type_report
-        identifier: "{{ var('apple_store_usage_territory_source_type_report_identifier', 'usage_territory_source_type_report')}}"
-        description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by territory and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
+            description: The type of device used (e.g., iPhone, iPad, Mac).
+          - name: platform_version
+            description: The operating system version on the user's device.
           - name: territory
-            description: '{{ doc("territory") }}'
-          - name: active_devices
-            description: '{{ doc("active_devices") }}'
-          - name: active_devices_last_30_days
-            description: '{{ doc("active_devices_last_30_days") }}'
-          - name: deletions
-            description: '{{ doc("deletions") }}'
-          - name: installations
-            description: '{{ doc("installations") }}'
+            description: The country or region where the event occurred.
+          - name: counts
+            description: The total number of events recorded.
+          - name: unique_counts
+            description: The number of unique devices associated with the events.
+          - name: page_title
+            description: The title of the App Store page where the event took place.
+          - name: source_info
+            description: Additional information about the source of the event.
+          - name: _fivetran_synced
+            description: Timestamp indicating when the data was last synchronized by Fivetran.
+
+      - name: app_crash_daily
+        identifier: "{{ var('apple_store_crash_daily_identifier', 'app_crash_daily') }}"
+        description: Provides daily data on app crashes, helping you understand app stability across different versions and devices.
+        columns:
+          - name: _fivetran_id
+            description: Unique identifier assigned by Fivetran.
+          - name: app_id
+            description: The unique identifier of your app.
+          - name: date
+            description: The date when the crashes were recorded.
+          - name: app_version
+            description: The version of your app that experienced crashes.
+          - name: device
+            description: The type of device on which the crash occurred.
+          - name: platform_version
+            description: The operating system version on the user's device.
+          - name: crashes
+            description: The total number of crashes recorded.
+          - name: unique_devices
+            description: The number of unique devices that experienced crashes.
+          - name: _fivetran_synced
+            description: Timestamp indicating when the data was last synchronized by Fivetran.
+
+      - name: app_store_download_detailed_daily
+        identifier: "{{ var('apple_store_download_detailed_daily_identifier', 'app_store_download_detailed_daily') }}"
+        description: Contains detailed daily metrics on app downloads, including download types and sources.
+        columns:
+          - name: _fivetran_id
+            description: Unique identifier assigned by Fivetran.
+          - name: app_id
+            description: The unique identifier of your app.
+          - name: date
+            description: The date when the downloads were recorded.
+          - name: download_type
+            description: The type of download event (e.g., First-Time Download, Redownload, Auto-Download, Manual Update, Restore).
+          - name: app_version
+            description: The version of your app that was downloaded.
+          - name: device
+            description: The type of device on which the download occurred.
+          - name: platform_version
+            description: The operating system version on the user's device.
+          - name: source_type
+            description: The origin from which users discovered your app leading to the download.
+          - name: page_type
+            description: The App Store page where the download was initiated.
+          - name: pre_order
+            description: Indicates whether the download was a result of a pre-order.
+          - name: territory
+            description: The country or region where the download occurred.
+          - name: counts
+            description: The total number of downloads recorded.
+          - name: source_info
+            description: Additional information about the source of the download.
+          - name: page_title
+            description: The title of the App Store page where the download took place.
+          - name: _fivetran_synced
+            description: Timestamp indicating when the data was last synchronized by Fivetran.
+
+      - name: app_session_detailed_daily
+        identifier: "{{ var('apple_store_session_detailed_daily_identifier', 'app_session_detailed_daily') }}"
+        description: Provides detailed daily metrics on user sessions within your app, including session duration and device information.
+        columns:
+          - name: _fivetran_id
+            description: Unique identifier assigned by Fivetran.
+          - name: app_id
+            description: The unique identifier of your app.
+          - name: date
+            description: The date when the sessions were recorded.
+          - name: app_version
+            description: The version of your app used during the sessions.
+          - name: device
+            description: The type of device used during the sessions.
+          - name: platform_version
+            description: The operating system version on the user's device.
+          - name: source_type
+            description: The origin from which users discovered your app leading to the session.
+          - name: page_type
+            description: The App Store page where the session was initiated.
+          - name: app_download_date
+            description: The date when the app was downloaded on the user's device.
+          - name: territory
+            description: The country or region where the session occurred.
           - name: sessions
-            description: '{{ doc("sessions") }}'
+            description: The total number of sessions recorded.
+          - name: total_session_duration
+            description: The cumulative duration of all sessions in seconds.
+          - name: unique_devices
+            description: The number of unique devices that initiated sessions.
+          - name: source_info
+            description: Additional information about the source of the session.
+          - name: page_title
+            description: The title of the App Store page where the session took place.
+          - name: _fivetran_synced
+            description: Timestamp indicating when the data was last synchronized by Fivetran.
+
+      - name: app_store_installation_and_deletion_detailed_daily
+        identifier: "{{ var('apple_store_installation_and_deletion_detailed_daily_identifier', 'app_store_installation_and_deletion_detailed_daily') }}"
+        description: Contains detailed daily metrics on app installations and deletions, providing insights into user acquisition and retention.
+        columns:
+          - name: _fivetran_id
+            description: Unique identifier assigned by Fivetran.
+          - name: app_id
+            description: The unique identifier of your app.
+          - name: date
+            description: The date when the installation or deletion event was recorded.
+          - name: event
+            description: The type of event, either 'Install' or 'Delete'.
+          - name: download_type
+            description: The type of download event (e.g., First-Time Download, Redownload, Auto-Download, Manual Update, Restore).
+          - name: app_version
+            description: The version of your app associated with the event.
+          - name: device
+            description: The type of device on which the event occurred (e.g., iPhone, iPad, Mac).
+          - name: platform_version
+            description: The operating system version on the user's device.
+          - name: source_type
+            description: The origin from which users discovered your app leading to the installation or deletion.
+          - name: page_type
+            description: The App Store page where the event was initiated.
+          - name: app_download_date
+            description: The date when the app was originally downloaded on the user's device.
+          - name: territory
+            description: The country or region where the event occurred.
+          - name: counts
+            description: The total number of installations or deletions recorded.
+          - name: unique_devices
+            description: The number of unique devices that performed the installation or deletion.
+          - name: source_info
+            description: Additional information about the source of the event.
+          - name: page_title
+            description: The title of the App Store page where the event took place.
+          - name: _fivetran_synced
+            description: Timestamp indicating when the data was last synchronized by Fivetran.
