@@ -22,35 +22,74 @@ models:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
             - source_relation
-            - date_day
-            - account_id
-            - app_name
-            - subscription_name
-            - device
-            - event
-            - country
-            - state
+            - vendor_number
+            - _fivetran_id
     columns:
-      - name: source_relation
-        description: "{{ doc('source_relation') }}"
-      - name: date_day
+      - name: _fivetran_id
+        description: '{{ doc("_fivetran_id") }}'
+      - name: _fivetran_synced
+        description: '{{ doc("_fivetran_synced") }}'
+      - name: vendor_number
+        description: '{{ doc("vendor_number") }}'
+      - name: event_date
         description: '{{ doc("date_day") }}'
-      - name: account_id
-        description: '{{ doc("account_id") }}'
-      - name: app_name
-        description: '{{ doc("app_name") }}'
-      - name: subscription_name
-        description: '{{ doc("subscription_name") }}'
       - name: event
         description: '{{ doc("event") }}'
-      - name: country
-        description: '{{ doc("country") }}'
-      - name: state
-        description: '{{ doc("state") }}'
+      - name: app_name
+        description: '{{ doc("app_name") }}'
+      - name: app_apple_id
+        description: '{{ doc("app_apple_id") }}'
+      - name: subscription_name
+        description: '{{ doc("subscription_name") }}'
+      - name: subscription_apple_id
+        description: '{{ doc("subscription_apple_id") }}'
+      - name: subscription_group_id
+        description: '{{ doc("subscription_group_id") }}'
+      - name: standard_subscription_duration
+        description: '{{ doc("standard_subscription_duration") }}'
+      - name: subscription_offer_type
+        description: '{{ doc("subscription_offer_type") }}'
+      - name: subscription_offer_duration
+        description: '{{ doc("subscription_offer_duration") }}'
+      - name: marketing_opt_in
+        description: '{{ doc("marketing_opt_in") }}'
+      - name: marketing_opt_in_duration
+        description: '{{ doc("marketing_opt_in_duration") }}'
+      - name: preserved_pricing
+        description: '{{ doc("preserved_pricing") }}'
+      - name: proceeds_reason
+        description: '{{ doc("proceeds_reason") }}'
+      - name: promotional_offer_name
+        description: '{{ doc("promotional_offer_name") }}'
+      - name: promotional_offer_id
+        description: '{{ doc("promotional_offer_id") }}'
+      - name: consecutive_paid_periods
+        description: '{{ doc("consecutive_paid_periods") }}'
+      - name: original_start_date
+        description: '{{ doc("original_start_date") }}'
       - name: device
         description: '{{ doc("device") }}'
+      - name: client
+        description: '{{ doc("client") }}'
+      - name: state
+        description: '{{ doc("state") }}'
+      - name: country
+        description: '{{ doc("country") }}'
+      - name: previous_subscription_name
+        description: '{{ doc("previous_subscription_name") }}'
+      - name: previous_subscription_apple_id
+        description: '{{ doc("previous_subscription_apple_id") }}'
+      - name: days_before_canceling
+        description: '{{ doc("days_before_canceling") }}'
+      - name: cancellation_reason
+        description: '{{ doc("cancellation_reason") }}'
+      - name: days_canceled
+        description: '{{ doc("days_canceled") }}'
       - name: quantity
         description: '{{ doc("quantity") }}'
+      - name: paid_service_days_recovered
+        description: '{{ doc("paid_service_days_recovered") }}'
+
 
   - name: stg_apple_store__sales_subscription_summary
     description: Daily subscription summary report by account ID, app name, country, state and subscription name; this model is aggregated by date, app_name, account_id, country, state and subscription_name for easier transformations in the modeling package.
@@ -58,36 +97,81 @@ models:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
             - source_relation
-            - date_day
-            - account_id
-            - app_name
-            - subscription_name
-            - device
-            - country
-            - state
+            - vendor_number
+            - _fivetran_id
     columns:
-      - name: source_relation
-        description: "{{ doc('source_relation') }}"
-      - name: date_day
-        description: '{{ doc("date_day") }}'
+      - name: _fivetran_id
+        description: '{{ doc("_fivetran_id") }}'
+      - name: _fivetran_synced
+        description: '{{ doc("_fivetran_synced") }}'
+      - name: vendor_number
+        description: '{{ doc("vendor_number") }}'
       - name: app_name
         description: '{{ doc("app_name") }}'
-      - name: account_id
-        description: '{{ doc("account_id") }}'
-      - name: country
-        description: '{{ doc("country") }}'
-      - name: state
-        description: '{{ doc("state") }}'
+      - name: app_apple_id
+        description: '{{ doc("app_apple_id") }}'
       - name: subscription_name
         description: '{{ doc("subscription_name") }}'
-      - name: active_free_trial_introductory_offer_subscriptions
-        description: '{{ doc("active_free_trial_introductory_offer_subscriptions") }}'
-      - name: active_pay_as_you_go_introductory_offer_subscriptions
-        description: '{{ doc("active_pay_as_you_go_introductory_offer_subscriptions") }}'
-      - name: active_pay_up_front_introductory_offer_subscriptions
-        description: '{{ doc("active_pay_up_front_introductory_offer_subscriptions") }}'
+      - name: subscription_apple_id
+        description: '{{ doc("subscription_apple_id") }}'
+      - name: subscription_group_id
+        description: '{{ doc("subscription_group_id") }}'
+      - name: standard_subscription_duration
+        description: '{{ doc("standard_subscription_duration") }}'
+      - name: customer_price
+        description: '{{ doc("customer_price") }}'
+      - name: customer_currency
+        description: '{{ doc("customer_currency") }}'
+      - name: developer_proceeds
+        description: '{{ doc("developer_proceeds") }}'
+      - name: proceeds_currency
+        description: '{{ doc("proceeds_currency") }}'
+      - name: preserved_pricing
+        description: '{{ doc("preserved_pricing") }}'
+      - name: proceeds_reason
+        description: '{{ doc("proceeds_reason") }}'
+      - name: subscription_offer_name
+        description: '{{ doc("subscription_offer_name") }}'
+      - name: promotional_offer_id
+        description: '{{ doc("promotional_offer_id") }}'
+      - name: state
+        description: '{{ doc("state") }}'
+      - name: country
+        description: '{{ doc("country") }}'
+      - name: device
+        description: '{{ doc("device") }}'
+      - name: client
+        description: '{{ doc("client") }}'
       - name: active_standard_price_subscriptions
         description: '{{ doc("active_standard_price_subscriptions") }}'
+      - name: active_free_trial_introductory_offer_subscriptions
+        description: '{{ doc("active_free_trial_introductory_offer_subscriptions") }}'
+      - name: active_pay_up_front_introductory_offer_subscriptions
+        description: '{{ doc("active_pay_up_front_introductory_offer_subscriptions") }}'
+      - name: active_pay_as_you_go_introductory_offer_subscriptions
+        description: '{{ doc("active_pay_as_you_go_introductory_offer_subscriptions") }}'
+      - name: free_trial_promotional_offer_subscriptions
+        description: '{{ doc("free_trial_promotional_offer_subscriptions") }}'
+      - name: pay_up_front_promotional_offer_subscriptions
+        description: '{{ doc("pay_up_front_promotional_offer_subscriptions") }}'
+      - name: pay_as_you_go_promotional_offer_subscriptions
+        description: '{{ doc("pay_as_you_go_promotional_offer_subscriptions") }}'
+      - name: marketing_opt_ins
+        description: '{{ doc("marketing_opt_ins") }}'
+      - name: billing_retry
+        description: '{{ doc("billing_retry") }}'
+      - name: grace_period
+        description: '{{ doc("grace_period") }}'
+      - name: free_trial_offer_code_subscriptions
+        description: '{{ doc("free_trial_offer_code_subscriptions") }}'
+      - name: pay_up_front_offer_code_subscriptions
+        description: '{{ doc("pay_up_front_offer_code_subscriptions") }}'
+      - name: pay_as_you_go_offer_code_subscriptions
+        description: '{{ doc("pay_as_you_go_offer_code_subscriptions") }}'
+      - name: subscribers
+        description: '{{ doc("subscribers") }}'
+      - name: date
+        description: '{{ doc("date_day") }}'
 
   - name: stg_apple_store__app_crash_daily
     description: Provides daily data on app crashes, helping you understand app stability across different versions and devices.

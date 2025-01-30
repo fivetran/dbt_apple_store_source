@@ -137,3 +137,151 @@ The total count of events, based on users who have agreed to share their data wi
 {% docs source_info %}
 Additional information about the source that referred users to your app's product page, such as the referring app or website.
 {% enddocs %}
+
+{% docs vendor_number %}
+The vendor number associated with the subscription event or summary.
+{% enddocs %}
+
+{% docs app_apple_id %}
+Apple ID of your subscription’s parent app.
+{% enddocs %}
+
+{% docs subscription_apple_id %}
+Apple ID of your subscription’s parent app.
+{% enddocs %}
+
+{% docs subscription_group_id %}
+The group ID of the subscription.
+{% enddocs %}
+
+{% docs standard_subscription_duration %}
+The duration of the standard subscription (e.g., 1 Month, 1 Year).
+{% enddocs %}
+
+{% docs subscription_offer_type %}
+The type of subscription offer (e.g., Free Trial, Introductory Offer).
+{% enddocs %}
+
+{% docs subscription_offer_duration %}
+The duration of the subscription offer (e.g., 7 Days).
+{% enddocs %}
+
+{% docs marketing_opt_in %}
+If the subscription included a marketing opt-in, this field equals “Yes”. Otherwise, it is blank.
+{% enddocs %}
+
+{% docs marketing_opt_in_duration %}
+Duration of the opt-in if applicable (e.g., 7 Days, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year).
+{% enddocs %}
+
+{% docs preserved_pricing %}
+For Renew events, if the price is preserved, this field equals “Yes”. Otherwise, it is blank.
+{% enddocs %}
+
+{% docs proceeds_reason %}
+For Renew events, if the subscription has been active for more than a year then you receive 85% of the customer price, minus applicable taxes, and this field equals “Rate After One Year”. Otherwise, you receive 70% and the field is blank.
+{% enddocs %}
+
+{% docs promotional_offer_name %}
+The name of the promotional offer.
+{% enddocs %}
+
+{% docs promotional_offer_id %}
+The ID of the promotional offer.
+{% enddocs %}
+
+{% docs consecutive_paid_periods %}
+The total number of paid periods that the subscription has been active without cancellation. This does not include free trials, marketing opt-in bonus periods, or grace periods.
+{% enddocs %}
+
+{% docs original_start_date %}
+The original start date of the subscription.
+{% enddocs %}
+
+{% docs client %}
+The client associated with the subscription.
+{% enddocs %}
+
+{% docs previous_subscription_name %}
+The name of the previous subscription.
+{% enddocs %}
+
+{% docs previous_subscription_apple_id %}
+The Apple ID of the previous subscription.
+{% enddocs %}
+
+{% docs days_before_canceling %}
+For cancel events, the number of days from the start date to when a subscriber canceled, which could be in the middle of the period. This only applies to cancel events where cancellation reason equals ‘canceled.' Otherwise, it is blank.
+{% enddocs %}
+
+{% docs cancellation_reason %}
+Reason for a cancellation (e.g., Billing issue, Price increase, Canceled, Removed from Sale, or Other.)
+{% enddocs %}
+
+{% docs days_canceled %}
+For reactivate events, the number of days ago that the subscriber canceled.
+{% enddocs %}
+
+{% docs paid_service_days_recovered %}
+The estimated number of paid service days recovered due to Billing Grace Period.
+{% enddocs %}
+
+{% docs customer_price %}
+The price paid by the customer.
+{% enddocs %}
+
+{% docs customer_currency %}
+Three-character ISO code indicating the customer’s currency. 
+{% enddocs %}
+
+{% docs developer_proceeds %}
+The proceeds for each item delivered.
+{% enddocs %}
+
+{% docs proceeds_currency %}
+The currency of the developer proceeds.
+{% enddocs %}
+
+{% docs subscription_offer_name %}
+The name of the subscription offer.
+{% enddocs %}
+
+{% docs free_trial_promotional_offer_subscriptions %}
+The number of free trial promotional offer subscriptions.
+{% enddocs %}
+
+{% docs pay_up_front_promotional_offer_subscriptions %}
+The number of pay-up-front promotional offer subscriptions.
+{% enddocs %}
+
+{% docs pay_as_you_go_promotional_offer_subscriptions %}
+The number of pay-as-you-go promotional offer subscriptions.
+{% enddocs %}
+
+{% docs marketing_opt_ins %}
+The number of marketing opt-ins.
+{% enddocs %}
+
+{% docs billing_retry %}
+The number of billing retries.
+{% enddocs %}
+
+{% docs grace_period %}
+The number of grace periods.
+{% enddocs %}
+
+{% docs free_trial_offer_code_subscriptions %}
+The number of free trial offer code subscriptions.
+{% enddocs %}
+
+{% docs pay_up_front_offer_code_subscriptions %}
+The number of pay-up-front offer code subscriptions.
+{% enddocs %}
+
+{% docs pay_as_you_go_offer_code_subscriptions %}
+The number of pay-as-you-go offer code subscriptions.
+{% enddocs %}
+
+{% docs subscribers %}
+The number of subscribers.
+{% enddocs %}
