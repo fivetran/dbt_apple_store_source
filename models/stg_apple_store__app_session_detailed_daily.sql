@@ -28,6 +28,7 @@ final as (
 
     select
         cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
+        cast(_fivetran_id as {{ dbt.type_string() }}) as _fivetran_id,
         cast(date as date) as date_day,
         cast(app_id as {{ dbt.type_bigint() }}) as app_id,
         cast(app_version as {{ dbt.type_string() }}) as app_version,
