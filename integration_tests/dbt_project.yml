@@ -1,7 +1,7 @@
 config-version: 2
 
 name: 'apple_store_source_integration_tests'
-version: '0.4.0'
+version: '0.5.0'
 
 profile: 'integration_tests' 
 
@@ -11,7 +11,7 @@ vars:
   apple_store_source:
     apple_store_app_identifier: "app"
     apple_store_sales_account_identifier: "sales_account"
-    apple_store_sales_subscription_event_summary_identifier: "sales_subscription_events"
+    apple_store_sales_subscription_event_summary_identifier: "sales_subscription_event_summary"
     apple_store_sales_subscription_summary_identifier: "sales_subscription_summary"
     apple_store_discovery_and_engagement_detailed_daily_identifier: "app_store_discovery_and_engagement_detailed_daily"
     apple_store_crash_daily_identifier: "app_crash_daily"
