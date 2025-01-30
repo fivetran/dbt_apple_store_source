@@ -16,21 +16,6 @@ models:
       - name: app_name
         description: '{{ doc("app_name") }}'
 
-  - name: stg_apple_store__sales_account
-    description: Table containing sales account data.
-    tests:
-      - dbt_utils.unique_combination_of_columns:
-          combination_of_columns:
-            - source_relation
-            - account_id
-    columns:
-      - name: source_relation
-        description: "{{ doc('source_relation') }}" 
-      - name: account_id
-        description: '{{ doc("account_id") }}'
-      - name: account_name
-        description: '{{ doc("account_name")}}'
-
   - name: stg_apple_store__sales_subscription_events
     description: Daily subscription event report by account ID, app name, subscription name, event, country, state and device; this model is aggregated by date, app_name, account_id, country, state and subscription_name for easier transformations in the modeling package.
     tests:
@@ -103,29 +88,6 @@ models:
         description: '{{ doc("active_pay_up_front_introductory_offer_subscriptions") }}'
       - name: active_standard_price_subscriptions
         description: '{{ doc("active_standard_price_subscriptions") }}'
-
-seeds:
-  - name: apple_store_country_codes
-    description: ISO-3166 country mapping table
-    columns:
-      - name: country_name
-        description: '{{ doc("country_name") }}'
-      - name: alternative_country_name
-        description: '{{ doc("alternative_country_name") }}'
-      - name: country_code_numeric
-        description: '{{ doc("country_code_numeric") }}'
-      - name: country_code_alpha_2
-        description: '{{ doc("country_code_alpha_2") }}'
-      - name: country_code_alpha_3
-        description: '{{ doc("country_code_alpha_3") }}'
-      - name: region
-        description: '{{ doc("region") }}'
-      - name: region_code
-        description: '{{ doc("region_code") }}'
-      - name: sub_region
-        description: '{{ doc("sub_region") }}'
-      - name: sub_region_code
-        description: '{{ doc("sub_region_code") }}'
 
   - name: stg_apple_store__app_crash_daily
     description: Provides daily data on app crashes, helping you understand app stability across different versions and devices.
@@ -298,3 +260,26 @@ seeds:
         description: '{{ doc("page_title") }}'
       - name: source_info
         description: '{{ doc("source_info") }}'
+
+seeds:
+  - name: apple_store_country_codes
+    description: ISO-3166 country mapping table
+    columns:
+      - name: country_name
+        description: '{{ doc("country_name") }}'
+      - name: alternative_country_name
+        description: '{{ doc("alternative_country_name") }}'
+      - name: country_code_numeric
+        description: '{{ doc("country_code_numeric") }}'
+      - name: country_code_alpha_2
+        description: '{{ doc("country_code_alpha_2") }}'
+      - name: country_code_alpha_3
+        description: '{{ doc("country_code_alpha_3") }}'
+      - name: region
+        description: '{{ doc("region") }}'
+      - name: region_code
+        description: '{{ doc("region_code") }}'
+      - name: sub_region
+        description: '{{ doc("sub_region") }}'
+      - name: sub_region_code
+        description: '{{ doc("sub_region_code") }}'
