@@ -25,6 +25,7 @@
     {"name": "promotional_offer_id", "datatype": dbt.type_string()},
     {"name": "promotional_offer_name", "datatype": dbt.type_string()},
     {"name": "quantity", "datatype": dbt.type_int()},
+    {"name": "paid_service_days_recovered", "datatype": dbt.type_int()},
     {"name": "standard_subscription_duration", "datatype": dbt.type_string()},
     {"name": "state", "datatype": dbt.type_string()},
     {"name": "subscription_apple_id", "datatype": dbt.type_int()},
