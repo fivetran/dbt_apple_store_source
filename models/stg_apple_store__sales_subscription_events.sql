@@ -30,6 +30,7 @@ final as (
     select
         cast(source_relation as {{ dbt.type_string() }}) as source_relation, 
         cast(event_date as date) as date_day,
+        cast(_fivetran_id as {{ dbt.type_string() }}) as _fivetran_id,
         cast(vendor_number as {{ dbt.type_int() }}) as vendor_number,
         cast(app_apple_id as {{ dbt.type_int() }}) as app_apple_id,
         cast(app_name as {{ dbt.type_string() }}) as app_name,

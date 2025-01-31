@@ -181,6 +181,7 @@ models:
             - source_relation
             - date_day
             - app_id
+            - _fivetran_id
     columns:
       - name: source_relation
         description: "{{ doc('source_relation') }}"
@@ -207,6 +208,7 @@ models:
             - source_relation
             - date_day
             - app_id
+            - _fivetran_id
     columns:
       - name: source_relation
         description: "{{ doc('source_relation') }}"
@@ -243,6 +245,7 @@ models:
             - source_relation
             - date_day
             - app_id
+            - _fivetran_id
     columns:
       - name: source_relation
         description: "{{ doc('source_relation') }}"
@@ -277,6 +280,7 @@ models:
             - source_relation
             - date_day
             - app_id
+            - _fivetran_id
     columns:
       - name: source_relation
         description: "{{ doc('source_relation') }}"
@@ -315,6 +319,7 @@ models:
             - source_relation
             - date_day
             - app_id
+            - _fivetran_id
     columns:
       - name: source_relation
         description: "{{ doc('source_relation') }}"
