@@ -37,7 +37,7 @@ final as (
         cast(platform_version as {{ dbt.type_string() }}) as platform_version,
         cast(source_type as {{ dbt.type_string() }}) as source_type,
         cast(page_type as {{ dbt.type_string() }}) as page_type,
-        cast(pre_order as {{ dbt.type_boolean() }}) as pre_order,
+        cast(pre_order as {{ dbt.type_string() }}) as pre_order, 
         cast(territory as {{ dbt.type_string() }}) as territory,
         cast(counts as {{ dbt.type_bigint() }}) as counts,
         cast(source_info as {{ dbt.type_string() }}) as source_info,
