@@ -33,6 +33,7 @@ final as (
         cast(vendor_number as {{ dbt.type_int() }}) as vendor_number,
         cast(app_apple_id as {{ dbt.type_int() }}) as app_apple_id,
         cast(app_name as {{ dbt.type_string() }}) as app_name,
+        cast(event as {{ dbt.type_string() }}) as event,
         cast(subscription_name as {{ dbt.type_string() }}) as subscription_name,
         cast(subscription_apple_id as {{ dbt.type_int() }}) as subscription_apple_id,
         cast(subscription_group_id as {{ dbt.type_int() }}) as subscription_group_id,
