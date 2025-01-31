@@ -6,11 +6,11 @@ version: '0.5.0'
 profile: 'integration_tests' 
 
 vars:
+  # apple_store__using_subscriptions: True ## comment out when not testing or docs
   # apple_store__using_subscriptions: True # un-comment this line when generating docs!
   apple_store_schema: apple_store_source_integrations_tests_2
   apple_store_source:
-    apple_store_app_identifier: "app"
-    apple_store_sales_account_identifier: "sales_account"
+    apple_store_app_identifier: "app_store_app"
     apple_store_sales_subscription_event_summary_identifier: "sales_subscription_event_summary"
     apple_store_sales_subscription_summary_identifier: "sales_subscription_summary"
     apple_store_discovery_and_engagement_detailed_daily_identifier: "app_store_discovery_and_engagement_detailed_daily"
