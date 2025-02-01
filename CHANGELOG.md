@@ -1,4 +1,14 @@
-# dbt_apple_store_source version.version
+# dbt_apple_store_source v0.5.0
+
+## Breaking Changes: Schema Change
+- Following the connector's [Nov 2024 Update](https://fivetran.com/docs/connectors/applications/apple-app-store/changelog#november2024) to sync from the [App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi), we've updated this dbt package to reflect the new schema which includes the following changes:
+
+- Tables Removed
+
+- Tables Added
+
+## Under the Hood
+- Updated unique tests, documentation, and seed files to reflect the new tables.
 
 ## Documentation
 - Corrected references to connectors and connections in the README. ([#17](https://github.com/fivetran/dbt_apple_store_source/pull/17))

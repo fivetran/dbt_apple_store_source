@@ -35,7 +35,7 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs date_day %} The date of the report and respective recorded metric(s); follows the format `YYYY-MM-DD`. {% enddocs %}
 
-{% docs deletions %} A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day. {% enddocs %}
+{% docs deletions %} The number of times your app is deleted. A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day. {% enddocs %}
 
 {% docs device %} Device type associated with the respective metric(s). {% enddocs %}
 
@@ -47,7 +47,7 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs impressions_unique_device %} The number of unique devices that viewed your app icon in a list alongside other apps, including in search results, charts, and the Today, Apps, and Games tabs. Page views are not included in these counts. In the models, this is deduplicated across the given grain. {% enddocs %}
 
-{% docs installations %} The number of time your app is installed on a device. {% enddocs %}
+{% docs installations %} The number of times your app is installed. {% enddocs %}
 
 {% docs page_views %} The number of times a user was presented with a dedicated page for your app or in-app event. {% enddocs %}
 
@@ -59,7 +59,7 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs sessions %} The number of sessions. Based on users who have agreed to share their data with Apple and developers. {% enddocs %}
 
-{% docs redownloads %} A subsequent installation of an app onto a device by an Apple ID account. Counted when a user taps the redownload button on the App Store. {% enddocs %}
+{% docs redownloads %} The number of times your app is redownloaded. A redownload is a subsequent installation of an app onto a device by an Apple ID account. Counted when a user taps the redownload button on the App Store. {% enddocs %}
 
 {% docs region %} The UN Statistics region name assignment. ([Original Source](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv)) {% enddocs %}
 
@@ -110,10 +110,6 @@ The total number of unique users that performed the event.
 The number of unique devices on which events were generated, based on users who have agreed to share their data with Apple and developers.
 {% enddocs %}
 
-{% docs page_title %}
-The name of the product page or in-app event page where the user interaction occurred.
-{% enddocs %}
-
 {% docs page_type %}
 The page type which led the user to discover your app.
 {% enddocs %}
@@ -122,20 +118,12 @@ The page type which led the user to discover your app.
 The date when the user originally downloaded the app on their device.
 {% enddocs %}
 
-{% docs _fivetran_id %}
-A Fivetran-generated key that is unique to each record for a given date and app.
-{% enddocs %}
-
 {% docs engagement_type %}
 The type of user engagement action (e.g., Tap, Scroll).
 {% enddocs %}
 
 {% docs counts %}
 The total count of events, based on users who have agreed to share their data with Apple and developers.
-{% enddocs %}
-
-{% docs source_info %}
-Additional information about the source that referred users to your app's product page, such as the referring app or website.
 {% enddocs %}
 
 {% docs vendor_number %}
@@ -284,4 +272,16 @@ The number of pay-as-you-go offer code subscriptions.
 
 {% docs subscribers %}
 The number of subscribers.
+{% enddocs %}
+
+{% docs _fivetran_id %}
+A Fivetran-generated key that is unique for each record, for each app and date or for each vendor, depending on the table.
+{% enddocs %}
+
+{% docs source_info %}
+The app referrer or web referrer that led the user to discover the app.
+{% enddocs %}
+
+{% docs page_title %}
+The name of the product page or in-app event page that led the user to download the app associated with the session.
 {% enddocs %}
