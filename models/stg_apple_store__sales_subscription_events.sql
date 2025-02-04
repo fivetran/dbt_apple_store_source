@@ -51,7 +51,9 @@ final as (
         cast(original_start_date as date) as original_start_date,
         cast(device as {{ dbt.type_string() }}) as device,
         cast(client as {{ dbt.type_string() }}) as client,
-        cast(state as {{ dbt.type_string() }}) as state,
+        cast(case
+            when replace(state, ' ', '') = '' then cast(null as {{ dbt.type_string() }}) else state
+        end as {{ dbt.type_string() }}) as state,
         cast(country as {{ dbt.type_string() }}) as country,
         cast(previous_subscription_name as {{ dbt.type_string() }}) as previous_subscription_name,
         cast(previous_subscription_apple_id as {{ dbt.type_int() }}) as previous_subscription_apple_id,

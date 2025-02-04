@@ -46,7 +46,9 @@ final as (
         cast(proceeds_reason as {{ dbt.type_string() }}) as proceeds_reason,
         cast(subscription_offer_name as {{ dbt.type_string() }}) as subscription_offer_name,
         cast(promotional_offer_id as {{ dbt.type_string() }}) as promotional_offer_id,
-        cast(state as {{ dbt.type_string() }}) as state,
+        cast(case
+            when replace(state, ' ', '') = '' then cast(null as {{ dbt.type_string() }}) else state
+        end as {{ dbt.type_string() }}) as state,
         cast(country as {{ dbt.type_string() }}) as country,
         cast(device as {{ dbt.type_string() }}) as device,
         cast(client as {{ dbt.type_string() }}) as client,
