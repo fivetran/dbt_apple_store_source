@@ -1,5 +1,5 @@
 _fivetran_id,app_id,date,event,download_type,app_version,device,platform_version,source_type,page_type,app_download_date,territory,counts,unique_devices,source_info,page_title,_fivetran_synced
-rLTCNO6J9D59i7ffRhp+E5EyleQ=,239587236,2024-11-11,Install,Manual update,329372.0,iPhone,iOS 17.5,Web referrer,Product page,,AU,5,5,walmart.com,Default Custom Product Page,2024-11-16 17:09:33.790 +00:00
+rLTCNO6J9D59i7ffRhp+E5EyleQ=,239587236,2024-11-11,Install,Manual update,329372.0,iPhone,iOS 17.5,Web referrer,Product page,,AU,5,5,source_website.com,Default Custom Product Page,2024-11-16 17:09:33.790 +00:00
 4NMQBTa2qQSIR9OAJEoekOzqANM=,239587236,2024-11-11,Install,Manual update,329372.1,iPhone,iOS 18.1,App Store browse,No page,2024-10-24,MX,6,6,,Default No Page,2024-11-16 17:09:34.269 +00:00
 TGwYHBcBQrDPz5kyrHqwRquf2Pc=,239587236,2024-11-12,Install,Manual update,329372.0,iPhone,iOS 18.0,App Store search,No page,,CR,5,5,,Default No Page,2024-11-18 05:10:16.445 +00:00
 QnICsNy0tjs++YD8Jd/gKnkVqr8=,239587236,2024-11-12,Install,Redownload,329372.1,iPhone,iOS 18.0,App Store browse,No page,2024-11-11,US,12,5,,Default No Page,2024-11-18 05:10:17.222 +00:00
