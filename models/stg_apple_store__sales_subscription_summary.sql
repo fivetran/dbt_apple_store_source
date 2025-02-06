@@ -51,6 +51,7 @@ final as (
         end as {{ dbt.type_string() }}) as state,
         cast(country as {{ dbt.type_string() }}) as country,
         cast(device as {{ dbt.type_string() }}) as device,
+        cast('' as {{ dbt.type_string() }}) as source_type,
         cast(client as {{ dbt.type_string() }}) as client,
         cast(active_standard_price_subscriptions as {{ dbt.type_int() }}) as active_standard_price_subscriptions,
         cast(active_free_trial_introductory_offer_subscriptions as {{ dbt.type_int() }}) as active_free_trial_introductory_offer_subscriptions,
