@@ -89,6 +89,9 @@ models:
         description: '{{ doc("quantity") }}'
       - name: paid_service_days_recovered
         description: '{{ doc("paid_service_days_recovered") }}'
+      - name: source_type
+        description: A null field for this subscription data, but created to assist with joins downstream.
+
 
 
   - name: stg_apple_store__sales_subscription_summary
@@ -172,6 +175,9 @@ models:
         description: '{{ doc("subscribers") }}'
       - name: date_day
         description: '{{ doc("date_day") }}'
+      - name: source_type
+        description: A null field for this subscription data, but created to assist with joins downstream.
+
 
   - name: stg_apple_store__app_crash_daily
     description: Provides daily data on app crashes, helping you understand app stability across different versions and devices.
@@ -201,6 +207,8 @@ models:
         description: '{{ doc("crashes") }}'
       - name: unique_devices
         description: '{{ doc("unique_devices") }}'
+      - name: source_type
+        description: A null field for crash data, but created to assist with joins downstream.
 
   - name: stg_apple_store__app_session_daily
     description: Provides detailed daily metrics on user sessions within your app, including session duration and device information.
