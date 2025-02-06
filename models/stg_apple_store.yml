@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_apple_store__app_store_app
+  - name: stg_apple_store__app
     description: Table containing data about your application(s)
     tests:
       - dbt_utils.unique_combination_of_columns:
