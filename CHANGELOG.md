@@ -3,9 +3,13 @@
 ## Breaking Changes: Schema Change
 - Following the connector's [Nov 2024 Update](https://fivetran.com/docs/connectors/applications/apple-app-store/changelog#november2024) to sync from the [App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi), we've updated this dbt package to reflect the new schema which includes the following changes:
 
-- Tables Removed
+- *Models Removed*
 
-- Tables Added
+- *Models Added*
+
+- *Models Modified* : Previously, the below models were pre-filtered along select dimensions; fields were aggregated accordingly. However, to follow our standard staging model structure, now we have included all columns present in the respective underlying source tables and moved aggregations downstream in the transforms package. 
+  - `stg_apple_store__sales_subscription_events`
+  - `stg_apple_store__sales_subscription_summary`
 
 ## Under the Hood
 - Updated unique tests, documentation, and seed files to reflect the new tables.

@@ -33,7 +33,7 @@ final as (
         cast(app_id as {{ dbt.type_bigint() }}) as app_id,
         cast(app_version as {{ dbt.type_string() }}) as app_version,
         cast(device as {{ dbt.type_string() }}) as device,
-        cast('' as {{ dbt.type_string() }}) as source_type,
+        cast('' as {{ dbt.type_string() }}) as source_type, -- adding source_type in order to join with other models downstream
         cast(platform_version as {{ dbt.type_string() }}) as platform_version,
         cast(crashes as {{ dbt.type_bigint() }}) as crashes,
         cast(unique_devices as {{ dbt.type_bigint() }}) as unique_devices

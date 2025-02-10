@@ -1,4 +1,6 @@
-<p align="center">
+# Apple App Store Source dbt Package ([Docs](https://fivetran.github.io/dbt_apple_store_source/))
+
+<p align="left">
     <a alt="License"
         href="https://github.com/fivetran/dbt_apple_store_source/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" /></a>
@@ -10,7 +12,6 @@
         <img src="https://img.shields.io/badge/Contributions-welcome-blueviolet" /></a>
 </p>
 
-# Apple App Store Source dbt Package ([Docs](https://fivetran.github.io/dbt_apple_store_source/))
 ## What does this dbt package do?
 - Materializes [Apple App Store staging tables](https://fivetran.github.io/dbt_apple_store_source/#!/overview/github_source/models/?g_v=1) which leverage data in the format described by [this ERD](https://fivetran.com/docs/connectors/applications/apple-app-store#schemainformation). These staging tables clean, test, and prepare your Apple App Store data from [Fivetran's connector](https://fivetran.com/docs/applications/apple-app-store) for analysis by doing the following:
   - Name columns for consistency across all packages and for easier analysis
