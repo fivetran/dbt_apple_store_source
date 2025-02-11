@@ -76,13 +76,13 @@ subscription offers, introductory offers, and marketing opt-ins. Subscriptions a
 
 {% docs subscription_name %} The subscription name associated with the subscription event metric or subscription summary metric. {% enddocs %}
 
-{% docs territory %} The territory (aka country) full name associated with the report's respective metric(s). {% enddocs %}
+{% docs territory %} The territory's (aka country) two-character ISO country code associated with the report's respective metric(s). {% enddocs %}
 
 {% docs total_downloads %} Total Downloads is the sum of Redownloads and First Time Downloads. {% enddocs %}
 
 {% docs territory_long %} Either the alternative country name, or the country name if the alternative doesn't exist. {% enddocs %}
 
-{% docs source_relation %}The source of the record if the unioning functionality is being used. If it is not this field will be empty.{% enddocs %}
+{% docs source_relation %} The source of the record if the unioning functionality is being used. If it is not this field will be empty.{% enddocs %}
 
 {% docs download_type %}
 The type of download event that occurred. Possible values include:
