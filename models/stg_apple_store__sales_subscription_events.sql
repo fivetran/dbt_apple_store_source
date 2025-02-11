@@ -50,7 +50,7 @@ final as (
         cast(consecutive_paid_periods as {{ dbt.type_int() }}) as consecutive_paid_periods,
         cast(original_start_date as date) as original_start_date,
         cast(device as {{ dbt.type_string() }}) as device,
-        cast('' as {{ dbt.type_string() }}) as source_type,
+        cast('' as {{ dbt.type_string() }}) as source_type, -- adding source_type in order to join with other models downstream
         cast(client as {{ dbt.type_string() }}) as client,
         cast(case
             when replace(state, ' ', '') = '' then cast(null as {{ dbt.type_string() }}) else state
