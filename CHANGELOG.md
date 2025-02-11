@@ -28,8 +28,7 @@
 - *Models Modified* :
   - `stg_apple_store__sales_subscription_events`
   - `stg_apple_store__sales_subscription_summary`
-
-  Previously, the subscription models were pre-filtered along select dimensions; fields were aggregated accordingly. However, to follow our standard staging model structure, now we have included all columns present in the respective underlying source tables and moved aggregations downstream in the transforms package. 
+  - Previously, the subscription models were pre-filtered along select dimensions; fields were aggregated accordingly. However, to follow our standard staging model structure, now we have included all columns present in the respective underlying source tables and moved aggregations downstream in the transforms package. 
 
 ## Under the Hood
 - Updated unique tests, tmp models, documentation, and seed files to reflect the new tables.
