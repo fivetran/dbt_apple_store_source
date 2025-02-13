@@ -173,8 +173,8 @@ sources:
           - name: date
             description: '{{ doc("date_day") }}'
 
-      - name: app_store_installation_and_deletion_detailed_daily
-        identifier: "{{ var('apple_store_installation_and_deletion_detailed_daily_identifier', 'app_store_installation_and_deletion_detailed_daily') }}"
+      - name: app_store_installation_and_deletion_standard_daily
+        identifier: "{{ var('apple_store_installation_and_deletion_standard_daily_identifier', 'app_store_installation_and_deletion_standard_daily') }}"
         description: '{{ doc("event") }}'
         columns:
           - name: _fivetran_id
@@ -205,13 +205,9 @@ sources:
             description: '{{ doc("counts") }}'
           - name: unique_devices
             description: '{{ doc("unique_devices") }}'
-          - name: source_info
-            description: '{{ doc("source_info") }}'
-          - name: page_title
-            description: '{{ doc("page_title") }}'
 
-      - name: app_store_discovery_and_engagement_detailed_daily
-        identifier: "{{ var('apple_store_discovery_and_engagement_detailed_daily_identifier', 'app_store_discovery_and_engagement_detailed_daily') }}"
+      - name: app_store_discovery_and_engagement_standard_daily
+        identifier: "{{ var('apple_store_discovery_and_engagement_standard_daily_identifier', 'app_store_discovery_and_engagement_standard_daily') }}"
         description: '{{ doc("event") }}'
         columns:
           - name: _fivetran_id
@@ -238,13 +234,9 @@ sources:
             description: '{{ doc("counts") }}'
           - name: unique_counts
             description: '{{ doc("unique_counts") }}'
-          - name: page_title
-            description: '{{ doc("page_title") }}'
-          - name: source_info
-            description: '{{ doc("source_info") }}'
 
-      - name: app_store_download_detailed_daily
-        identifier: "{{ var('apple_store_download_detailed_daily_identifier', 'app_store_download_detailed_daily') }}"
+      - name: app_store_download_standard_daily
+        identifier: "{{ var('apple_store_download_standard_daily_identifier', 'app_store_download_standard_daily') }}"
         description: '{{ doc("download_type") }}'
         columns:
           - name: _fivetran_id
@@ -271,10 +263,6 @@ sources:
             description: '{{ doc("territory") }}'
           - name: counts
             description: '{{ doc("counts") }}'
-          - name: source_info
-            description: '{{ doc("source_info") }}'
-          - name: page_title
-            description: '{{ doc("page_title") }}'
       - name: app_crash_daily
         identifier: "{{ var('apple_store_crash_daily_identifier', 'app_crash_daily') }}"
         description: '{{ doc("crashes") }}'
@@ -296,8 +284,8 @@ sources:
           - name: unique_devices
             description: '{{ doc("unique_devices") }}'
 
-      - name: app_session_detailed_daily
-        identifier: "{{ var('apple_store_session_detailed_daily_identifier', 'app_session_detailed_daily') }}"
+      - name: app_session_standard_daily
+        identifier: "{{ var('apple_store_session_standard_daily_identifier', 'app_session_standard_daily') }}"
         description: '{{ doc("sessions") }}'
         columns:
           - name: _fivetran_id
@@ -326,7 +314,3 @@ sources:
             description: '{{ doc("total_session_duration") }}'
           - name: unique_devices
             description: '{{ doc("unique_devices") }}'
-          - name: source_info
-            description: '{{ doc("source_info") }}'
-          - name: page_title
-            description: '{{ doc("page_title") }}'

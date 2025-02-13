@@ -1,4 +1,4 @@
-{% macro get_app_store_discovery_and_engagement_detailed_daily_columns() %}
+{% macro get_app_store_discovery_and_engagement_daily_columns() %}
 
 {% set columns = [
     {"name": "_fivetran_id", "datatype": dbt.type_string()},

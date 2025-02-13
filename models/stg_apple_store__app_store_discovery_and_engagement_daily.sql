@@ -11,7 +11,7 @@ fields as (
         {{
             fivetran_utils.fill_staging_columns(
                 source_columns=adapter.get_columns_in_relation(ref('stg_apple_store__app_store_discovery_and_engagement_tmp')),
-                staging_columns=get_app_store_discovery_and_engagement_detailed_daily_columns()
+                staging_columns=get_app_store_discovery_and_engagement_daily_columns()
             )
         }}
         

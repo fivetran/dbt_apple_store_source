@@ -211,7 +211,7 @@ models:
         description: A null field for crash data, but created to assist with joins downstream.
 
   - name: stg_apple_store__app_session_daily
-    description: Provides detailed daily metrics on user sessions within your app, including session duration and device information.
+    description: Provides standard daily metrics on user sessions within your app, including session duration and device information.
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
@@ -248,13 +248,9 @@ models:
         description: '{{ doc("total_session_duration") }}'
       - name: unique_devices
         description: '{{ doc("unique_devices") }}'
-      - name: page_title
-        description: '{{ doc("page_title") }}'
-      - name: source_info
-        description: '{{ doc("source_info") }}'
 
   - name: stg_apple_store__app_store_download_daily
-    description: Contains detailed daily metrics on app downloads, including download types and sources.
+    description: Contains standard daily metrics on app downloads, including download types and sources.
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
@@ -289,13 +285,9 @@ models:
         description: '{{ doc("territory") }}'
       - name: counts
         description: '{{ doc("counts") }}'
-      - name: page_title
-        description: '{{ doc("page_title") }}'
-      - name: source_info
-        description: '{{ doc("source_info") }}'
 
   - name: stg_apple_store__app_store_installation_and_deletion_daily
-    description: Contains detailed daily metrics on app installations and deletions, providing insights into user acquisition and retention.
+    description: Contains standard daily metrics on app installations and deletions, providing insights into user acquisition and retention.
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
@@ -334,10 +326,6 @@ models:
         description: '{{ doc("counts") }}'
       - name: unique_devices
         description: '{{ doc("unique_devices") }}'
-      - name: page_title
-        description: '{{ doc("page_title") }}'
-      - name: source_info
-        description: '{{ doc("source_info") }}'
 
   - name: stg_apple_store__app_store_discovery_and_engagement_daily
     description: Contains daily metrics on how users discover and engage with your app on the App Store.
@@ -375,10 +363,6 @@ models:
         description: '{{ doc("counts") }}'
       - name: unique_counts
         description: The number of unique devices associated with the event.
-      - name: page_title
-        description: '{{ doc("page_title") }}'
-      - name: source_info
-        description: '{{ doc("source_info") }}'
 
 seeds:
   - name: apple_store_country_codes

@@ -277,11 +277,3 @@ The number of subscribers.
 {% docs _fivetran_id %}
 A Fivetran-generated key that is unique for each record, for each app and date or for each vendor, depending on the table.
 {% enddocs %}
-
-{% docs source_info %}
-The app referrer or web referrer that led the user to discover the app.
-{% enddocs %}
-
-{% docs page_title %}
-The name of the product page or in-app event page that led the user to download the app associated with the session.
-{% enddocs %}
