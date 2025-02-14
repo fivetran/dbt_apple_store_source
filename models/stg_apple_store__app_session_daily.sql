@@ -40,9 +40,7 @@ final as (
         cast(territory as {{ dbt.type_string() }}) as territory,
         cast(sessions as {{ dbt.type_bigint() }}) as sessions,
         cast(total_session_duration as {{ dbt.type_bigint() }}) as total_session_duration,
-        cast(unique_devices as {{ dbt.type_bigint() }}) as unique_devices,
-        cast(source_info as {{ dbt.type_string() }}) as source_info,
-        cast(page_title as {{ dbt.type_string() }}) as page_title
+        cast(unique_devices as {{ dbt.type_bigint() }}) as unique_devices
     from fields
 
 )

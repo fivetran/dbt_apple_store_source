@@ -39,9 +39,7 @@ final as (
         cast(platform_version as {{ dbt.type_string() }}) as platform_version,
         cast(territory as {{ dbt.type_string() }}) as territory,
         cast(counts as {{ dbt.type_bigint() }}) as counts,
-        cast(unique_counts as {{ dbt.type_bigint() }}) as unique_counts,
-        cast(page_title as {{ dbt.type_string() }}) as page_title,
-        cast(source_info as {{ dbt.type_string() }}) as source_info
+        cast(unique_counts as {{ dbt.type_bigint() }}) as unique_counts
     from fields
 
 )
