@@ -8,11 +8,11 @@ vars:
     sales_subscription_events: "{{ source('apple_store', 'sales_subscription_event_summary') }}"
     sales_subscription_summary: "{{ source('apple_store', 'sales_subscription_summary') }}"
     apple_store_country_codes: "{{ ref('apple_store_country_codes') }}"
-    app_store_discovery_and_engagement_detailed_daily: "{{ source('apple_store', 'app_store_discovery_and_engagement_detailed_daily') }}"
+    app_store_discovery_and_engagement_standard_daily: "{{ source('apple_store', 'app_store_discovery_and_engagement_standard_daily') }}"
     app_crash_daily: "{{ source('apple_store', 'app_crash_daily') }}"
-    app_store_download_detailed_daily: "{{ source('apple_store', 'app_store_download_detailed_daily') }}"
-    app_session_detailed_daily: "{{ source('apple_store', 'app_session_detailed_daily') }}"
-    app_store_installation_and_deletion_detailed_daily: "{{ source('apple_store', 'app_store_installation_and_deletion_detailed_daily') }}"
+    app_store_download_standard_daily: "{{ source('apple_store', 'app_store_download_standard_daily') }}"
+    app_session_standard_daily: "{{ source('apple_store', 'app_session_standard_daily') }}"
+    app_store_installation_and_deletion_standard_daily: "{{ source('apple_store', 'app_store_installation_and_deletion_standard_daily') }}"
     
     apple_store__subscription_events:
     - 'Renew'

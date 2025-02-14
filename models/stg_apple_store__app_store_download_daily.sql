@@ -39,9 +39,7 @@ final as (
         cast(page_type as {{ dbt.type_string() }}) as page_type,
         cast(pre_order as {{ dbt.type_string() }}) as pre_order, 
         cast(territory as {{ dbt.type_string() }}) as territory,
-        cast(counts as {{ dbt.type_bigint() }}) as counts,
-        cast(source_info as {{ dbt.type_string() }}) as source_info,
-        cast(page_title as {{ dbt.type_string() }}) as page_title
+        cast(counts as {{ dbt.type_bigint() }}) as counts
     from fields
 
 )

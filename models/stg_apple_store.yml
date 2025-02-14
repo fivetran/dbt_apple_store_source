@@ -17,7 +17,7 @@ models:
         description: '{{ doc("app_name") }}'
 
   - name: stg_apple_store__sales_subscription_events
-    description: Daily subscription event report by account ID, app name, subscription name, event, country, state and device; this model is aggregated by date, app_name, account_id, country, state and subscription_name for easier transformations in the modeling package.
+    description: Daily subscription event report by app name, subscription name, event, country, state and device; this model is aggregated by date, app_name, country, state and subscription_name for easier transformations in the modeling package.
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
@@ -95,7 +95,7 @@ models:
 
 
   - name: stg_apple_store__sales_subscription_summary
-    description: Daily subscription summary report by account ID, app name, country, state and subscription name; this model is aggregated by date, app_name, account_id, country, state and subscription_name for easier transformations in the modeling package.
+    description: Daily subscription summary report by app name, country, state and subscription name; this model is aggregated by date, app_name, country, state and subscription_name for easier transformations in the modeling package.
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
