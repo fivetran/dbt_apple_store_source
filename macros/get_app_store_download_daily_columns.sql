@@ -1,0 +1,23 @@
+{% macro get_app_store_download_daily_columns() %}
+
+{% set columns = [
+    {"name": "_fivetran_id", "datatype": dbt.type_string()},
+    {"name": "app_id", "datatype": dbt.type_int()},
+    {"name": "date", "datatype": "date"},
+    {"name": "download_type", "datatype": dbt.type_string()},
+    {"name": "app_version", "datatype": dbt.type_string()},
+    {"name": "device", "datatype": dbt.type_string()},
+    {"name": "platform_version", "datatype": dbt.type_string()},
+    {"name": "source_type", "datatype": dbt.type_string()},
+    {"name": "page_type", "datatype": dbt.type_string()},
+    {"name": "pre_order", "datatype": dbt.type_string()},
+    {"name": "territory", "datatype": dbt.type_string()},
+    {"name": "counts", "datatype": dbt.type_int()},
+    {"name": "source_info", "datatype": dbt.type_string()},
+    {"name": "page_title", "datatype": dbt.type_string()},
+    {"name": "_fivetran_synced", "datatype": dbt.type_timestamp()}
+] %}
+
+{{ return(columns) }}
+
+{% endmacro %}
