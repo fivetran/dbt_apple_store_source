@@ -1,3 +1,42 @@
+# dbt_apple_store_source v0.5.0
+[PR #18](https://github.com/fivetran/dbt_apple_store_source/pull/18) includes the following updates:
+
+## Breaking Changes: Schema Change
+- Following the connector's [Nov 2024 Update](https://fivetran.com/docs/connectors/applications/apple-app-store/changelog#november2024) to sync from the [App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi), we've updated this dbt package to reflect the new schema which includes the following changes:
+
+- *Models Removed*:
+  - `stg_apple_store__app_store_device`
+  - `stg_apple_store__app_store_platform_version`
+  - `stg_apple_store__app_store_territory`
+  - `stg_apple_store__crashes_app_version`
+  - `stg_apple_store__downloads_device`
+  - `stg_apple_store__downloads_platform_version`
+  - `stg_apple_store__downloads_territory`
+  - `stg_apple_store__sales_account`
+  - `stg_apple_store__usage_app_version`
+  - `stg_apple_store__usage_device`
+  - `stg_apple_store__usage_platform_version`
+  - `stg_apple_store__usage_territory`
+  - `stg_apple_store__app`
+- *Models Added*
+  - `stg_apple_store__app_crash_daily`
+  - `stg_apple_store__app_store_app`
+  - `stg_apple_store__app_store_discovery_and_engagement_daily`
+  - `stg_apple_store__app_store_download_daily`
+  - `stg_apple_store__app_store_installation_and_deletion_daily`
+  - `stg_apple_store__app_session_daily`
+
+- *Models Modified* :
+  - `stg_apple_store__sales_subscription_events`
+  - `stg_apple_store__sales_subscription_summary`
+  - Previously, the subscription models were pre-filtered along select dimensions; fields were aggregated accordingly. However, to follow our standard staging model structure, now we have included all columns present in the respective underlying source tables and moved aggregations downstream in the transforms package. 
+
+## Under the Hood
+- Updated unique tests, tmp models, documentation, and seed files to reflect the new tables.
+
+## Documentation
+- Corrected references to connectors and connections in the README. ([#17](https://github.com/fivetran/dbt_apple_store_source/pull/17))
+
 # dbt_apple_store_source v0.5.0-a1
 
 [PR #18](https://github.com/fivetran/dbt_apple_store_source/pull/18) includes the following updates:
