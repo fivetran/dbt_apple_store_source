@@ -49,6 +49,7 @@
   - `stg_apple_store__app_store_platform_version`
   - `stg_apple_store__app_store_territory`
   - `stg_apple_store__crashes_app_version`
+  - `stg_apple_store__crashes_platform_version`
   - `stg_apple_store__downloads_device`
   - `stg_apple_store__downloads_platform_version`
   - `stg_apple_store__downloads_territory`
