@@ -12,7 +12,7 @@ sources:
       error_after: {count: 168, period: hour}
 
     tables:
-      - name: app
+      - name: app_store_app
         identifier: "{{ var('apple_store_app_identifier', 'app')}}"
         description: Table containing data about your application(s)
         columns:
@@ -23,189 +23,76 @@ sources:
           - name: is_enabled
             description: Boolean indicator for whether application is enabled or not.
 
-      - name: app_store_platform_version_source_type_report
-        identifier: "{{ var('apple_store_app_store_platform_version_source_type_report_identifier', 'app_store_platform_version_source_type_report')}}"
-        description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by platform version and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: platform_version
-            description: '{{ doc("platform_version") }}'
-          - name: impressions
-            description: '{{ doc("impressions")}}'
-          - name: impressions_unique_device
-            description: '{{ doc("impressions_unique_device") }}'
-          - name: page_views
-            description: '{{ doc("page_views") }}'
-          - name: page_views_unique_device
-            description: '{{ doc("page_views_unique_device") }}'
-
-      - name: app_store_source_type_device_report
-        identifier: "{{ var('apple_store_app_store_source_type_device_report_identifier', 'app_store_source_type_device_report')}}"
-        description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by device and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: impressions
-            description: '{{ doc("impressions")}}'
-          - name: impressions_unique_device
-            description: '{{ doc("impressions_unique_device") }}'
-          - name: page_views
-            description: '{{ doc("page_views") }}'
-          - name: page_views_unique_device
-            description: '{{ doc("page_views_unique_device") }}'
-
-      - name: app_store_territory_source_type_report
-        identifier: "{{ var('apple_store_app_store_territory_source_type_report_identifier', 'app_store_territory_source_type_report')}}"
-        description: Daily app store metrics (impressions, impressions_unique_device, page_views and page_views_unique_device) by territory and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: territory
-            description: '{{ doc("territory") }}'
-          - name: impressions
-            description: '{{ doc("impressions")}}'
-          - name: impressions_unique_device
-            description: '{{ doc("impressions_unique_device") }}'
-          - name: page_views
-            description: '{{ doc("page_views") }}'
-          - name: page_views_unique_device
-            description: '{{ doc("page_views_unique_device") }}'
-
-      - name: crashes_app_version_device_report
-        identifier: "{{ var('apple_store_crashes_app_version_device_report_identifier', 'crashes_app_version_device_report')}}"
-        description: Daily crashes by app version and device.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: app_version
-            description: '{{ doc("app_version") }}'
-          - name: crashes
-            description: '{{ doc("crashes") }}'
-
-      - name: crashes_platform_version_device_report
-        identifier: "{{ var('apple_store_crashes_platform_version_device_report_identifier', 'crashes_platform_version_device_report')}}"
-        description: Daily crashes by platform version and device.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: platform_version
-            description: '{{ doc("app_version") }}'
-          - name: crashes
-            description: '{{ doc("crashes") }}'
-
-      - name: downloads_platform_version_source_type_report
-        identifier: "{{ var('apple_store_downloads_platform_version_source_type_report_identifier', 'downloads_platform_version_source_type_report')}}"
-        description: Daily downloads metrics (first time downloads, redownloads and total downloads) by platform version and source type.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: platform_version
-            description: '{{ doc("platform_version") }}'
-          - name: first_time_downloads
-            description: '{{ doc("first_time_downloads") }}'
-          - name: redownloads
-            description: '{{ doc("redownloads") }}'
-          - name: total_downloads
-            description: '{{ doc("total_downloads") }}'
-
-      - name: downloads_source_type_device_report
-        identifier: "{{ var('apple_store_downloads_source_type_device_report_identifier', 'downloads_source_type_device_report')}}"
-        description: Daily downloads metrics (first time downloads, redownloads and total downloads) by device and source type.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: first_time_downloads
-            description: '{{ doc("first_time_downloads") }}'
-          - name: redownloads
-            description: '{{ doc("redownloads") }}'
-          - name: total_downloads
-            description: '{{ doc("total_downloads") }}'
-
-      - name: downloads_territory_source_type_report
-        identifier: "{{ var('apple_store_downloads_territory_source_type_report_identifier', 'downloads_territory_source_type_report')}}"
-        description: Daily downloads metrics (first time downloads, redownloads and total downloads) by territory and source type.
-        columns: 
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: territory
-            description: '{{ doc("territory") }}'
-          - name: first_time_downloads
-            description: '{{ doc("first_time_downloads") }}'
-          - name: redownloads
-            description: '{{ doc("redownloads") }}'
-          - name: total_downloads
-            description: '{{ doc("total_downloads") }}'
-
-      - name: sales_account
-        identifier: "{{ var('apple_store_sales_account_identifier', 'sales_account')}}"
-        description: Table containing sales account data.
-        columns: 
-          - name: id
-            description: '{{ doc("account_id") }}'
-          - name: name
-            description: '{{ doc("account_name")}}'
-
       - name: sales_subscription_event_summary
         identifier: "{{ var('apple_store_sales_subscription_event_summary_identifier', 'sales_subscription_event_summary')}}"
         description: Daily subscription event report by account ID, app name, subscription name, event, country, state and device; this model is aggregated by date, app_name, account_id, country, state and subscription_name for easier transformations in the modeling package.
         config:
           enabled: "{{ var('apple_store__using_subscriptions', false) }}"
         columns:
-          - name: event_date
-            description: '{{ doc("date_day") }}'
-          - name: account_number
-            description: '{{ doc("account_id") }}'
-          - name: app_name
-            description: '{{ doc("app_name") }}'
-          - name: subscription_name
-            description: '{{ doc("subscription_name") }}'
-          - name: event
-            description: '{{ doc("event") }}'
-          - name: country
-            description: '{{ doc("country") }}'
-          - name: state
-            description: '{{ doc("state") }}'
-          - name: device
-            description: '{{ doc("device") }}'
-          - name: quantity
-            description: '{{ doc("quantity") }}'
+            - name: _fivetran_id
+              description: '{{ doc("_fivetran_id") }}'
+            - name: _fivetran_synced
+              description: '{{ doc("_fivetran_synced") }}'
+            - name: vendor_number
+              description: '{{ doc("vendor_number") }}'
+            - name: event_date
+              description: '{{ doc("date_day") }}'
+            - name: event
+              description: '{{ doc("event") }}'
+            - name: app_name
+              description: '{{ doc("app_name") }}'
+            - name: app_apple_id
+              description: '{{ doc("app_apple_id") }}'
+            - name: subscription_name
+              description: '{{ doc("subscription_name") }}'
+            - name: subscription_apple_id
+              description: '{{ doc("subscription_apple_id") }}'
+            - name: subscription_group_id
+              description: '{{ doc("subscription_group_id") }}'
+            - name: standard_subscription_duration
+              description: '{{ doc("standard_subscription_duration") }}'
+            - name: subscription_offer_type
+              description: '{{ doc("subscription_offer_type") }}'
+            - name: subscription_offer_duration
+              description: '{{ doc("subscription_offer_duration") }}'
+            - name: marketing_opt_in
+              description: '{{ doc("marketing_opt_in") }}'
+            - name: marketing_opt_in_duration
+              description: '{{ doc("marketing_opt_in_duration") }}'
+            - name: preserved_pricing
+              description: '{{ doc("preserved_pricing") }}'
+            - name: proceeds_reason
+              description: '{{ doc("proceeds_reason") }}'
+            - name: promotional_offer_name
+              description: '{{ doc("promotional_offer_name") }}'
+            - name: promotional_offer_id
+              description: '{{ doc("promotional_offer_id") }}'
+            - name: consecutive_paid_periods
+              description: '{{ doc("consecutive_paid_periods") }}'
+            - name: original_start_date
+              description: '{{ doc("original_start_date") }}'
+            - name: device
+              description: '{{ doc("device") }}'
+            - name: client
+              description: '{{ doc("client") }}'
+            - name: state
+              description: '{{ doc("state") }}'
+            - name: country
+              description: '{{ doc("country") }}'
+            - name: previous_subscription_name
+              description: '{{ doc("previous_subscription_name") }}'
+            - name: previous_subscription_apple_id
+              description: '{{ doc("previous_subscription_apple_id") }}'
+            - name: days_before_canceling
+              description: '{{ doc("days_before_canceling") }}'
+            - name: cancellation_reason
+              description: '{{ doc("cancellation_reason") }}'
+            - name: days_canceled
+              description: '{{ doc("days_canceled") }}'
+            - name: quantity
+              description: '{{ doc("quantity") }}'
+            - name: paid_service_days_recovered
+              description: '{{ doc("paid_service_days_recovered") }}'
 
       - name: sales_subscription_summary
         identifier: "{{ var('apple_store_sales_subscription_summary_identifier', 'sales_subscription_summary')}}"
@@ -213,115 +100,217 @@ sources:
         config:
           enabled: "{{ var('apple_store__using_subscriptions', false) }}"
         columns:
-          - name: _filename
-            description: Report filenames used to extract the date of the report
+          - name: _fivetran_id
+            description: '{{ doc("_fivetran_id") }}'
+          - name: _fivetran_synced
+            description: '{{ doc("_fivetran_synced") }}'
+          - name: vendor_number
+            description: '{{ doc("vendor_number") }}'
           - name: app_name
             description: '{{ doc("app_name") }}'
-          - name: account_number
-            description: '{{ doc("account_id") }}'
-          - name: country
-            description: '{{ doc("country") }}'
-          - name: state
-            description: '{{ doc("state") }}'
+          - name: app_apple_id
+            description: '{{ doc("app_apple_id") }}'
           - name: subscription_name
             description: '{{ doc("subscription_name") }}'
-          - name: active_free_trial_introductory_offer_subscriptions
-            description: '{{ doc("active_free_trial_introductory_offer_subscriptions") }}'
-          - name: active_pay_as_you_go_introductory_offer_subscriptions
-            description: '{{ doc("active_pay_as_you_go_introductory_offer_subscriptions") }}'
-          - name: active_pay_up_front_introductory_offer_subscriptions
-            description: '{{ doc("active_pay_up_front_introductory_offer_subscriptions") }}'
-          - name: active_standard_price_subscriptions
-            description: '{{ doc("active_standard_price_subscriptions") }}'
-
-      - name: usage_app_version_source_type_report
-        identifier: "{{ var('apple_store_usage_app_version_source_type_report_identifier', 'usage_app_version_source_type_report')}}"
-        description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by app version and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: app_version
-            description: '{{ doc("app_version") }}'
-          - name: active_devices
-            description: '{{ doc("active_devices") }}'
-          - name: active_devices_last_30_days
-            description: '{{ doc("active_devices_last_30_days") }}'
-          - name: deletions
-            description: '{{ doc("deletions") }}'
-          - name: installations
-            description: '{{ doc("installations") }}'
-          - name: sessions
-            description: '{{ doc("sessions") }}'
-
-      - name: usage_platform_version_source_type_report
-        identifier: "{{ var('apple_store_usage_platform_version_source_type_report_identifier', 'usage_platform_version_source_type_report')}}"
-        description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by platform version and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
-          - name: platform_version
-            description: '{{ doc("platform_version") }}'
-          - name: active_devices
-            description: '{{ doc("active_devices") }}'
-          - name: active_devices_last_30_days
-            description: '{{ doc("active_devices_last_30_days") }}'
-          - name: deletions
-            description: '{{ doc("deletions") }}'
-          - name: installations
-            description: '{{ doc("installations") }}'
-          - name: sessions
-            description: '{{ doc("sessions") }}'
-
-      - name: usage_source_type_device_report
-        identifier: "{{ var('apple_store_usage_source_type_device_report_identifier', 'usage_source_type_device_report')}}"
-        description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by device and source type.
-        columns:
-          - name: date
-            description: '{{ doc("date_day") }}'
-          - name: app_id
-            description: '{{ doc("app_id") }}'
-          - name: source_type
-            description: '{{ doc("source_type") }}'
+          - name: subscription_apple_id
+            description: '{{ doc("subscription_apple_id") }}'
+          - name: subscription_group_id
+            description: '{{ doc("subscription_group_id") }}'
+          - name: standard_subscription_duration
+            description: '{{ doc("standard_subscription_duration") }}'
+          - name: customer_price
+            description: '{{ doc("customer_price") }}'
+          - name: customer_currency
+            description: '{{ doc("customer_currency") }}'
+          - name: developer_proceeds
+            description: '{{ doc("developer_proceeds") }}'
+          - name: proceeds_currency
+            description: '{{ doc("proceeds_currency") }}'
+          - name: preserved_pricing
+            description: '{{ doc("preserved_pricing") }}'
+          - name: proceeds_reason
+            description: '{{ doc("proceeds_reason") }}'
+          - name: subscription_offer_name
+            description: '{{ doc("subscription_offer_name") }}'
+          - name: promotional_offer_id
+            description: '{{ doc("promotional_offer_id") }}'
+          - name: state
+            description: '{{ doc("state") }}'
+          - name: country
+            description: '{{ doc("country") }}'
           - name: device
             description: '{{ doc("device") }}'
-          - name: active_devices
-            description: '{{ doc("active_devices") }}'
-          - name: active_devices_last_30_days
-            description: '{{ doc("active_devices_last_30_days") }}'
-          - name: deletions
-            description: '{{ doc("deletions") }}'
-          - name: installations
-            description: '{{ doc("installations") }}'
-          - name: sessions
-            description: '{{ doc("sessions") }}'
-
-      - name: usage_territory_source_type_report
-        identifier: "{{ var('apple_store_usage_territory_source_type_report_identifier', 'usage_territory_source_type_report')}}"
-        description: Daily usage metrics (active devices, active devices last 30 days, deletions, installations, sessions) by territory and source type.
-        columns:
+          - name: client
+            description: '{{ doc("client") }}'
+          - name: active_standard_price_subscriptions
+            description: '{{ doc("active_standard_price_subscriptions") }}'
+          - name: active_free_trial_introductory_offer_subscriptions
+            description: '{{ doc("active_free_trial_introductory_offer_subscriptions") }}'
+          - name: active_pay_up_front_introductory_offer_subscriptions
+            description: '{{ doc("active_pay_up_front_introductory_offer_subscriptions") }}'
+          - name: active_pay_as_you_go_introductory_offer_subscriptions
+            description: '{{ doc("active_pay_as_you_go_introductory_offer_subscriptions") }}'
+          - name: free_trial_promotional_offer_subscriptions
+            description: '{{ doc("free_trial_promotional_offer_subscriptions") }}'
+          - name: pay_up_front_promotional_offer_subscriptions
+            description: '{{ doc("pay_up_front_promotional_offer_subscriptions") }}'
+          - name: pay_as_you_go_promotional_offer_subscriptions
+            description: '{{ doc("pay_as_you_go_promotional_offer_subscriptions") }}'
+          - name: marketing_opt_ins
+            description: '{{ doc("marketing_opt_ins") }}'
+          - name: billing_retry
+            description: '{{ doc("billing_retry") }}'
+          - name: grace_period
+            description: '{{ doc("grace_period") }}'
+          - name: free_trial_offer_code_subscriptions
+            description: '{{ doc("free_trial_offer_code_subscriptions") }}'
+          - name: pay_up_front_offer_code_subscriptions
+            description: '{{ doc("pay_up_front_offer_code_subscriptions") }}'
+          - name: pay_as_you_go_offer_code_subscriptions
+            description: '{{ doc("pay_as_you_go_offer_code_subscriptions") }}'
+          - name: subscribers
+            description: '{{ doc("subscribers") }}'
           - name: date
             description: '{{ doc("date_day") }}'
+
+      - name: app_store_installation_and_deletion_standard_daily
+        identifier: "{{ var('apple_store_installation_and_deletion_standard_daily_identifier', 'app_store_installation_and_deletion_standard_daily') }}"
+        description: Daily metrics to estimate the number of times people install and delete your App Store apps.
+        columns:
+          - name: _fivetran_id
+            description: '{{ doc("_fivetran_id") }}'
           - name: app_id
             description: '{{ doc("app_id") }}'
+          - name: date
+            description: '{{ doc("date_day") }}'
+          - name: event
+            description: '{{ doc("event") }}'
+          - name: download_type
+            description: '{{ doc("download_type") }}'
+          - name: app_version
+            description: '{{ doc("app_version") }}'
+          - name: device
+            description: '{{ doc("device") }}'
+          - name: platform_version
+            description: '{{ doc("platform_version") }}'
           - name: source_type
             description: '{{ doc("source_type") }}'
+          - name: page_type
+            description: '{{ doc("page_type") }}'
+          - name: app_download_date
+            description: '{{ doc("app_download_date") }}'
           - name: territory
             description: '{{ doc("territory") }}'
-          - name: active_devices
-            description: '{{ doc("active_devices") }}'
-          - name: active_devices_last_30_days
-            description: '{{ doc("active_devices_last_30_days") }}'
-          - name: deletions
-            description: '{{ doc("deletions") }}'
-          - name: installations
-            description: '{{ doc("installations") }}'
+          - name: counts
+            description: '{{ doc("counts") }}'
+          - name: unique_devices
+            description: '{{ doc("unique_devices") }}'
+
+      - name: app_store_discovery_and_engagement_standard_daily
+        identifier: "{{ var('apple_store_discovery_and_engagement_standard_daily_identifier', 'app_store_discovery_and_engagement_standard_daily') }}"
+        description: Daily metrics on how users discover and engage with your app on the App Store.
+        columns:
+          - name: _fivetran_id
+            description: '{{ doc("_fivetran_id") }}'
+          - name: app_id
+            description: '{{ doc("app_id") }}'
+          - name: date
+            description: '{{ doc("date_day") }}'
+          - name: event
+            description: '{{ doc("event") }}'
+          - name: page_type
+            description: '{{ doc("page_type") }}'
+          - name: source_type
+            description: '{{ doc("source_type") }}'
+          - name: engagement_type
+            description: '{{ doc("event") }}'
+          - name: device
+            description: '{{ doc("device") }}'
+          - name: platform_version
+            description: '{{ doc("platform_version") }}'
+          - name: territory
+            description: '{{ doc("territory") }}'
+          - name: counts
+            description: '{{ doc("counts") }}'
+          - name: unique_counts
+            description: '{{ doc("unique_counts") }}'
+
+      - name: app_store_download_standard_daily
+        identifier: "{{ var('apple_store_download_standard_daily_identifier', 'app_store_download_standard_daily') }}"
+        description: Daily metrics to understand to understand your total number of downloads, including first-time downloads, redownloads, updates, and more.
+        columns:
+          - name: _fivetran_id
+            description: '{{ doc("_fivetran_id") }}'
+          - name: app_id
+            description: '{{ doc("app_id") }}'
+          - name: date
+            description: '{{ doc("date_day") }}'
+          - name: download_type
+            description: '{{ doc("download_type") }}'
+          - name: app_version
+            description: '{{ doc("app_version") }}'
+          - name: device
+            description: '{{ doc("device") }}'
+          - name: platform_version
+            description: '{{ doc("platform_version") }}'
+          - name: source_type
+            description: '{{ doc("source_type") }}'
+          - name: page_type
+            description: '{{ doc("page_type") }}'
+          - name: pre_order
+            description: '{{ doc("pre_order") }}'
+          - name: territory
+            description: '{{ doc("territory") }}'
+          - name: counts
+            description: '{{ doc("counts") }}'
+      - name: app_crash_daily
+        identifier: "{{ var('apple_store_crash_daily_identifier', 'app_crash_daily') }}"
+        description: Daily metrics to understand crashes for your App Store apps by app version and device type.
+        columns:
+          - name: _fivetran_id
+            description: '{{ doc("_fivetran_id") }}'
+          - name: app_id
+            description: '{{ doc("app_id") }}'
+          - name: date
+            description: '{{ doc("date_day") }}'
+          - name: app_version
+            description: '{{ doc("app_version") }}'
+          - name: device
+            description: '{{ doc("device") }}'
+          - name: platform_version
+            description: '{{ doc("platform_version") }}'
+          - name: crashes
+            description: '{{ doc("crashes") }}'
+          - name: unique_devices
+            description: '{{ doc("unique_devices") }}'
+
+      - name: app_session_standard_daily
+        identifier: "{{ var('apple_store_session_standard_daily_identifier', 'app_session_standard_daily') }}"
+        description: Daily metrics to understand how often people open your app, and how long they spend in your app.
+        columns:
+          - name: _fivetran_id
+            description: '{{ doc("_fivetran_id") }}'
+          - name: app_id
+            description: '{{ doc("app_id") }}'
+          - name: date
+            description: '{{ doc("date_day") }}'
+          - name: app_version
+            description: '{{ doc("app_version") }}'
+          - name: device
+            description: '{{ doc("device") }}'
+          - name: platform_version
+            description: '{{ doc("platform_version") }}'
+          - name: source_type
+            description: '{{ doc("source_type") }}'
+          - name: page_type
+            description: '{{ doc("page_type") }}'
+          - name: app_download_date
+            description: '{{ doc("app_download_date") }}'
+          - name: territory
+            description: '{{ doc("territory") }}'
           - name: sessions
             description: '{{ doc("sessions") }}'
+          - name: total_session_duration
+            description: '{{ doc("total_session_duration") }}'
+          - name: unique_devices
+            description: '{{ doc("unique_devices") }}'

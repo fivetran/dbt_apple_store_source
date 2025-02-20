@@ -1,4 +1,6 @@
-<p align="center">
+# Apple App Store Source dbt Package ([Docs](https://fivetran.github.io/dbt_apple_store_source/))
+
+<p align="left">
     <a alt="License"
         href="https://github.com/fivetran/dbt_apple_store_source/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" /></a>
@@ -10,7 +12,6 @@
         <img src="https://img.shields.io/badge/Contributions-welcome-blueviolet" /></a>
 </p>
 
-# Apple App Store Source dbt Package ([Docs](https://fivetran.github.io/dbt_apple_store_source/))
 ## What does this dbt package do?
 - Materializes [Apple App Store staging tables](https://fivetran.github.io/dbt_apple_store_source/#!/overview/github_source/models/?g_v=1) which leverage data in the format described by [this ERD](https://fivetran.com/docs/connectors/applications/apple-app-store#schemainformation). These staging tables clean, test, and prepare your Apple App Store data from [Fivetran's connector](https://fivetran.com/docs/applications/apple-app-store) for analysis by doing the following:
   - Name columns for consistency across all packages and for easier analysis
@@ -31,10 +32,10 @@ Include the following apple_store_source package version in your `packages.yml` 
 ```yaml
 packages:
   - package: fivetran/apple_store_source
-    version: [">=0.4.0", "<0.5.0"] # we recommend using ranges to capture non-breaking changes automatically
+    version: [">=0.5.0", "<0.6.0"] # we recommend using ranges to capture non-breaking changes automatically
 ```
 ### Step 3: Define database and schema variables
-By default, this package runs using your destination and the `apple_store` schema. If this is not where your apple_store data is (for example, if your apple_store schema is named `apple_store_fivetran`), add the following configuration to your root `dbt_project.yml` file:
+By default, this package runs using your destination and your Apple Store schema (default `itunes_connect`). If this is not where your Apple Store data is (for example, if your Apple Store schema is named `apple_store_fivetran`), add the following configuration to your root `dbt_project.yml` file:
 
 ```yml
 vars:
