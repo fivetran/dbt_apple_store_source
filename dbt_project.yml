@@ -20,10 +20,10 @@ vars:
     - 'Subscribe'
 models:
   apple_store_source:
-    materialized: table
+    +materialized: table
     +schema: apple_store_source
     tmp:
-      materialized: view
+      +materialized: view
 seeds:
   apple_store_source:
     +schema: apple_store_source
