@@ -1,3 +1,13 @@
+# dbt_apple_store_source v0.5.1
+This release includes the following updates:
+
+## Under the Hood
+- Prepends `materialized` configs in the package's `dbt_project.yml` file with `+` to improve compatibility with the newer versions of dbt-core starting with v1.10.0. ([PR #19](https://github.com/fivetran/dbt_apple_store_source/pull/19))
+- Updates the package maintainer pull request template. ([PR #20](https://github.com/fivetran/dbt_apple_store_source/pull/20))
+
+## Contributors
+- [@b-per](https://github.com/b-per) ([PR #19](https://github.com/fivetran/dbt_apple_store_source/pull/19))
+
 # dbt_apple_store_source v0.5.0
 [PR #18](https://github.com/fivetran/dbt_apple_store_source/pull/18) includes the following updates:
 
