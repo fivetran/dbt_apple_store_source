@@ -24,6 +24,8 @@ models:
     columns: "{{ false if target.type in ('spark','databricks') else true }}"
 
 seeds:
+  +docs:
+    show: False
   apple_store_source_integration_tests:
     +quote_columns: "{{ true if target.type == 'redshift' else false }}"
     +column_types:
@@ -36,3 +38,5 @@ dispatch:
 
 flags:
   send_anonymous_usage_stats: False
+
+  use_colors: True
